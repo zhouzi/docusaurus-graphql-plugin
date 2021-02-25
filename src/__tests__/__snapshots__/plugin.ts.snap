@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertEnumsToMarkdown should convert enums to markdown 1`] = `
+"## UserRole
+
+Enum listing the different role a user can have.
+
+**Values**
+
+<table>
+<thead><tr><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td>
+<p>Admin rights.</p>
+</td>
+</tr>
+<tr>
+<td>User</td>
+<td>
+<p>Regular user rights.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`convertInputObjectsToMarkdown should convert inputObjects to markdown 1`] = `
+"## UserInput
+
+Payload used to create/update a user.
+
+**Arguments**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+<p>Name of the user.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`convertInterfacesToMarkdown should convert interfaces to markdown 1`] = `
+"## Humanoid
+
+Shared traits of humanoids.
+
+**Fields**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+<p>Name of the humanoid.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`convertMutationsToMarkdown should convert mutations to markdown 1`] = `
+"## createUser
+
+**Type:** [User!](#)
+
+Create a new user.
+
+**Arguments**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>input</code></td>
+<td><a href=\\"#\\"><code>UserInput!</code></a></td>
+<td>
+<p>Payload to create the new user.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## updateUser
+
+**Type:** [User!](#)
+
+Update an existing user.
+
+**Arguments**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td><a href=\\"#\\"><code>ID!</code></a></td>
+<td>
+<p>ID of the user to update.</p>
+</td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td><a href=\\"#\\"><code>UserInput!</code></a></td>
+<td>
+<p>Payload to update the existing user.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`convertObjectsToMarkdown should convert objects to markdown 1`] = `
+"## Droid
+
+Represents a droid.
+
+**Implements**
+
+- [Humanoid](#)
+
+**Fields**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+<p>Name of the droid.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## User
+
+Represents a user.
+
+**Implements**
+
+- [Humanoid](#)
+
+**Fields**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+<p>Name of the user.</p>
+</td>
+</tr>
+<tr>
+<td><code>friends</code></td>
+<td><a href=\\"#\\"><code>[User!]!</code></a></td>
+<td>
+<p>Returns the user&#39;s list of friends.</p>
+
+**Arguments**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>take</code></td>
+<td><a href=\\"#\\"><code>Int!</code></a></td>
+<td>
+<p>Number of friends to return.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+<tr>
+<td><code>role</code></td>
+<td><a href=\\"#\\"><code>UserRole!</code></a></td>
+<td>
+<p>Role of the user.</p>
+</td>
+</tr>
+<tr>
+<td><code>createdAt</code></td>
+<td><a href=\\"#\\"><code>DateTime</code></a></td>
+<td>
+<blockquote>Deprecated: This property will be removed in the future</blockquote>
+
+
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`convertQueriesToMarkdown should convert queries to markdown 1`] = `
+"## currentUser
+
+**Type:** [User](#)
+
+Returns the current user if they're logged in.
+
+## searchHumanoids
+
+**Type:** [[SearchResult!]!](#)
+
+Search among humanoids and returns a mix of:
+
+* Droid
+* Human
+
+**Arguments**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>query</code></td>
+<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+<p>The search query.</p>
+</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><a href=\\"#\\"><code>String</code></a></td>
+<td>
+<blockquote>Deprecated: Use query instead</blockquote>
+
+<p>Search humanoids by their name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## users
+
+**Type:** [[User!]!](#)
+
+Returns the list of users.
+
+**Arguments**
+
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td><code>take</code></td>
+<td><a href=\\"#\\"><code>Int!</code></a></td>
+<td>
+<p>Number of users to return.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`convertScalarsToMarkdown should convert scalars to markdown 1`] = `
+"## Boolean
+
+The \`Boolean\` scalar type represents \`true\` or \`false\`.
+
+## DateTime
+
+Date string following the ISO format.
+
+## ID
+
+The \`ID\` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as \`\\"4\\"\`) or integer (such as \`4\`) input value will be accepted as an ID.
+
+## Int
+
+The \`Int\` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+
+## String
+
+The \`String\` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+
+"
+`;
+
+exports[`convertUnionsToMarkdown should convert unions to markdown 1`] = `
+"## SearchResult
+
+Represents the mix of search results.
+
+**Possible types**
+
+- [User](#)
+- [Droid](#)
+
+"
+`;
