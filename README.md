@@ -7,7 +7,7 @@ Docusaurus plugin generating Markdown documentation from a GraphQL schema.
 1. In an existing Docusaurus project, install the plugin:
 
 ```
-yarn add --dev docusaurus-plugin-content-graphql
+yarn add docusaurus-plugin-content-graphql
 ```
 
 2. Add the plugin to your `docusaurus.config.js` file:
@@ -61,7 +61,8 @@ Can be a path, a glob or an URL used to load your GraphQL schema.
 
 ### `routeBasePath`
 
-If you changed the docs plugin's `routeBasePath` then you need to pass it to this plugin as well. For example, if you opted for docs only:
+By default this is set to `/docs/api/`. You can customize the path by changing it to `/docs/api-reference/` for example.
+This option is also useful if you used the docs plugin's `routeBasePath`. For example, if you opted for docs only:
 
 ```js
 module.exports = {
@@ -85,7 +86,7 @@ module.exports = {
       "docusaurus-plugin-content-graphql",
       {
         schema: "schema.graphql",
-        routeBasePath: "/",
+        routeBasePath: "/api/",
       },
     ],
   ],

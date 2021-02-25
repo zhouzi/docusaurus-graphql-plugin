@@ -48,7 +48,7 @@ interface PluginOptions {
 
 const OptionsSchema = Joi.object({
   schema: Joi.string().required(),
-  routeBasePath: Joi.string().default("/docs/"),
+  routeBasePath: Joi.string().default("/docs/api/"),
 });
 
 interface GroupedTypes {
@@ -95,13 +95,7 @@ export default function plugin(
     contentLoaded: async ({ content }) => {
       const slugger = new Slugger();
       const slugify = (name: string) => slugger.slug(name, { dryrun: true });
-      const baseUrl = joinURL(
-        context.baseUrl,
-
-        // Docs can be served over a path different than "/docs"
-        // That's done through its routeBasePath option which we have to duplicate
-        options.routeBasePath === "/" ? "" : options.routeBasePath
-      );
+      const baseUrl = joinURL(context.baseUrl, options.routeBasePath);
       const getTypePath = (
         type:
           | GraphQLScalarType
@@ -122,26 +116,26 @@ export default function plugin(
         }
 
         if (isScalarType(type)) {
-          return joinURL(baseUrl, `/api/scalars#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/scalars#${slugify(type.name)}`);
         }
 
         if (isObjectType(type)) {
-          return joinURL(baseUrl, `/api/objects#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/objects#${slugify(type.name)}`);
         }
 
         if (isInterfaceType(type)) {
-          return joinURL(baseUrl, `/api/interfaces#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/interfaces#${slugify(type.name)}`);
         }
 
         if (isUnionType(type)) {
-          return joinURL(baseUrl, `/api/unions#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/unions#${slugify(type.name)}`);
         }
 
         if (isEnumType(type)) {
-          return joinURL(baseUrl, `/api/enums#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/enums#${slugify(type.name)}`);
         }
 
-        return joinURL(baseUrl, `/api/inputObjects#${slugify(type.name)}`);
+        return joinURL(baseUrl, `/inputObjects#${slugify(type.name)}`);
       };
       const {
         queries,
