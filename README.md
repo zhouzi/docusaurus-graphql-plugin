@@ -61,7 +61,9 @@ Can be a path, a glob or an URL used to load your GraphQL schema.
 
 ### `routeBasePath`
 
-By default this is set to `/docs/api/`. You can customize the path by changing it to `/docs/api-reference/` for example.
+By default this is set to `/docs/api/` which means that the Markdown files will be generated in `docs/api`.
+You can change the name of the generated folder and path to `api-reference` by setting this to: `/docs/api-reference/`.
+
 This option is also useful if you used the docs plugin's `routeBasePath`. For example, if you opted for docs only:
 
 ```js
@@ -92,3 +94,5 @@ module.exports = {
   ],
 };
 ```
+
+With this configuration, the files are still generated in `docs/api` but the reference links will point to `/api/` instead of `/docs/api/`.

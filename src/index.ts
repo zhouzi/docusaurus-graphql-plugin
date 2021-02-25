@@ -194,7 +194,12 @@ export default function plugin(
 
       for (const file of files) {
         await fse.outputFile(
-          path.join(context.siteDir, "docs", "api", `${file.id}.md`),
+          path.join(
+            context.siteDir,
+            "docs",
+            path.basename(options.routeBasePath),
+            `${file.id}.md`
+          ),
           [
             `---`,
             `\n`,
