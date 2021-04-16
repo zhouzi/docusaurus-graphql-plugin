@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: "14"
       - run: yarn
+      - run: yarn --cwd ./packages/docusaurus-plugin-content-graphql build
       - run: yarn --cwd ./packages/docs build
       - uses: peaceiris/actions-gh-pages@v3
         with:
