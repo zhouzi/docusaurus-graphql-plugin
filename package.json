@@ -1,52 +1,9 @@
 {
-  "name": "docusaurus-plugin-content-graphql",
-  "version": "0.4.0",
-  "description": "Docusaurus plugin generating Markdown documentation from a GraphQL schema.",
-  "keywords": [
-    "docusaurus",
-    "plugin",
-    "markdown",
-    "generated",
-    "graphql",
-    "documentation"
+  "private": true,
+  "workspaces": [
+    "./packages/*"
   ],
-  "homepage": "https://github.com/zhouzi/docusaurus-plugin-content-graphql/",
-  "bugs": "https://github.com/zhouzi/docusaurus-plugin-content-graphql/issues/",
-  "license": "MIT",
-  "author": "Gabin Aureche <hello@gabinaureche.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Zhouzi/docusaurus-plugin-content-graphql.git"
-  },
   "scripts": {
-    "test": "jest",
-    "prebuild": "rm -rf build",
-    "build": "tsc",
-    "prepare": "yarn run build"
-  },
-  "main": "build/index.js",
-  "files": [
-    "build"
-  ],
-  "devDependencies": {
-    "@docusaurus/types": "^2.0.0-alpha.70",
-    "@types/fs-extra": "^9.0.7",
-    "@types/jest": "^26.0.20",
-    "@types/url-join": "^4.0.0",
-    "jest": "^26.6.3",
-    "ts-jest": "^26.5.2",
-    "typescript": "^4.2.2"
-  },
-  "dependencies": {
-    "@graphql-tools/graphql-file-loader": "^6.2.7",
-    "@graphql-tools/json-file-loader": "^6.2.6",
-    "@graphql-tools/load": "^6.2.7",
-    "@graphql-tools/url-loader": "^6.8.1",
-    "@types/marked": "^1.2.2",
-    "graphql": "^15.5.0",
-    "fs-extra": "^9.1.0",
-    "joi": "^17.4.0",
-    "marked": "^2.0.0",
-    "url-join": "^4.0.1"
+    "test": "yarn --cwd ./packages/docusaurus-plugin-content-graphql test"
   }
 }

@@ -79,7 +79,7 @@ interface MarkdownOptions {
 export default function plugin(
   context: LoadContext,
   options: PluginOptions
-): Plugin<PluginContent, typeof OptionsSchema> {
+): Plugin<PluginContent> {
   return {
     name: "docusaurus-plugin-content-graphql",
     loadContent: async () => {
@@ -233,10 +233,7 @@ export default function plugin(
 export function validateOptions({
   options,
   validate,
-}: OptionValidationContext<PluginOptions, ValidationError>): ValidationResult<
-  PluginOptions,
-  ValidationError
-> {
+}: OptionValidationContext<PluginOptions>): ValidationResult<PluginOptions> {
   return validate(OptionsSchema, options);
 }
 
