@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>docusaurus-plugin-content-graphql Blog</title>
+        <link>https://gabinaureche.com/docusaurus-plugin-content-graphql/blog</link>
+        <description>docusaurus-plugin-content-graphql Blog</description>
+        <lastBuildDate>Sun, 25 Oct 2015 23:29:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+    </channel>
+</rss>
