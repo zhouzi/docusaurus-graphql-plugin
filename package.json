@@ -2,8 +2,5 @@
   "private": true,
   "workspaces": [
     "./packages/*"
-  ],
-  "scripts": {
-    "test": "yarn --cwd ./packages/docusaurus-plugin-content-graphql test"
-  }
+  ]
 }
