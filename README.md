@@ -14,8 +14,6 @@ yarn add docusaurus-plugin-content-graphql
 
 ```js
 module.exports = {
-  // preceded by your existing configuration
-  // ...
   plugins: [
     [
       "docusaurus-plugin-content-graphql",
@@ -61,23 +59,26 @@ Can be a path, a glob or an URL used to load your GraphQL schema.
 
 ### `routeBasePath`
 
-By default this is set to `/docs/api/` which means that the Markdown files will be generated in `docs/api`.
-You can change the name of the generated folder and path to `api-reference` by setting this to: `/docs/api-reference/`.
+**Defaults:** `/docs/api/`
 
-This option is also useful if you used the docs plugin's `routeBasePath`. For example, if you opted for docs only:
+This option is used for two things:
+
+1. To generate reference links, such as the return type of a query being linked to its corresponding object.
+2. To generate the path where the files will be written to disk.
+
+So if you want the API docs to be served over `/docs/api-reference/` instead of `/docs/api/`, you can change this option to `/docs/api-reference/`. Note that you can also have more levels to the path, e.g `/docs/reference/api/`.
+
+**You must change this option if you are using the docs plugin's `routeBasePath`.**
+For example, if you opted for a docs only documentation, your configuration could look like this:
 
 ```js
 module.exports = {
-  // preceded by your existing configuration
-  // ...
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          // with the change below, docs are server over `/` instead of `/docs/`
           routeBasePath: "/",
         },
       },
@@ -88,11 +89,11 @@ module.exports = {
       "docusaurus-plugin-content-graphql",
       {
         schema: "schema.graphql",
+
+        // routeBasePath defaults to `/docs/api/` which will not work if docs are server over `/`
         routeBasePath: "/api/",
       },
     ],
   ],
 };
 ```
-
-With this configuration, the files are still generated in `docs/api` but the reference links will point to `/api/` instead of `/docs/api/`.

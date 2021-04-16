@@ -96,6 +96,22 @@ export default function plugin(
       const slugger = new Slugger();
       const slugify = (name: string) => slugger.slug(name, { dryrun: true });
       const baseUrl = joinURL(context.baseUrl, options.routeBasePath);
+      const outputPath = path.join(
+        context.siteDir,
+        "docs",
+
+        ...options.routeBasePath
+
+          // the files are generated in the docs folder even if the routeBasePath doesn't contain /docs
+          // e.g /docs/api and /api both result in the files being generated in docs/api
+          .replace(/^\/docs/, "")
+
+          // routeBasePath is an URL path so the delimiter is known
+          // but outputPath is used to write files, with OS dependent delimiters
+          // so that's taken care of by path.join
+          .split("/")
+      );
+
       const getTypePath = (
         type:
           | GraphQLScalarType
@@ -194,12 +210,7 @@ export default function plugin(
 
       for (const file of files) {
         await fse.outputFile(
-          path.join(
-            context.siteDir,
-            "docs",
-            path.basename(options.routeBasePath),
-            `${file.id}.md`
-          ),
+          path.join(outputPath, `${file.id}.md`),
           [
             `---`,
             `\n`,
