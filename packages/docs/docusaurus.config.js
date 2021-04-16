@@ -4,7 +4,7 @@ module.exports = {
   tagline:
     "Docusaurus plugin generating Markdown documentation from a GraphQL schema.",
   url: "https://gabinaureche.com/docusaurus-plugin-content-graphql",
-  baseUrl: "/",
+  baseUrl: "/docusaurus-plugin-content-graphql/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
