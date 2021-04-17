@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-graphql-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Docusaurus plugin generating Markdown documentation from a GraphQL schema.",
   "keywords": [
     "docusaurus",
