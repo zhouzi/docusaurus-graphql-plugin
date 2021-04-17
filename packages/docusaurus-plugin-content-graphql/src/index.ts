@@ -29,7 +29,7 @@ import {
   isScalarType,
   isUnionType,
 } from "graphql";
-import Joi, { ValidationError } from "joi";
+import Joi from "joi";
 import { loadSchema } from "@graphql-tools/load";
 import { UrlLoader } from "@graphql-tools/url-loader";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
@@ -335,7 +335,7 @@ function sortByName<T extends { name: string }>(types: T[]): T[] {
 export function convertQueriesToMarkdown(
   queries: GraphQLField<any, any>[],
   { getTypePath }: MarkdownOptions
-) {
+): string {
   const lines: string[] = [];
 
   queries.forEach((query) => {
@@ -357,7 +357,7 @@ export function convertQueriesToMarkdown(
 export function convertMutationsToMarkdown(
   mutations: GraphQLField<any, any>[],
   { getTypePath }: MarkdownOptions
-) {
+): string {
   const lines: string[] = [];
 
   mutations.forEach((mutation) => {
@@ -423,7 +423,7 @@ function pushArguments(
 export function convertObjectsToMarkdown(
   objects: GraphQLObjectType[],
   { getTypePath }: MarkdownOptions
-) {
+): string {
   const lines: string[] = [];
 
   objects.forEach((object) => {
@@ -445,7 +445,7 @@ export function convertObjectsToMarkdown(
 export function convertInterfacesToMarkdown(
   interfaces: GraphQLInterfaceType[],
   { getTypePath }: MarkdownOptions
-) {
+): string {
   const lines: string[] = [];
 
   interfaces.forEach((inter) => {
@@ -527,8 +527,8 @@ function pushFields(
 
 export function convertEnumsToMarkdown(
   enums: GraphQLEnumType[],
-  { getTypePath }: MarkdownOptions
-) {
+  _: MarkdownOptions
+): string {
   const lines: string[] = [];
 
   enums.forEach((en) => {
@@ -563,7 +563,7 @@ export function convertEnumsToMarkdown(
 export function convertUnionsToMarkdown(
   unions: GraphQLUnionType[],
   { getTypePath }: MarkdownOptions
-) {
+): string {
   const lines: string[] = [];
 
   unions.forEach((union) => {
@@ -583,7 +583,7 @@ export function convertUnionsToMarkdown(
 export function convertInputObjectsToMarkdown(
   inputObjects: GraphQLInputObjectType[],
   { getTypePath }: MarkdownOptions
-) {
+): string {
   const lines: string[] = [];
 
   inputObjects.forEach((inputObject) => {
@@ -600,8 +600,8 @@ export function convertInputObjectsToMarkdown(
 
 export function convertScalarsToMarkdown(
   scalars: GraphQLScalarType[],
-  { getTypePath }: MarkdownOptions
-) {
+  _: MarkdownOptions
+): string {
   const lines: string[] = [];
 
   scalars.forEach((scalar) => {

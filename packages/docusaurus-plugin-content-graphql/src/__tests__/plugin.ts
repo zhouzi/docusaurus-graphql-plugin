@@ -1,5 +1,4 @@
 import { buildSchema } from "graphql";
-import { group } from "yargs";
 import {
   groupTypes,
   sortGroupedTypes,
