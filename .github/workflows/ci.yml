@@ -19,4 +19,12 @@ jobs:
           node-version: "14"
       - run: yarn
       - run: yarn lint
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - run: yarn
       - run: yarn --cwd ./packages/docusaurus-plugin-content-graphql test --ci
