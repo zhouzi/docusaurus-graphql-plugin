@@ -116,7 +116,7 @@ export default function plugin(
     },
     contentLoaded: async ({ content }) => {
       const slugger = new Slugger();
-      const slugify = (name: string) => slugger.slug(name, { dryrun: true });
+      const sluggify = (name: string) => slugger.slug(name, { dryrun: true });
       const baseUrl = joinURL(context.baseUrl, options.routeBasePath);
       const outputPath = path.join(
         context.siteDir,
@@ -154,26 +154,26 @@ export default function plugin(
         }
 
         if (isScalarType(type)) {
-          return joinURL(baseUrl, `/scalars#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/scalars#${sluggify(type.name)}`);
         }
 
         if (isObjectType(type)) {
-          return joinURL(baseUrl, `/objects#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/objects#${sluggify(type.name)}`);
         }
 
         if (isInterfaceType(type)) {
-          return joinURL(baseUrl, `/interfaces#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/interfaces#${sluggify(type.name)}`);
         }
 
         if (isUnionType(type)) {
-          return joinURL(baseUrl, `/unions#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/unions#${sluggify(type.name)}`);
         }
 
         if (isEnumType(type)) {
-          return joinURL(baseUrl, `/enums#${slugify(type.name)}`);
+          return joinURL(baseUrl, `/enums#${sluggify(type.name)}`);
         }
 
-        return joinURL(baseUrl, `/inputObjects#${slugify(type.name)}`);
+        return joinURL(baseUrl, `/inputObjects#${sluggify(type.name)}`);
       };
       const {
         queries,
