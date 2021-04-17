@@ -22,6 +22,7 @@
     "test": "jest",
     "prebuild": "rm -rf build",
     "build": "tsc",
+    "postbuild": "cp ../../README.md .",
     "prepare": "yarn run build"
   },
   "main": "build/index.js",
