@@ -8,7 +8,7 @@ slug: enums
 
 Properties by which Audit Log connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -26,7 +26,7 @@ Properties by which Audit Log connections can be ordered.
 
 Represents an annotation's information level.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -56,7 +56,7 @@ Represents an annotation's information level.
 
 The possible states for a check suite or run conclusion.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -122,7 +122,7 @@ The possible states for a check suite or run conclusion.
 
 The possible types of check runs.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -146,7 +146,7 @@ The possible types of check runs.
 
 The possible states for a check suite or run status.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -188,7 +188,7 @@ The possible states for a check suite or run status.
 
 Collaborators affiliation level with a subject.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -218,7 +218,7 @@ Collaborators affiliation level with a subject.
 
 A comment author association with repository.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -278,7 +278,7 @@ A comment author association with repository.
 
 The possible errors that will prevent a user from updating a comment.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -332,7 +332,7 @@ The possible errors that will prevent a user from updating a comment.
 
 Properties by which commit contribution connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -356,7 +356,7 @@ Properties by which commit contribution connections can be ordered.
 
 Varying levels of contributions from none to many.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -398,7 +398,7 @@ Varying levels of contributions from none to many.
 
 The possible default permissions for repositories.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -434,7 +434,7 @@ The possible default permissions for repositories.
 
 Properties by which deployment connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -452,7 +452,7 @@ Properties by which deployment connections can be ordered.
 
 The possible states in which a deployment can be.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -524,7 +524,7 @@ The possible states in which a deployment can be.
 
 The possible states for a deployment status.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -584,7 +584,7 @@ The possible states for a deployment status.
 
 The possible sides of a diff.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -608,7 +608,7 @@ The possible sides of a diff.
 
 Properties by which enterprise administrator invitation connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -626,7 +626,7 @@ Properties by which enterprise administrator invitation connections can be order
 
 The possible administrator roles in an enterprise account.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -650,7 +650,7 @@ The possible administrator roles in an enterprise account.
 
 The possible values for the enterprise default repository permission setting.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -692,7 +692,7 @@ The possible values for the enterprise default repository permission setting.
 
 The possible values for an enabled/disabled enterprise setting.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -722,7 +722,7 @@ The possible values for an enabled/disabled enterprise setting.
 
 The possible values for an enabled/no policy enterprise setting.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -746,7 +746,7 @@ The possible values for an enabled/no policy enterprise setting.
 
 Properties by which enterprise member connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -770,7 +770,7 @@ Properties by which enterprise member connections can be ordered.
 
 The possible values for the enterprise members can create repositories setting.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -812,7 +812,7 @@ The possible values for the enterprise members can create repositories setting.
 
 The possible values for the members can make purchases setting.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -836,7 +836,7 @@ The possible values for the members can make purchases setting.
 
 Properties by which Enterprise Server installation connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -866,7 +866,7 @@ Properties by which Enterprise Server installation connections can be ordered.
 
 Properties by which Enterprise Server user account email connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -884,7 +884,7 @@ Properties by which Enterprise Server user account email connections can be orde
 
 Properties by which Enterprise Server user account connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -908,7 +908,7 @@ Properties by which Enterprise Server user account connections can be ordered.
 
 Properties by which Enterprise Server user accounts upload connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -926,7 +926,7 @@ Properties by which Enterprise Server user accounts upload connections can be or
 
 Synchronization state of the Enterprise Server user accounts upload
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -956,7 +956,7 @@ Synchronization state of the Enterprise Server user accounts upload
 
 The possible roles for enterprise membership.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -980,7 +980,7 @@ The possible roles for enterprise membership.
 
 The possible GitHub Enterprise deployments where this user can exist.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1004,7 +1004,7 @@ The possible GitHub Enterprise deployments where this user can exist.
 
 The possible viewed states of a file .
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1034,7 +1034,7 @@ The possible viewed states of a file .
 
 The possible funding platforms for repository funding links.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1106,7 +1106,7 @@ The possible funding platforms for repository funding links.
 
 Properties by which gist connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1136,7 +1136,7 @@ Properties by which gist connections can be ordered.
 
 The privacy of a Gist
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1166,7 +1166,7 @@ The privacy of a Gist
 
 The state of a Git signature.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1280,7 +1280,7 @@ The state of a Git signature.
 
 The possible states in which authentication can be configured with an identity provider.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1310,7 +1310,7 @@ The possible states in which authentication can be configured with an identity p
 
 The possible values for the IP allow list enabled setting.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1334,7 +1334,7 @@ The possible values for the IP allow list enabled setting.
 
 Properties by which IP allow list entry connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1358,7 +1358,7 @@ Properties by which IP allow list entry connections can be ordered.
 
 Properties by which issue comment connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1376,7 +1376,7 @@ Properties by which issue comment connections can be ordered.
 
 Properties by which issue connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1406,7 +1406,7 @@ Properties by which issue connections can be ordered.
 
 The possible states of an issue.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1430,7 +1430,7 @@ The possible states of an issue.
 
 The possible item types found in a timeline.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1622,7 +1622,7 @@ The possible item types found in a timeline.
 
 Properties by which label connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1646,7 +1646,7 @@ Properties by which label connections can be ordered.
 
 Properties by which language connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1664,7 +1664,7 @@ Properties by which language connections can be ordered.
 
 The possible reasons that an issue or pull request was locked.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1700,7 +1700,7 @@ The possible reasons that an issue or pull request was locked.
 
 Whether or not a PullRequest can be merged.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1730,7 +1730,7 @@ Whether or not a PullRequest can be merged.
 
 Detailed status information about a pull request merge.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1790,7 +1790,7 @@ Detailed status information about a pull request merge.
 
 Properties by which milestone connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1826,7 +1826,7 @@ Properties by which milestone connections can be ordered.
 
 The possible states of a milestone.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1850,7 +1850,7 @@ The possible states of a milestone.
 
 The possible values for the notification restriction setting.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1874,7 +1874,7 @@ The possible values for the notification restriction setting.
 
 The state of an OAuth Application when it was created.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1904,7 +1904,7 @@ The state of an OAuth Application when it was created.
 
 The corresponding operation type for the action
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1958,7 +1958,7 @@ The corresponding operation type for the action
 
 Possible directions in which to order a list of items when provided an `orderBy` argument.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -1982,7 +1982,7 @@ Possible directions in which to order a list of items when provided an `orderBy`
 
 The permissions available to members on an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2006,7 +2006,7 @@ The permissions available to members on an Organization.
 
 The possible organization invitation roles.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2042,7 +2042,7 @@ The possible organization invitation roles.
 
 The possible organization invitation types.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2066,7 +2066,7 @@ The possible organization invitation types.
 
 The possible roles within an organization for its members.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2090,7 +2090,7 @@ The possible roles within an organization for its members.
 
 The possible values for the members can create repositories setting on an organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2120,7 +2120,7 @@ The possible values for the members can create repositories setting on an organi
 
 Properties by which organization connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2144,7 +2144,7 @@ Properties by which organization connections can be ordered.
 
 The billing plans available for organizations.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2186,7 +2186,7 @@ The billing plans available for organizations.
 
 The reason a billing manager was removed from an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2216,7 +2216,7 @@ The reason a billing manager was removed from an Organization.
 
 The type of membership a user has with an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2264,7 +2264,7 @@ Organization and does not have access to any repositories in the Organization.</
 
 The reason a member was removed from an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2306,7 +2306,7 @@ The reason a member was removed from an Organization.
 
 The type of membership a user has with an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2339,7 +2339,7 @@ Organization and does not have access to any repositories in the organization.</
 
 The reason an outside collaborator was removed from an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2363,7 +2363,7 @@ The reason an outside collaborator was removed from an Organization.
 
 The default permission a repository can have in an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2399,7 +2399,7 @@ The default permission a repository can have in an Organization.
 
 The permissions available to members on an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2423,7 +2423,7 @@ The permissions available to members on an Organization.
 
 The permissions available for repository creation on an Organization.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2483,7 +2483,7 @@ The permissions available for repository creation on an Organization.
 
 Properties by which package file connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2501,7 +2501,7 @@ Properties by which package file connections can be ordered.
 
 Properties by which package connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2519,7 +2519,7 @@ Properties by which package connections can be ordered.
 
 The possible types of a package.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2573,7 +2573,7 @@ The possible types of a package.
 
 Properties by which package version connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2591,7 +2591,7 @@ Properties by which package version connections can be ordered.
 
 Represents items that can be pinned to a profile page or dashboard.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2651,7 +2651,7 @@ Represents items that can be pinned to a profile page or dashboard.
 
 The possible archived states of a project card.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2675,7 +2675,7 @@ The possible archived states of a project card.
 
 Various content states of a ProjectCard
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2705,7 +2705,7 @@ Various content states of a ProjectCard
 
 The semantic purpose of the column - todo, in progress, or done.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2735,7 +2735,7 @@ The semantic purpose of the column - todo, in progress, or done.
 
 Properties by which project connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2765,7 +2765,7 @@ Properties by which project connections can be ordered.
 
 State of the project; either 'open' or 'closed'
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2789,7 +2789,7 @@ State of the project; either 'open' or 'closed'
 
 GitHub-provided templates for Projects
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2825,7 +2825,7 @@ GitHub-provided templates for Projects
 
 Represents available types of methods to use when merging a pull request.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2855,7 +2855,7 @@ Represents available types of methods to use when merging a pull request.
 
 Properties by which pull_requests connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2879,7 +2879,7 @@ Properties by which pull_requests connections can be ordered.
 
 The possible states of a pull request review comment.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2903,7 +2903,7 @@ The possible states of a pull request review comment.
 
 The review status of a pull request.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2933,7 +2933,7 @@ The review status of a pull request.
 
 The possible events to perform on a pull request review.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -2969,7 +2969,7 @@ The possible events to perform on a pull request review.
 
 The possible states of a pull request review.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3011,7 +3011,7 @@ The possible states of a pull request review.
 
 The possible states of a pull request.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3041,7 +3041,7 @@ The possible states of a pull request.
 
 The possible item types found in a timeline.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3383,7 +3383,7 @@ The possible item types found in a timeline.
 
 The possible target states when updating a pull request.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3407,7 +3407,7 @@ The possible target states when updating a pull request.
 
 Emojis that can be attached to Issues, Pull Requests and Comments.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3467,7 +3467,7 @@ Emojis that can be attached to Issues, Pull Requests and Comments.
 
 A list of fields that reactions can be ordered by.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3485,7 +3485,7 @@ A list of fields that reactions can be ordered by.
 
 Properties by which ref connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3509,7 +3509,7 @@ Properties by which ref connections can be ordered.
 
 Properties by which release connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3533,7 +3533,7 @@ Properties by which release connections can be ordered.
 
 The privacy of a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3563,7 +3563,7 @@ The privacy of a repository
 
 The privacy of a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3593,7 +3593,7 @@ The privacy of a repository
 
 The privacy of a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3623,7 +3623,7 @@ The privacy of a repository
 
 The merge options available for pull requests to this repository.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3653,7 +3653,7 @@ The merge options available for pull requests to this repository.
 
 The privacy of a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3683,7 +3683,7 @@ The privacy of a repository
 
 The privacy of a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3713,7 +3713,7 @@ The privacy of a repository
 
 The privacy of a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3743,7 +3743,7 @@ The privacy of a repository
 
 The reasons a piece of content can be reported or minimized.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3791,7 +3791,7 @@ The reasons a piece of content can be reported or minimized.
 
 The affiliation of a user to a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3822,7 +3822,7 @@ organization. This includes every repository on every team that the user is on.<
 
 The reason a repository is listed as 'contributed'.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3864,7 +3864,7 @@ The reason a repository is listed as 'contributed'.
 
 A repository interaction limit.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3900,7 +3900,7 @@ A repository interaction limit.
 
 The length for a repository interaction limit to be enabled for.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3942,7 +3942,7 @@ The length for a repository interaction limit to be enabled for.
 
 Indicates where an interaction limit is configured.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3972,7 +3972,7 @@ Indicates where an interaction limit is configured.
 
 Properties by which repository invitation connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -3996,7 +3996,7 @@ Properties by which repository invitation connections can be ordered.
 
 The possible reasons a given repository could be in a locked state.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4032,7 +4032,7 @@ The possible reasons a given repository could be in a locked state.
 
 Properties by which repository connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4074,7 +4074,7 @@ Properties by which repository connections can be ordered.
 
 The access level to a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4117,7 +4117,7 @@ requests, and repository settings, including adding collaborators</p>
 
 The privacy of a repository
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4141,7 +4141,7 @@ The privacy of a repository
 
 The repository's visibility level.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4171,7 +4171,7 @@ The repository's visibility level.
 
 The possible states that can be requested when creating a check run.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4207,7 +4207,7 @@ The possible states that can be requested when creating a check run.
 
 The possible digest algorithms used to sign SAML requests for an identity provider.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4243,7 +4243,7 @@ The possible digest algorithms used to sign SAML requests for an identity provid
 
 The possible signature algorithms used to sign SAML requests for a Identity Provider.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4279,7 +4279,7 @@ The possible signature algorithms used to sign SAML requests for a Identity Prov
 
 Properties by which saved reply connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4297,7 +4297,7 @@ Properties by which saved reply connections can be ordered.
 
 Represents the individual results of a search.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4327,7 +4327,7 @@ Represents the individual results of a search.
 
 The possible ecosystems of a security vulnerability's package.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4375,7 +4375,7 @@ The possible ecosystems of a security vulnerability's package.
 
 Identifier formats available for advisories.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4399,7 +4399,7 @@ Identifier formats available for advisories.
 
 Properties by which security advisory connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4423,7 +4423,7 @@ Properties by which security advisory connections can be ordered.
 
 Severity of the vulnerability.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4459,7 +4459,7 @@ Severity of the vulnerability.
 
 Properties by which security vulnerability connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4477,7 +4477,7 @@ Properties by which security vulnerability connections can be ordered.
 
 Properties by which sponsorable connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4495,7 +4495,7 @@ Properties by which sponsorable connections can be ordered.
 
 The different kinds of goals a GitHub Sponsors member can have.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4519,7 +4519,7 @@ The different kinds of goals a GitHub Sponsors member can have.
 
 Properties by which sponsorship connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4537,7 +4537,7 @@ Properties by which sponsorship connections can be ordered.
 
 The privacy of a sponsorship
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4561,7 +4561,7 @@ The privacy of a sponsorship
 
 Properties by which Sponsors tiers connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4585,7 +4585,7 @@ Properties by which Sponsors tiers connections can be ordered.
 
 Properties by which star connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4603,7 +4603,7 @@ Properties by which star connections can be ordered.
 
 The possible commit status states.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4645,7 +4645,7 @@ The possible commit status states.
 
 The possible states of a subscription.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4675,7 +4675,7 @@ The possible states of a subscription.
 
 Properties by which team discussion comment connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4693,7 +4693,7 @@ Properties by which team discussion comment connections can be ordered.
 
 Properties by which team discussion connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4711,7 +4711,7 @@ Properties by which team discussion connections can be ordered.
 
 Properties by which team member connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4735,7 +4735,7 @@ Properties by which team member connections can be ordered.
 
 The possible team member roles; either 'maintainer' or 'member'.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4759,7 +4759,7 @@ The possible team member roles; either 'maintainer' or 'member'.
 
 Defines which types of team members are included in the returned list. Can be one of IMMEDIATE, CHILD_TEAM or ALL.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4789,7 +4789,7 @@ Defines which types of team members are included in the returned list. Can be on
 
 Properties by which team connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4807,7 +4807,7 @@ Properties by which team connections can be ordered.
 
 The possible team privacy values.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4831,7 +4831,7 @@ The possible team privacy values.
 
 Properties by which team repository connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4879,7 +4879,7 @@ Properties by which team repository connections can be ordered.
 
 The possible team review assignment algorithms
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4903,7 +4903,7 @@ The possible team review assignment algorithms
 
 The role of a user on a team.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4927,7 +4927,7 @@ The role of a user on a team.
 
 Reason that the suggested topic is declined.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -4963,7 +4963,7 @@ Reason that the suggested topic is declined.
 
 The possible durations that a user can be blocked for.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -5005,7 +5005,7 @@ The possible durations that a user can be blocked for.
 
 Properties by which user status connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -5023,7 +5023,7 @@ Properties by which user status connections can be ordered.
 
 Properties by which verifiable domain connections can be ordered.
 
-**Values**
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>

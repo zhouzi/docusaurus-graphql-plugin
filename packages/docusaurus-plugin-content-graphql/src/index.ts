@@ -428,22 +428,27 @@ function pushArguments(
   args: Array<GraphQLArgument | GraphQLInputField>,
   { getTypePath }: MarkdownOptions
 ) {
-  lines.push(`**Arguments**`, `\n\n`);
+  lines.push(
+    `<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>`,
+    `\n\n`
+  );
 
   lines.push(`<table>`, `\n`);
-  lines.push(
-    `<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>`,
-    `\n`
-  );
+  lines.push(`<thead><tr><th>Name</th><th>Description</th></tr></thead>`, `\n`);
   lines.push(`<tbody>`, `\n`);
 
   args.forEach((arg) => {
     lines.push(`<tr>`, `\n`);
-    lines.push(`<td><code>${arg.name}</code></td>`, `\n`);
     lines.push(
-      `<td><a href="${getTypePath(
+      `<td>`,
+      `\n`,
+      `${arg.name}`,
+      `<br />\n`,
+      `<a href="${getTypePath(
         arg.type
-      )}"><code>${arg.type.inspect()}</code></a></td>`,
+      )}"><code>${arg.type.inspect()}</code></a>`,
+      `\n`,
+      `</td>`,
       `\n`
     );
 
@@ -505,7 +510,10 @@ export function convertInterfacesToMarkdown(
     }
 
     if (implementedBy.length > 0) {
-      lines.push(`**Implemented by**`, `\n\n`);
+      lines.push(
+        `<p style={{ marginBottom: "0.4em" }}><strong>Implemented by</strong></p>`,
+        `\n\n`
+      );
       implementedBy.forEach((object) => {
         lines.push(`- [${object.name}](${getTypePath(object)})`, `\n`);
       });
@@ -524,7 +532,10 @@ function pushInterfaces(
   interfaces: GraphQLInterfaceType[],
   { getTypePath }: MarkdownOptions
 ) {
-  lines.push(`**Implements**`, `\n\n`);
+  lines.push(
+    `<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>`,
+    `\n\n`
+  );
   interfaces.forEach((inter) => {
     lines.push(`- [${inter.name}](${getTypePath(inter)})`, `\n`);
   });
@@ -536,22 +547,27 @@ function pushFields(
   fields: GraphQLField<any, any>[],
   { getTypePath }: MarkdownOptions
 ) {
-  lines.push(`**Fields**`, `\n\n`);
+  lines.push(
+    `<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>`,
+    `\n\n`
+  );
 
   lines.push(`<table>`, `\n`);
-  lines.push(
-    `<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>`,
-    `\n`
-  );
+  lines.push(`<thead><tr><th>Name</th><th>Description</th></tr></thead>`, `\n`);
   lines.push(`<tbody>`, `\n`);
 
   fields.forEach((field) => {
     lines.push(`<tr>`, `\n`);
-    lines.push(`<td><code>${field.name}</code></td>`, `\n`);
     lines.push(
-      `<td><a href="${getTypePath(
+      `<td>`,
+      `\n`,
+      `${field.name}`,
+      `<br />\n`,
+      `<a href="${getTypePath(
         field.type
-      )}"><code>${field.type.inspect()}</code></a></td>`,
+      )}"><code>${field.type.inspect()}</code></a>`,
+      `\n`,
+      `</td>`,
       `\n`
     );
 
@@ -590,7 +606,10 @@ export function convertEnumsToMarkdown(
     lines.push(`## ${en.name}`, `\n\n`);
     lines.push(en.description || "", `\n\n`);
 
-    lines.push(`**Values**`, `\n\n`);
+    lines.push(
+      `<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>`,
+      `\n\n`
+    );
 
     lines.push(`<table>`, `\n`);
     lines.push(
@@ -625,7 +644,10 @@ export function convertUnionsToMarkdown(
     lines.push(`## ${union.name}`, `\n\n`);
     lines.push(union.description || "", `\n\n`);
 
-    lines.push(`**Possible types**`, `\n\n`);
+    lines.push(
+      `<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>`,
+      `\n\n`
+    );
     union.getTypes().forEach((type) => {
       lines.push(`- [${type.name}](${getTypePath(type)})`, `\n`);
     });

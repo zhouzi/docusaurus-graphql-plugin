@@ -8,457 +8,457 @@ slug: unions
 
 Types that can be assigned to issues.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Bot](/github-example/objects#bot)
-- [Mannequin](/github-example/objects#mannequin)
-- [Organization](/github-example/objects#organization)
-- [User](/github-example/objects#user)
+- [Bot](/docusaurus-plugin-content-graphql/github-example/objects#bot)
+- [Mannequin](/docusaurus-plugin-content-graphql/github-example/objects#mannequin)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## AuditEntryActor
 
 Types that can initiate an audit log event.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Bot](/github-example/objects#bot)
-- [Organization](/github-example/objects#organization)
-- [User](/github-example/objects#user)
+- [Bot](/docusaurus-plugin-content-graphql/github-example/objects#bot)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## Closer
 
 The object which triggered a `ClosedEvent`.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Commit](/github-example/objects#commit)
-- [PullRequest](/github-example/objects#pullrequest)
+- [Commit](/docusaurus-plugin-content-graphql/github-example/objects#commit)
+- [PullRequest](/docusaurus-plugin-content-graphql/github-example/objects#pullrequest)
 
 ## CreatedIssueOrRestrictedContribution
 
 Represents either a issue the viewer can access or a restricted contribution.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [CreatedIssueContribution](/github-example/objects#createdissuecontribution)
-- [RestrictedContribution](/github-example/objects#restrictedcontribution)
+- [CreatedIssueContribution](/docusaurus-plugin-content-graphql/github-example/objects#createdissuecontribution)
+- [RestrictedContribution](/docusaurus-plugin-content-graphql/github-example/objects#restrictedcontribution)
 
 ## CreatedPullRequestOrRestrictedContribution
 
 Represents either a pull request the viewer can access or a restricted contribution.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [CreatedPullRequestContribution](/github-example/objects#createdpullrequestcontribution)
-- [RestrictedContribution](/github-example/objects#restrictedcontribution)
+- [CreatedPullRequestContribution](/docusaurus-plugin-content-graphql/github-example/objects#createdpullrequestcontribution)
+- [RestrictedContribution](/docusaurus-plugin-content-graphql/github-example/objects#restrictedcontribution)
 
 ## CreatedRepositoryOrRestrictedContribution
 
 Represents either a repository the viewer can access or a restricted contribution.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [CreatedRepositoryContribution](/github-example/objects#createdrepositorycontribution)
-- [RestrictedContribution](/github-example/objects#restrictedcontribution)
+- [CreatedRepositoryContribution](/docusaurus-plugin-content-graphql/github-example/objects#createdrepositorycontribution)
+- [RestrictedContribution](/docusaurus-plugin-content-graphql/github-example/objects#restrictedcontribution)
 
 ## EnterpriseMember
 
 An object that is a member of an enterprise.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [EnterpriseUserAccount](/github-example/objects#enterpriseuseraccount)
-- [User](/github-example/objects#user)
+- [EnterpriseUserAccount](/docusaurus-plugin-content-graphql/github-example/objects#enterpriseuseraccount)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## IpAllowListOwner
 
 Types that can own an IP allow list.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Enterprise](/github-example/objects#enterprise)
-- [Organization](/github-example/objects#organization)
+- [Enterprise](/docusaurus-plugin-content-graphql/github-example/objects#enterprise)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
 
 ## IssueOrPullRequest
 
 Used for return value of Repository.issueOrPullRequest.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Issue](/github-example/objects#issue)
-- [PullRequest](/github-example/objects#pullrequest)
+- [Issue](/docusaurus-plugin-content-graphql/github-example/objects#issue)
+- [PullRequest](/docusaurus-plugin-content-graphql/github-example/objects#pullrequest)
 
 ## IssueTimelineItem
 
 An item in an issue timeline
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [AssignedEvent](/github-example/objects#assignedevent)
-- [ClosedEvent](/github-example/objects#closedevent)
-- [Commit](/github-example/objects#commit)
-- [CrossReferencedEvent](/github-example/objects#crossreferencedevent)
-- [DemilestonedEvent](/github-example/objects#demilestonedevent)
-- [IssueComment](/github-example/objects#issuecomment)
-- [LabeledEvent](/github-example/objects#labeledevent)
-- [LockedEvent](/github-example/objects#lockedevent)
-- [MilestonedEvent](/github-example/objects#milestonedevent)
-- [ReferencedEvent](/github-example/objects#referencedevent)
-- [RenamedTitleEvent](/github-example/objects#renamedtitleevent)
-- [ReopenedEvent](/github-example/objects#reopenedevent)
-- [SubscribedEvent](/github-example/objects#subscribedevent)
-- [TransferredEvent](/github-example/objects#transferredevent)
-- [UnassignedEvent](/github-example/objects#unassignedevent)
-- [UnlabeledEvent](/github-example/objects#unlabeledevent)
-- [UnlockedEvent](/github-example/objects#unlockedevent)
-- [UnsubscribedEvent](/github-example/objects#unsubscribedevent)
-- [UserBlockedEvent](/github-example/objects#userblockedevent)
+- [AssignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#assignedevent)
+- [ClosedEvent](/docusaurus-plugin-content-graphql/github-example/objects#closedevent)
+- [Commit](/docusaurus-plugin-content-graphql/github-example/objects#commit)
+- [CrossReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#crossreferencedevent)
+- [DemilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#demilestonedevent)
+- [IssueComment](/docusaurus-plugin-content-graphql/github-example/objects#issuecomment)
+- [LabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#labeledevent)
+- [LockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#lockedevent)
+- [MilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#milestonedevent)
+- [ReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#referencedevent)
+- [RenamedTitleEvent](/docusaurus-plugin-content-graphql/github-example/objects#renamedtitleevent)
+- [ReopenedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reopenedevent)
+- [SubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#subscribedevent)
+- [TransferredEvent](/docusaurus-plugin-content-graphql/github-example/objects#transferredevent)
+- [UnassignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unassignedevent)
+- [UnlabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlabeledevent)
+- [UnlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlockedevent)
+- [UnsubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unsubscribedevent)
+- [UserBlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#userblockedevent)
 
 ## IssueTimelineItems
 
 An item in an issue timeline
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [AddedToProjectEvent](/github-example/objects#addedtoprojectevent)
-- [AssignedEvent](/github-example/objects#assignedevent)
-- [ClosedEvent](/github-example/objects#closedevent)
-- [CommentDeletedEvent](/github-example/objects#commentdeletedevent)
-- [ConnectedEvent](/github-example/objects#connectedevent)
-- [ConvertedNoteToIssueEvent](/github-example/objects#convertednotetoissueevent)
-- [CrossReferencedEvent](/github-example/objects#crossreferencedevent)
-- [DemilestonedEvent](/github-example/objects#demilestonedevent)
-- [DisconnectedEvent](/github-example/objects#disconnectedevent)
-- [IssueComment](/github-example/objects#issuecomment)
-- [LabeledEvent](/github-example/objects#labeledevent)
-- [LockedEvent](/github-example/objects#lockedevent)
-- [MarkedAsDuplicateEvent](/github-example/objects#markedasduplicateevent)
-- [MentionedEvent](/github-example/objects#mentionedevent)
-- [MilestonedEvent](/github-example/objects#milestonedevent)
-- [MovedColumnsInProjectEvent](/github-example/objects#movedcolumnsinprojectevent)
-- [PinnedEvent](/github-example/objects#pinnedevent)
-- [ReferencedEvent](/github-example/objects#referencedevent)
-- [RemovedFromProjectEvent](/github-example/objects#removedfromprojectevent)
-- [RenamedTitleEvent](/github-example/objects#renamedtitleevent)
-- [ReopenedEvent](/github-example/objects#reopenedevent)
-- [SubscribedEvent](/github-example/objects#subscribedevent)
-- [TransferredEvent](/github-example/objects#transferredevent)
-- [UnassignedEvent](/github-example/objects#unassignedevent)
-- [UnlabeledEvent](/github-example/objects#unlabeledevent)
-- [UnlockedEvent](/github-example/objects#unlockedevent)
-- [UnmarkedAsDuplicateEvent](/github-example/objects#unmarkedasduplicateevent)
-- [UnpinnedEvent](/github-example/objects#unpinnedevent)
-- [UnsubscribedEvent](/github-example/objects#unsubscribedevent)
-- [UserBlockedEvent](/github-example/objects#userblockedevent)
+- [AddedToProjectEvent](/docusaurus-plugin-content-graphql/github-example/objects#addedtoprojectevent)
+- [AssignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#assignedevent)
+- [ClosedEvent](/docusaurus-plugin-content-graphql/github-example/objects#closedevent)
+- [CommentDeletedEvent](/docusaurus-plugin-content-graphql/github-example/objects#commentdeletedevent)
+- [ConnectedEvent](/docusaurus-plugin-content-graphql/github-example/objects#connectedevent)
+- [ConvertedNoteToIssueEvent](/docusaurus-plugin-content-graphql/github-example/objects#convertednotetoissueevent)
+- [CrossReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#crossreferencedevent)
+- [DemilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#demilestonedevent)
+- [DisconnectedEvent](/docusaurus-plugin-content-graphql/github-example/objects#disconnectedevent)
+- [IssueComment](/docusaurus-plugin-content-graphql/github-example/objects#issuecomment)
+- [LabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#labeledevent)
+- [LockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#lockedevent)
+- [MarkedAsDuplicateEvent](/docusaurus-plugin-content-graphql/github-example/objects#markedasduplicateevent)
+- [MentionedEvent](/docusaurus-plugin-content-graphql/github-example/objects#mentionedevent)
+- [MilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#milestonedevent)
+- [MovedColumnsInProjectEvent](/docusaurus-plugin-content-graphql/github-example/objects#movedcolumnsinprojectevent)
+- [PinnedEvent](/docusaurus-plugin-content-graphql/github-example/objects#pinnedevent)
+- [ReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#referencedevent)
+- [RemovedFromProjectEvent](/docusaurus-plugin-content-graphql/github-example/objects#removedfromprojectevent)
+- [RenamedTitleEvent](/docusaurus-plugin-content-graphql/github-example/objects#renamedtitleevent)
+- [ReopenedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reopenedevent)
+- [SubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#subscribedevent)
+- [TransferredEvent](/docusaurus-plugin-content-graphql/github-example/objects#transferredevent)
+- [UnassignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unassignedevent)
+- [UnlabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlabeledevent)
+- [UnlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlockedevent)
+- [UnmarkedAsDuplicateEvent](/docusaurus-plugin-content-graphql/github-example/objects#unmarkedasduplicateevent)
+- [UnpinnedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unpinnedevent)
+- [UnsubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unsubscribedevent)
+- [UserBlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#userblockedevent)
 
 ## MilestoneItem
 
 Types that can be inside a Milestone.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Issue](/github-example/objects#issue)
-- [PullRequest](/github-example/objects#pullrequest)
+- [Issue](/docusaurus-plugin-content-graphql/github-example/objects#issue)
+- [PullRequest](/docusaurus-plugin-content-graphql/github-example/objects#pullrequest)
 
 ## OrganizationAuditEntry
 
 An audit entry in an organization audit log.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [MembersCanDeleteReposClearAuditEntry](/github-example/objects#memberscandeletereposclearauditentry)
-- [MembersCanDeleteReposDisableAuditEntry](/github-example/objects#memberscandeletereposdisableauditentry)
-- [MembersCanDeleteReposEnableAuditEntry](/github-example/objects#memberscandeletereposenableauditentry)
-- [OauthApplicationCreateAuditEntry](/github-example/objects#oauthapplicationcreateauditentry)
-- [OrgAddBillingManagerAuditEntry](/github-example/objects#orgaddbillingmanagerauditentry)
-- [OrgAddMemberAuditEntry](/github-example/objects#orgaddmemberauditentry)
-- [OrgBlockUserAuditEntry](/github-example/objects#orgblockuserauditentry)
-- [OrgConfigDisableCollaboratorsOnlyAuditEntry](/github-example/objects#orgconfigdisablecollaboratorsonlyauditentry)
-- [OrgConfigEnableCollaboratorsOnlyAuditEntry](/github-example/objects#orgconfigenablecollaboratorsonlyauditentry)
-- [OrgCreateAuditEntry](/github-example/objects#orgcreateauditentry)
-- [OrgDisableOauthAppRestrictionsAuditEntry](/github-example/objects#orgdisableoauthapprestrictionsauditentry)
-- [OrgDisableSamlAuditEntry](/github-example/objects#orgdisablesamlauditentry)
-- [OrgDisableTwoFactorRequirementAuditEntry](/github-example/objects#orgdisabletwofactorrequirementauditentry)
-- [OrgEnableOauthAppRestrictionsAuditEntry](/github-example/objects#orgenableoauthapprestrictionsauditentry)
-- [OrgEnableSamlAuditEntry](/github-example/objects#orgenablesamlauditentry)
-- [OrgEnableTwoFactorRequirementAuditEntry](/github-example/objects#orgenabletwofactorrequirementauditentry)
-- [OrgInviteMemberAuditEntry](/github-example/objects#orginvitememberauditentry)
-- [OrgInviteToBusinessAuditEntry](/github-example/objects#orginvitetobusinessauditentry)
-- [OrgOauthAppAccessApprovedAuditEntry](/github-example/objects#orgoauthappaccessapprovedauditentry)
-- [OrgOauthAppAccessDeniedAuditEntry](/github-example/objects#orgoauthappaccessdeniedauditentry)
-- [OrgOauthAppAccessRequestedAuditEntry](/github-example/objects#orgoauthappaccessrequestedauditentry)
-- [OrgRemoveBillingManagerAuditEntry](/github-example/objects#orgremovebillingmanagerauditentry)
-- [OrgRemoveMemberAuditEntry](/github-example/objects#orgremovememberauditentry)
-- [OrgRemoveOutsideCollaboratorAuditEntry](/github-example/objects#orgremoveoutsidecollaboratorauditentry)
-- [OrgRestoreMemberAuditEntry](/github-example/objects#orgrestorememberauditentry)
-- [OrgUnblockUserAuditEntry](/github-example/objects#orgunblockuserauditentry)
-- [OrgUpdateDefaultRepositoryPermissionAuditEntry](/github-example/objects#orgupdatedefaultrepositorypermissionauditentry)
-- [OrgUpdateMemberAuditEntry](/github-example/objects#orgupdatememberauditentry)
-- [OrgUpdateMemberRepositoryCreationPermissionAuditEntry](/github-example/objects#orgupdatememberrepositorycreationpermissionauditentry)
-- [OrgUpdateMemberRepositoryInvitationPermissionAuditEntry](/github-example/objects#orgupdatememberrepositoryinvitationpermissionauditentry)
-- [PrivateRepositoryForkingDisableAuditEntry](/github-example/objects#privaterepositoryforkingdisableauditentry)
-- [PrivateRepositoryForkingEnableAuditEntry](/github-example/objects#privaterepositoryforkingenableauditentry)
-- [RepoAccessAuditEntry](/github-example/objects#repoaccessauditentry)
-- [RepoAddMemberAuditEntry](/github-example/objects#repoaddmemberauditentry)
-- [RepoAddTopicAuditEntry](/github-example/objects#repoaddtopicauditentry)
-- [RepoArchivedAuditEntry](/github-example/objects#repoarchivedauditentry)
-- [RepoChangeMergeSettingAuditEntry](/github-example/objects#repochangemergesettingauditentry)
-- [RepoConfigDisableAnonymousGitAccessAuditEntry](/github-example/objects#repoconfigdisableanonymousgitaccessauditentry)
-- [RepoConfigDisableCollaboratorsOnlyAuditEntry](/github-example/objects#repoconfigdisablecollaboratorsonlyauditentry)
-- [RepoConfigDisableContributorsOnlyAuditEntry](/github-example/objects#repoconfigdisablecontributorsonlyauditentry)
-- [RepoConfigDisableSockpuppetDisallowedAuditEntry](/github-example/objects#repoconfigdisablesockpuppetdisallowedauditentry)
-- [RepoConfigEnableAnonymousGitAccessAuditEntry](/github-example/objects#repoconfigenableanonymousgitaccessauditentry)
-- [RepoConfigEnableCollaboratorsOnlyAuditEntry](/github-example/objects#repoconfigenablecollaboratorsonlyauditentry)
-- [RepoConfigEnableContributorsOnlyAuditEntry](/github-example/objects#repoconfigenablecontributorsonlyauditentry)
-- [RepoConfigEnableSockpuppetDisallowedAuditEntry](/github-example/objects#repoconfigenablesockpuppetdisallowedauditentry)
-- [RepoConfigLockAnonymousGitAccessAuditEntry](/github-example/objects#repoconfiglockanonymousgitaccessauditentry)
-- [RepoConfigUnlockAnonymousGitAccessAuditEntry](/github-example/objects#repoconfigunlockanonymousgitaccessauditentry)
-- [RepoCreateAuditEntry](/github-example/objects#repocreateauditentry)
-- [RepoDestroyAuditEntry](/github-example/objects#repodestroyauditentry)
-- [RepoRemoveMemberAuditEntry](/github-example/objects#reporemovememberauditentry)
-- [RepoRemoveTopicAuditEntry](/github-example/objects#reporemovetopicauditentry)
-- [RepositoryVisibilityChangeDisableAuditEntry](/github-example/objects#repositoryvisibilitychangedisableauditentry)
-- [RepositoryVisibilityChangeEnableAuditEntry](/github-example/objects#repositoryvisibilitychangeenableauditentry)
-- [TeamAddMemberAuditEntry](/github-example/objects#teamaddmemberauditentry)
-- [TeamAddRepositoryAuditEntry](/github-example/objects#teamaddrepositoryauditentry)
-- [TeamChangeParentTeamAuditEntry](/github-example/objects#teamchangeparentteamauditentry)
-- [TeamRemoveMemberAuditEntry](/github-example/objects#teamremovememberauditentry)
-- [TeamRemoveRepositoryAuditEntry](/github-example/objects#teamremoverepositoryauditentry)
+- [MembersCanDeleteReposClearAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#memberscandeletereposclearauditentry)
+- [MembersCanDeleteReposDisableAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#memberscandeletereposdisableauditentry)
+- [MembersCanDeleteReposEnableAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#memberscandeletereposenableauditentry)
+- [OauthApplicationCreateAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#oauthapplicationcreateauditentry)
+- [OrgAddBillingManagerAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgaddbillingmanagerauditentry)
+- [OrgAddMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgaddmemberauditentry)
+- [OrgBlockUserAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgblockuserauditentry)
+- [OrgConfigDisableCollaboratorsOnlyAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgconfigdisablecollaboratorsonlyauditentry)
+- [OrgConfigEnableCollaboratorsOnlyAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgconfigenablecollaboratorsonlyauditentry)
+- [OrgCreateAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgcreateauditentry)
+- [OrgDisableOauthAppRestrictionsAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgdisableoauthapprestrictionsauditentry)
+- [OrgDisableSamlAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgdisablesamlauditentry)
+- [OrgDisableTwoFactorRequirementAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgdisabletwofactorrequirementauditentry)
+- [OrgEnableOauthAppRestrictionsAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgenableoauthapprestrictionsauditentry)
+- [OrgEnableSamlAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgenablesamlauditentry)
+- [OrgEnableTwoFactorRequirementAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgenabletwofactorrequirementauditentry)
+- [OrgInviteMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orginvitememberauditentry)
+- [OrgInviteToBusinessAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orginvitetobusinessauditentry)
+- [OrgOauthAppAccessApprovedAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgoauthappaccessapprovedauditentry)
+- [OrgOauthAppAccessDeniedAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgoauthappaccessdeniedauditentry)
+- [OrgOauthAppAccessRequestedAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgoauthappaccessrequestedauditentry)
+- [OrgRemoveBillingManagerAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgremovebillingmanagerauditentry)
+- [OrgRemoveMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgremovememberauditentry)
+- [OrgRemoveOutsideCollaboratorAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgremoveoutsidecollaboratorauditentry)
+- [OrgRestoreMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgrestorememberauditentry)
+- [OrgUnblockUserAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgunblockuserauditentry)
+- [OrgUpdateDefaultRepositoryPermissionAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgupdatedefaultrepositorypermissionauditentry)
+- [OrgUpdateMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgupdatememberauditentry)
+- [OrgUpdateMemberRepositoryCreationPermissionAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgupdatememberrepositorycreationpermissionauditentry)
+- [OrgUpdateMemberRepositoryInvitationPermissionAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#orgupdatememberrepositoryinvitationpermissionauditentry)
+- [PrivateRepositoryForkingDisableAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#privaterepositoryforkingdisableauditentry)
+- [PrivateRepositoryForkingEnableAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#privaterepositoryforkingenableauditentry)
+- [RepoAccessAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoaccessauditentry)
+- [RepoAddMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoaddmemberauditentry)
+- [RepoAddTopicAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoaddtopicauditentry)
+- [RepoArchivedAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoarchivedauditentry)
+- [RepoChangeMergeSettingAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repochangemergesettingauditentry)
+- [RepoConfigDisableAnonymousGitAccessAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigdisableanonymousgitaccessauditentry)
+- [RepoConfigDisableCollaboratorsOnlyAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigdisablecollaboratorsonlyauditentry)
+- [RepoConfigDisableContributorsOnlyAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigdisablecontributorsonlyauditentry)
+- [RepoConfigDisableSockpuppetDisallowedAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigdisablesockpuppetdisallowedauditentry)
+- [RepoConfigEnableAnonymousGitAccessAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigenableanonymousgitaccessauditentry)
+- [RepoConfigEnableCollaboratorsOnlyAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigenablecollaboratorsonlyauditentry)
+- [RepoConfigEnableContributorsOnlyAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigenablecontributorsonlyauditentry)
+- [RepoConfigEnableSockpuppetDisallowedAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigenablesockpuppetdisallowedauditentry)
+- [RepoConfigLockAnonymousGitAccessAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfiglockanonymousgitaccessauditentry)
+- [RepoConfigUnlockAnonymousGitAccessAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repoconfigunlockanonymousgitaccessauditentry)
+- [RepoCreateAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repocreateauditentry)
+- [RepoDestroyAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repodestroyauditentry)
+- [RepoRemoveMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#reporemovememberauditentry)
+- [RepoRemoveTopicAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#reporemovetopicauditentry)
+- [RepositoryVisibilityChangeDisableAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repositoryvisibilitychangedisableauditentry)
+- [RepositoryVisibilityChangeEnableAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#repositoryvisibilitychangeenableauditentry)
+- [TeamAddMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#teamaddmemberauditentry)
+- [TeamAddRepositoryAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#teamaddrepositoryauditentry)
+- [TeamChangeParentTeamAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#teamchangeparentteamauditentry)
+- [TeamRemoveMemberAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#teamremovememberauditentry)
+- [TeamRemoveRepositoryAuditEntry](/docusaurus-plugin-content-graphql/github-example/objects#teamremoverepositoryauditentry)
 
 ## OrgRestoreMemberAuditEntryMembership
 
 Types of memberships that can be restored for an Organization member.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [OrgRestoreMemberMembershipOrganizationAuditEntryData](/github-example/objects#orgrestoremembermembershiporganizationauditentrydata)
-- [OrgRestoreMemberMembershipRepositoryAuditEntryData](/github-example/objects#orgrestoremembermembershiprepositoryauditentrydata)
-- [OrgRestoreMemberMembershipTeamAuditEntryData](/github-example/objects#orgrestoremembermembershipteamauditentrydata)
+- [OrgRestoreMemberMembershipOrganizationAuditEntryData](/docusaurus-plugin-content-graphql/github-example/objects#orgrestoremembermembershiporganizationauditentrydata)
+- [OrgRestoreMemberMembershipRepositoryAuditEntryData](/docusaurus-plugin-content-graphql/github-example/objects#orgrestoremembermembershiprepositoryauditentrydata)
+- [OrgRestoreMemberMembershipTeamAuditEntryData](/docusaurus-plugin-content-graphql/github-example/objects#orgrestoremembermembershipteamauditentrydata)
 
 ## PermissionGranter
 
 Types that can grant permissions on a repository to a user
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Organization](/github-example/objects#organization)
-- [Repository](/github-example/objects#repository)
-- [Team](/github-example/objects#team)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
+- [Repository](/docusaurus-plugin-content-graphql/github-example/objects#repository)
+- [Team](/docusaurus-plugin-content-graphql/github-example/objects#team)
 
 ## PinnableItem
 
 Types that can be pinned to a profile page.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Gist](/github-example/objects#gist)
-- [Repository](/github-example/objects#repository)
+- [Gist](/docusaurus-plugin-content-graphql/github-example/objects#gist)
+- [Repository](/docusaurus-plugin-content-graphql/github-example/objects#repository)
 
 ## ProjectCardItem
 
 Types that can be inside Project Cards.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Issue](/github-example/objects#issue)
-- [PullRequest](/github-example/objects#pullrequest)
+- [Issue](/docusaurus-plugin-content-graphql/github-example/objects#issue)
+- [PullRequest](/docusaurus-plugin-content-graphql/github-example/objects#pullrequest)
 
 ## PullRequestTimelineItem
 
 An item in a pull request timeline
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [AssignedEvent](/github-example/objects#assignedevent)
-- [BaseRefDeletedEvent](/github-example/objects#baserefdeletedevent)
-- [BaseRefForcePushedEvent](/github-example/objects#baserefforcepushedevent)
-- [ClosedEvent](/github-example/objects#closedevent)
-- [Commit](/github-example/objects#commit)
-- [CommitCommentThread](/github-example/objects#commitcommentthread)
-- [CrossReferencedEvent](/github-example/objects#crossreferencedevent)
-- [DemilestonedEvent](/github-example/objects#demilestonedevent)
-- [DeployedEvent](/github-example/objects#deployedevent)
-- [DeploymentEnvironmentChangedEvent](/github-example/objects#deploymentenvironmentchangedevent)
-- [HeadRefDeletedEvent](/github-example/objects#headrefdeletedevent)
-- [HeadRefForcePushedEvent](/github-example/objects#headrefforcepushedevent)
-- [HeadRefRestoredEvent](/github-example/objects#headrefrestoredevent)
-- [IssueComment](/github-example/objects#issuecomment)
-- [LabeledEvent](/github-example/objects#labeledevent)
-- [LockedEvent](/github-example/objects#lockedevent)
-- [MergedEvent](/github-example/objects#mergedevent)
-- [MilestonedEvent](/github-example/objects#milestonedevent)
-- [PullRequestReview](/github-example/objects#pullrequestreview)
-- [PullRequestReviewComment](/github-example/objects#pullrequestreviewcomment)
-- [PullRequestReviewThread](/github-example/objects#pullrequestreviewthread)
-- [ReferencedEvent](/github-example/objects#referencedevent)
-- [RenamedTitleEvent](/github-example/objects#renamedtitleevent)
-- [ReopenedEvent](/github-example/objects#reopenedevent)
-- [ReviewDismissedEvent](/github-example/objects#reviewdismissedevent)
-- [ReviewRequestRemovedEvent](/github-example/objects#reviewrequestremovedevent)
-- [ReviewRequestedEvent](/github-example/objects#reviewrequestedevent)
-- [SubscribedEvent](/github-example/objects#subscribedevent)
-- [UnassignedEvent](/github-example/objects#unassignedevent)
-- [UnlabeledEvent](/github-example/objects#unlabeledevent)
-- [UnlockedEvent](/github-example/objects#unlockedevent)
-- [UnsubscribedEvent](/github-example/objects#unsubscribedevent)
-- [UserBlockedEvent](/github-example/objects#userblockedevent)
+- [AssignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#assignedevent)
+- [BaseRefDeletedEvent](/docusaurus-plugin-content-graphql/github-example/objects#baserefdeletedevent)
+- [BaseRefForcePushedEvent](/docusaurus-plugin-content-graphql/github-example/objects#baserefforcepushedevent)
+- [ClosedEvent](/docusaurus-plugin-content-graphql/github-example/objects#closedevent)
+- [Commit](/docusaurus-plugin-content-graphql/github-example/objects#commit)
+- [CommitCommentThread](/docusaurus-plugin-content-graphql/github-example/objects#commitcommentthread)
+- [CrossReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#crossreferencedevent)
+- [DemilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#demilestonedevent)
+- [DeployedEvent](/docusaurus-plugin-content-graphql/github-example/objects#deployedevent)
+- [DeploymentEnvironmentChangedEvent](/docusaurus-plugin-content-graphql/github-example/objects#deploymentenvironmentchangedevent)
+- [HeadRefDeletedEvent](/docusaurus-plugin-content-graphql/github-example/objects#headrefdeletedevent)
+- [HeadRefForcePushedEvent](/docusaurus-plugin-content-graphql/github-example/objects#headrefforcepushedevent)
+- [HeadRefRestoredEvent](/docusaurus-plugin-content-graphql/github-example/objects#headrefrestoredevent)
+- [IssueComment](/docusaurus-plugin-content-graphql/github-example/objects#issuecomment)
+- [LabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#labeledevent)
+- [LockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#lockedevent)
+- [MergedEvent](/docusaurus-plugin-content-graphql/github-example/objects#mergedevent)
+- [MilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#milestonedevent)
+- [PullRequestReview](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestreview)
+- [PullRequestReviewComment](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestreviewcomment)
+- [PullRequestReviewThread](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestreviewthread)
+- [ReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#referencedevent)
+- [RenamedTitleEvent](/docusaurus-plugin-content-graphql/github-example/objects#renamedtitleevent)
+- [ReopenedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reopenedevent)
+- [ReviewDismissedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reviewdismissedevent)
+- [ReviewRequestRemovedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reviewrequestremovedevent)
+- [ReviewRequestedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reviewrequestedevent)
+- [SubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#subscribedevent)
+- [UnassignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unassignedevent)
+- [UnlabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlabeledevent)
+- [UnlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlockedevent)
+- [UnsubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unsubscribedevent)
+- [UserBlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#userblockedevent)
 
 ## PullRequestTimelineItems
 
 An item in a pull request timeline
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [AddedToProjectEvent](/github-example/objects#addedtoprojectevent)
-- [AssignedEvent](/github-example/objects#assignedevent)
-- [AutoMergeDisabledEvent](/github-example/objects#automergedisabledevent)
-- [AutoMergeEnabledEvent](/github-example/objects#automergeenabledevent)
-- [AutoRebaseEnabledEvent](/github-example/objects#autorebaseenabledevent)
-- [AutoSquashEnabledEvent](/github-example/objects#autosquashenabledevent)
-- [AutomaticBaseChangeFailedEvent](/github-example/objects#automaticbasechangefailedevent)
-- [AutomaticBaseChangeSucceededEvent](/github-example/objects#automaticbasechangesucceededevent)
-- [BaseRefChangedEvent](/github-example/objects#baserefchangedevent)
-- [BaseRefDeletedEvent](/github-example/objects#baserefdeletedevent)
-- [BaseRefForcePushedEvent](/github-example/objects#baserefforcepushedevent)
-- [ClosedEvent](/github-example/objects#closedevent)
-- [CommentDeletedEvent](/github-example/objects#commentdeletedevent)
-- [ConnectedEvent](/github-example/objects#connectedevent)
-- [ConvertToDraftEvent](/github-example/objects#converttodraftevent)
-- [ConvertedNoteToIssueEvent](/github-example/objects#convertednotetoissueevent)
-- [CrossReferencedEvent](/github-example/objects#crossreferencedevent)
-- [DemilestonedEvent](/github-example/objects#demilestonedevent)
-- [DeployedEvent](/github-example/objects#deployedevent)
-- [DeploymentEnvironmentChangedEvent](/github-example/objects#deploymentenvironmentchangedevent)
-- [DisconnectedEvent](/github-example/objects#disconnectedevent)
-- [HeadRefDeletedEvent](/github-example/objects#headrefdeletedevent)
-- [HeadRefForcePushedEvent](/github-example/objects#headrefforcepushedevent)
-- [HeadRefRestoredEvent](/github-example/objects#headrefrestoredevent)
-- [IssueComment](/github-example/objects#issuecomment)
-- [LabeledEvent](/github-example/objects#labeledevent)
-- [LockedEvent](/github-example/objects#lockedevent)
-- [MarkedAsDuplicateEvent](/github-example/objects#markedasduplicateevent)
-- [MentionedEvent](/github-example/objects#mentionedevent)
-- [MergedEvent](/github-example/objects#mergedevent)
-- [MilestonedEvent](/github-example/objects#milestonedevent)
-- [MovedColumnsInProjectEvent](/github-example/objects#movedcolumnsinprojectevent)
-- [PinnedEvent](/github-example/objects#pinnedevent)
-- [PullRequestCommit](/github-example/objects#pullrequestcommit)
-- [PullRequestCommitCommentThread](/github-example/objects#pullrequestcommitcommentthread)
-- [PullRequestReview](/github-example/objects#pullrequestreview)
-- [PullRequestReviewThread](/github-example/objects#pullrequestreviewthread)
-- [PullRequestRevisionMarker](/github-example/objects#pullrequestrevisionmarker)
-- [ReadyForReviewEvent](/github-example/objects#readyforreviewevent)
-- [ReferencedEvent](/github-example/objects#referencedevent)
-- [RemovedFromProjectEvent](/github-example/objects#removedfromprojectevent)
-- [RenamedTitleEvent](/github-example/objects#renamedtitleevent)
-- [ReopenedEvent](/github-example/objects#reopenedevent)
-- [ReviewDismissedEvent](/github-example/objects#reviewdismissedevent)
-- [ReviewRequestRemovedEvent](/github-example/objects#reviewrequestremovedevent)
-- [ReviewRequestedEvent](/github-example/objects#reviewrequestedevent)
-- [SubscribedEvent](/github-example/objects#subscribedevent)
-- [TransferredEvent](/github-example/objects#transferredevent)
-- [UnassignedEvent](/github-example/objects#unassignedevent)
-- [UnlabeledEvent](/github-example/objects#unlabeledevent)
-- [UnlockedEvent](/github-example/objects#unlockedevent)
-- [UnmarkedAsDuplicateEvent](/github-example/objects#unmarkedasduplicateevent)
-- [UnpinnedEvent](/github-example/objects#unpinnedevent)
-- [UnsubscribedEvent](/github-example/objects#unsubscribedevent)
-- [UserBlockedEvent](/github-example/objects#userblockedevent)
+- [AddedToProjectEvent](/docusaurus-plugin-content-graphql/github-example/objects#addedtoprojectevent)
+- [AssignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#assignedevent)
+- [AutoMergeDisabledEvent](/docusaurus-plugin-content-graphql/github-example/objects#automergedisabledevent)
+- [AutoMergeEnabledEvent](/docusaurus-plugin-content-graphql/github-example/objects#automergeenabledevent)
+- [AutoRebaseEnabledEvent](/docusaurus-plugin-content-graphql/github-example/objects#autorebaseenabledevent)
+- [AutoSquashEnabledEvent](/docusaurus-plugin-content-graphql/github-example/objects#autosquashenabledevent)
+- [AutomaticBaseChangeFailedEvent](/docusaurus-plugin-content-graphql/github-example/objects#automaticbasechangefailedevent)
+- [AutomaticBaseChangeSucceededEvent](/docusaurus-plugin-content-graphql/github-example/objects#automaticbasechangesucceededevent)
+- [BaseRefChangedEvent](/docusaurus-plugin-content-graphql/github-example/objects#baserefchangedevent)
+- [BaseRefDeletedEvent](/docusaurus-plugin-content-graphql/github-example/objects#baserefdeletedevent)
+- [BaseRefForcePushedEvent](/docusaurus-plugin-content-graphql/github-example/objects#baserefforcepushedevent)
+- [ClosedEvent](/docusaurus-plugin-content-graphql/github-example/objects#closedevent)
+- [CommentDeletedEvent](/docusaurus-plugin-content-graphql/github-example/objects#commentdeletedevent)
+- [ConnectedEvent](/docusaurus-plugin-content-graphql/github-example/objects#connectedevent)
+- [ConvertToDraftEvent](/docusaurus-plugin-content-graphql/github-example/objects#converttodraftevent)
+- [ConvertedNoteToIssueEvent](/docusaurus-plugin-content-graphql/github-example/objects#convertednotetoissueevent)
+- [CrossReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#crossreferencedevent)
+- [DemilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#demilestonedevent)
+- [DeployedEvent](/docusaurus-plugin-content-graphql/github-example/objects#deployedevent)
+- [DeploymentEnvironmentChangedEvent](/docusaurus-plugin-content-graphql/github-example/objects#deploymentenvironmentchangedevent)
+- [DisconnectedEvent](/docusaurus-plugin-content-graphql/github-example/objects#disconnectedevent)
+- [HeadRefDeletedEvent](/docusaurus-plugin-content-graphql/github-example/objects#headrefdeletedevent)
+- [HeadRefForcePushedEvent](/docusaurus-plugin-content-graphql/github-example/objects#headrefforcepushedevent)
+- [HeadRefRestoredEvent](/docusaurus-plugin-content-graphql/github-example/objects#headrefrestoredevent)
+- [IssueComment](/docusaurus-plugin-content-graphql/github-example/objects#issuecomment)
+- [LabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#labeledevent)
+- [LockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#lockedevent)
+- [MarkedAsDuplicateEvent](/docusaurus-plugin-content-graphql/github-example/objects#markedasduplicateevent)
+- [MentionedEvent](/docusaurus-plugin-content-graphql/github-example/objects#mentionedevent)
+- [MergedEvent](/docusaurus-plugin-content-graphql/github-example/objects#mergedevent)
+- [MilestonedEvent](/docusaurus-plugin-content-graphql/github-example/objects#milestonedevent)
+- [MovedColumnsInProjectEvent](/docusaurus-plugin-content-graphql/github-example/objects#movedcolumnsinprojectevent)
+- [PinnedEvent](/docusaurus-plugin-content-graphql/github-example/objects#pinnedevent)
+- [PullRequestCommit](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestcommit)
+- [PullRequestCommitCommentThread](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestcommitcommentthread)
+- [PullRequestReview](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestreview)
+- [PullRequestReviewThread](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestreviewthread)
+- [PullRequestRevisionMarker](/docusaurus-plugin-content-graphql/github-example/objects#pullrequestrevisionmarker)
+- [ReadyForReviewEvent](/docusaurus-plugin-content-graphql/github-example/objects#readyforreviewevent)
+- [ReferencedEvent](/docusaurus-plugin-content-graphql/github-example/objects#referencedevent)
+- [RemovedFromProjectEvent](/docusaurus-plugin-content-graphql/github-example/objects#removedfromprojectevent)
+- [RenamedTitleEvent](/docusaurus-plugin-content-graphql/github-example/objects#renamedtitleevent)
+- [ReopenedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reopenedevent)
+- [ReviewDismissedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reviewdismissedevent)
+- [ReviewRequestRemovedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reviewrequestremovedevent)
+- [ReviewRequestedEvent](/docusaurus-plugin-content-graphql/github-example/objects#reviewrequestedevent)
+- [SubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#subscribedevent)
+- [TransferredEvent](/docusaurus-plugin-content-graphql/github-example/objects#transferredevent)
+- [UnassignedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unassignedevent)
+- [UnlabeledEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlabeledevent)
+- [UnlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unlockedevent)
+- [UnmarkedAsDuplicateEvent](/docusaurus-plugin-content-graphql/github-example/objects#unmarkedasduplicateevent)
+- [UnpinnedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unpinnedevent)
+- [UnsubscribedEvent](/docusaurus-plugin-content-graphql/github-example/objects#unsubscribedevent)
+- [UserBlockedEvent](/docusaurus-plugin-content-graphql/github-example/objects#userblockedevent)
 
 ## PushAllowanceActor
 
 Types that can be an actor.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [App](/github-example/objects#app)
-- [Team](/github-example/objects#team)
-- [User](/github-example/objects#user)
+- [App](/docusaurus-plugin-content-graphql/github-example/objects#app)
+- [Team](/docusaurus-plugin-content-graphql/github-example/objects#team)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## ReferencedSubject
 
 Any referencable object
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Issue](/github-example/objects#issue)
-- [PullRequest](/github-example/objects#pullrequest)
+- [Issue](/docusaurus-plugin-content-graphql/github-example/objects#issue)
+- [PullRequest](/docusaurus-plugin-content-graphql/github-example/objects#pullrequest)
 
 ## RenamedTitleSubject
 
 An object which has a renamable title
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Issue](/github-example/objects#issue)
-- [PullRequest](/github-example/objects#pullrequest)
+- [Issue](/docusaurus-plugin-content-graphql/github-example/objects#issue)
+- [PullRequest](/docusaurus-plugin-content-graphql/github-example/objects#pullrequest)
 
 ## RequestedReviewer
 
 Types that can be requested reviewers.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Mannequin](/github-example/objects#mannequin)
-- [Team](/github-example/objects#team)
-- [User](/github-example/objects#user)
+- [Mannequin](/docusaurus-plugin-content-graphql/github-example/objects#mannequin)
+- [Team](/docusaurus-plugin-content-graphql/github-example/objects#team)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## ReviewDismissalAllowanceActor
 
 Types that can be an actor.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Team](/github-example/objects#team)
-- [User](/github-example/objects#user)
+- [Team](/docusaurus-plugin-content-graphql/github-example/objects#team)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## SearchResultItem
 
 The results of a search.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [App](/github-example/objects#app)
-- [Issue](/github-example/objects#issue)
-- [MarketplaceListing](/github-example/objects#marketplacelisting)
-- [Organization](/github-example/objects#organization)
-- [PullRequest](/github-example/objects#pullrequest)
-- [Repository](/github-example/objects#repository)
-- [User](/github-example/objects#user)
+- [App](/docusaurus-plugin-content-graphql/github-example/objects#app)
+- [Issue](/docusaurus-plugin-content-graphql/github-example/objects#issue)
+- [MarketplaceListing](/docusaurus-plugin-content-graphql/github-example/objects#marketplacelisting)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
+- [PullRequest](/docusaurus-plugin-content-graphql/github-example/objects#pullrequest)
+- [Repository](/docusaurus-plugin-content-graphql/github-example/objects#repository)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## Sponsor
 
 Entities that can sponsor others via GitHub Sponsors
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Organization](/github-example/objects#organization)
-- [User](/github-example/objects#user)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## SponsorableItem
 
 Entities that can be sponsored via GitHub Sponsors
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Organization](/github-example/objects#organization)
-- [User](/github-example/objects#user)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
+- [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
 
 ## StatusCheckRollupContext
 
 Types that can be inside a StatusCheckRollup context.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [CheckRun](/github-example/objects#checkrun)
-- [StatusContext](/github-example/objects#statuscontext)
+- [CheckRun](/docusaurus-plugin-content-graphql/github-example/objects#checkrun)
+- [StatusContext](/docusaurus-plugin-content-graphql/github-example/objects#statuscontext)
 
 ## VerifiableDomainOwner
 
 Types that can own a verifiable domain.
 
-**Possible types**
+<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>
 
-- [Enterprise](/github-example/objects#enterprise)
-- [Organization](/github-example/objects#organization)
+- [Enterprise](/docusaurus-plugin-content-graphql/github-example/objects#enterprise)
+- [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
 

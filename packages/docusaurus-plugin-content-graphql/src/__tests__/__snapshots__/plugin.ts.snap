@@ -5,7 +5,7 @@ exports[`convertEnumsToMarkdown should convert enums to markdown 1`] = `
 
 Enum listing the different role a user can have.
 
-**Values**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Values</strong></p>
 
 <table>
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
@@ -33,14 +33,16 @@ exports[`convertInputObjectsToMarkdown should convert inputObjects to markdown 1
 
 Payload used to create/update a user.
 
-**Arguments**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>name</code></td>
-<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+name<br />
+<a href=\\"#\\"><code>String!</code></a>
+</td>
 <td>
 <p>Name of the user.</p>
 </td>
@@ -56,19 +58,21 @@ exports[`convertInterfacesToMarkdown should convert interfaces to markdown 1`] =
 
 Shared traits of humanoids.
 
-**Implemented by**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
 
 - [User](#)
 - [Droid](#)
 
-**Fields**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>name</code></td>
-<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+name<br />
+<a href=\\"#\\"><code>String!</code></a>
+</td>
 <td>
 <p>Name of the humanoid.</p>
 </td>
@@ -86,14 +90,16 @@ exports[`convertMutationsToMarkdown should convert mutations to markdown 1`] = `
 
 Create a new user.
 
-**Arguments**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>input</code></td>
-<td><a href=\\"#\\"><code>UserInput!</code></a></td>
+<td>
+input<br />
+<a href=\\"#\\"><code>UserInput!</code></a>
+</td>
 <td>
 <p>Payload to create the new user.</p>
 </td>
@@ -107,21 +113,25 @@ Create a new user.
 
 Update an existing user.
 
-**Arguments**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>id</code></td>
-<td><a href=\\"#\\"><code>ID!</code></a></td>
+<td>
+id<br />
+<a href=\\"#\\"><code>ID!</code></a>
+</td>
 <td>
 <p>ID of the user to update.</p>
 </td>
 </tr>
 <tr>
-<td><code>input</code></td>
-<td><a href=\\"#\\"><code>UserInput!</code></a></td>
+<td>
+input<br />
+<a href=\\"#\\"><code>UserInput!</code></a>
+</td>
 <td>
 <p>Payload to update the existing user.</p>
 </td>
@@ -137,18 +147,20 @@ exports[`convertObjectsToMarkdown should convert objects to markdown 1`] = `
 
 Represents a droid.
 
-**Implements**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
 
 - [Humanoid](#)
 
-**Fields**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>name</code></td>
-<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+name<br />
+<a href=\\"#\\"><code>String!</code></a>
+</td>
 <td>
 <p>Name of the droid.</p>
 </td>
@@ -160,36 +172,42 @@ Represents a droid.
 
 Represents a user.
 
-**Implements**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
 
 - [Humanoid](#)
 
-**Fields**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>name</code></td>
-<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+name<br />
+<a href=\\"#\\"><code>String!</code></a>
+</td>
 <td>
 <p>Name of the user.</p>
 </td>
 </tr>
 <tr>
-<td><code>friends</code></td>
-<td><a href=\\"#\\"><code>[User!]!</code></a></td>
+<td>
+friends<br />
+<a href=\\"#\\"><code>[User!]!</code></a>
+</td>
 <td>
 <p>Returns the user&#39;s list of friends.</p>
 
-**Arguments**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>take</code></td>
-<td><a href=\\"#\\"><code>Int!</code></a></td>
+<td>
+take<br />
+<a href=\\"#\\"><code>Int!</code></a>
+</td>
 <td>
 <p>Number of friends to return.</p>
 </td>
@@ -200,15 +218,19 @@ Represents a user.
 </td>
 </tr>
 <tr>
-<td><code>role</code></td>
-<td><a href=\\"#\\"><code>UserRole!</code></a></td>
+<td>
+role<br />
+<a href=\\"#\\"><code>UserRole!</code></a>
+</td>
 <td>
 <p>Role of the user.</p>
 </td>
 </tr>
 <tr>
-<td><code>createdAt</code></td>
-<td><a href=\\"#\\"><code>DateTime</code></a></td>
+<td>
+createdAt<br />
+<a href=\\"#\\"><code>DateTime</code></a>
+</td>
 <td>
 <blockquote>Deprecated: This property will be removed in the future</blockquote>
 
@@ -237,21 +259,25 @@ Search among humanoids and returns a mix of:
 * Droid
 * Human
 
-**Arguments**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>query</code></td>
-<td><a href=\\"#\\"><code>String!</code></a></td>
+<td>
+query<br />
+<a href=\\"#\\"><code>String!</code></a>
+</td>
 <td>
 <p>The search query.</p>
 </td>
 </tr>
 <tr>
-<td><code>name</code></td>
-<td><a href=\\"#\\"><code>String</code></a></td>
+<td>
+name<br />
+<a href=\\"#\\"><code>String</code></a>
+</td>
 <td>
 <blockquote>Deprecated: Use query instead</blockquote>
 
@@ -267,14 +293,16 @@ Search among humanoids and returns a mix of:
 
 Returns the list of users.
 
-**Arguments**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
 <table>
-<thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td><code>take</code></td>
-<td><a href=\\"#\\"><code>Int!</code></a></td>
+<td>
+take<br />
+<a href=\\"#\\"><code>Int!</code></a>
+</td>
 <td>
 <p>Number of users to return.</p>
 </td>
@@ -314,7 +342,7 @@ exports[`convertUnionsToMarkdown should convert unions to markdown 1`] = `
 
 Represents the mix of search results.
 
-**Possible types**
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Possible types</strong></p>
 
 - [User](#)
 - [Droid](#)

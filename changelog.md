@@ -10,3 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add a "implemented by" block on the interface documentation
+
+### Changed
+
+- Merged the name and type column together.
+- Decreased the margin between tables/lists and their title.
