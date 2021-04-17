@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 0.1.0 - 2021-04-18
+
 ### Added
 
 - Add a "implemented by" block on the interface documentation.
