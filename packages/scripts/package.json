@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "scripts",
   "scripts": {
     "generateDocs": "ts-node ./src/generateDocs"
   },
