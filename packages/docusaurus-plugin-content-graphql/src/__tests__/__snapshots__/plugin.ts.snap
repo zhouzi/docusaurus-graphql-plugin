@@ -56,6 +56,11 @@ exports[`convertInterfacesToMarkdown should convert interfaces to markdown 1`] =
 
 Shared traits of humanoids.
 
+**Implemented by**
+
+- [User](#)
+- [Droid](#)
+
 **Fields**
 
 <table>
