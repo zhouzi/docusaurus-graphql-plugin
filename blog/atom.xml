@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gabinaureche.com/docusaurus-plugin-content-graphql/blog</id>
-    <title>docusaurus-plugin-content-graphql Blog</title>
+    <id>https://gabinaureche.com/docusaurus-graphql-plugin/blog</id>
+    <title>docusaurus-graphql-plugin Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://gabinaureche.com/docusaurus-plugin-content-graphql/blog"/>
-    <subtitle>docusaurus-plugin-content-graphql Blog</subtitle>
-    <icon>https://gabinaureche.com/docusaurus-plugin-content-graphql/img/favicon.ico</icon>
+    <link rel="alternate" href="https://gabinaureche.com/docusaurus-graphql-plugin/blog"/>
+    <subtitle>docusaurus-graphql-plugin Blog</subtitle>
+    <icon>https://gabinaureche.com/docusaurus-graphql-plugin/img/favicon.ico</icon>
 </feed>
