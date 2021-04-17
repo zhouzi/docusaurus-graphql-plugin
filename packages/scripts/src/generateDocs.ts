@@ -2,8 +2,6 @@ import path from "path";
 import fs from "fs";
 import { Slugger } from "marked";
 
-// TODO: this script could be turned into a docusaurus plugin
-
 const slugger = new Slugger();
 const sluggify = (name: string) => slugger.slug(name, { dryrun: true });
 const readme = fs.readFileSync(

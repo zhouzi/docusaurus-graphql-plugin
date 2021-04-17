@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Motivation
 slug: /
 ---
 

@@ -8,6 +8,8 @@ Do not edit it but make your changes to the README.md instead and run the comman
 yarn --cwd ./packages/scripts generateDocs
 -->
 
+### Installation
+
 1. In an existing Docusaurus project, install the plugin:
 
 ```

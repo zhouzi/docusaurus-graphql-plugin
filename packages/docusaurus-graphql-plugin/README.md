@@ -2,12 +2,14 @@
 
 Docusaurus plugin generating Markdown documentation from a GraphQL schema.
 
-## Introduction
+## Motivation
 
 The goal of this plugin is to generate a documentation that is pleasant to browse, based on a GraphQL schema.
 The templates it generates is heavily inspired by [GitHub's documentation](https://docs.github.com/en/graphql/reference), which I enjoy browsing.
 
 ## Usage
+
+### Installation
 
 1. In an existing Docusaurus project, install the plugin:
 

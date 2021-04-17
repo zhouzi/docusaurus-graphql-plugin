@@ -6,7 +6,7 @@
   "scripts": {
     "prettier": "prettier . --check",
     "lint": "eslint . --ext .js,.ts,.tsx",
-    "docs": "yarn --cwd ./packages/docusaurus-graphql-plugin postbuild && yarn --cwd ./packages/scripts generateDocs && yarn --cwd ./packages/docs build"
+    "docs": "yarn --cwd ./packages/docusaurus-graphql-plugin build && yarn --cwd ./packages/scripts generateDocs && yarn --cwd ./packages/docs build"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
