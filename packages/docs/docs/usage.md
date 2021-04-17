@@ -2,6 +2,12 @@
 title: Usage
 ---
 
+<!--
+This file was automatically generated from the README.md.
+Do not edit it but make your changes to the README.md instead and run the command:
+yarn --cwd ./packages/scripts generateDocs
+-->
+
 1. In an existing Docusaurus project, install the plugin:
 
 ```
@@ -49,13 +55,13 @@ modules.exports = {
 };
 ```
 
-## Options
+### Options
 
-### `schema`
+#### `schema`
 
 Can be a path, a glob or an URL used to load your GraphQL schema.
 
-### `routeBasePath`
+#### `routeBasePath`
 
 **Defaults:** `/docs/api/`
 
