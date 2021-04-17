@@ -6,7 +6,7 @@ slug: queries
 
 ## codeOfConduct
 
-**Type:** [CodeOfConduct](/docusaurus-plugin-content-graphql/github-example/objects#codeofconduct)
+**Type:** [CodeOfConduct](/docusaurus-graphql-plugin/github-example/objects#codeofconduct)
 
 Look up a code of conduct by its key
 
@@ -18,7 +18,7 @@ Look up a code of conduct by its key
 <tr>
 <td>
 key<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The code of conduct&#39;s key</p>
@@ -29,13 +29,13 @@ key<br />
 
 ## codesOfConduct
 
-**Type:** [[CodeOfConduct]](/docusaurus-plugin-content-graphql/github-example/objects#codeofconduct)
+**Type:** [[CodeOfConduct]](/docusaurus-graphql-plugin/github-example/objects#codeofconduct)
 
 Look up a code of conduct by its key
 
 ## enterprise
 
-**Type:** [Enterprise](/docusaurus-plugin-content-graphql/github-example/objects#enterprise)
+**Type:** [Enterprise](/docusaurus-graphql-plugin/github-example/objects#enterprise)
 
 Look up an enterprise by URL slug.
 
@@ -47,7 +47,7 @@ Look up an enterprise by URL slug.
 <tr>
 <td>
 invitationToken<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>The enterprise invitation token.</p>
@@ -56,7 +56,7 @@ invitationToken<br />
 <tr>
 <td>
 slug<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The enterprise URL slug.</p>
@@ -67,7 +67,7 @@ slug<br />
 
 ## enterpriseAdministratorInvitation
 
-**Type:** [EnterpriseAdministratorInvitation](/docusaurus-plugin-content-graphql/github-example/objects#enterpriseadministratorinvitation)
+**Type:** [EnterpriseAdministratorInvitation](/docusaurus-graphql-plugin/github-example/objects#enterpriseadministratorinvitation)
 
 Look up a pending enterprise administrator invitation by invitee, enterprise and role.
 
@@ -79,7 +79,7 @@ Look up a pending enterprise administrator invitation by invitee, enterprise and
 <tr>
 <td>
 enterpriseSlug<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The slug of the enterprise the user was invited to join.</p>
@@ -88,7 +88,7 @@ enterpriseSlug<br />
 <tr>
 <td>
 role<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/enums#enterpriseadministratorrole"><code>EnterpriseAdministratorRole!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/enums#enterpriseadministratorrole"><code>EnterpriseAdministratorRole!</code></a>
 </td>
 <td>
 <p>The role for the business member invitation.</p>
@@ -97,7 +97,7 @@ role<br />
 <tr>
 <td>
 userLogin<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The login of the user invited to join the business.</p>
@@ -108,7 +108,7 @@ userLogin<br />
 
 ## enterpriseAdministratorInvitationByToken
 
-**Type:** [EnterpriseAdministratorInvitation](/docusaurus-plugin-content-graphql/github-example/objects#enterpriseadministratorinvitation)
+**Type:** [EnterpriseAdministratorInvitation](/docusaurus-graphql-plugin/github-example/objects#enterpriseadministratorinvitation)
 
 Look up a pending enterprise administrator invitation by invitation token.
 
@@ -120,7 +120,7 @@ Look up a pending enterprise administrator invitation by invitation token.
 <tr>
 <td>
 invitationToken<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The invitation token sent with the invitation email.</p>
@@ -131,7 +131,7 @@ invitationToken<br />
 
 ## license
 
-**Type:** [License](/docusaurus-plugin-content-graphql/github-example/objects#license)
+**Type:** [License](/docusaurus-graphql-plugin/github-example/objects#license)
 
 Look up an open source license by its key
 
@@ -143,7 +143,7 @@ Look up an open source license by its key
 <tr>
 <td>
 key<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The license&#39;s downcased SPDX ID</p>
@@ -154,13 +154,13 @@ key<br />
 
 ## licenses
 
-**Type:** [[License]!](/docusaurus-plugin-content-graphql/github-example/objects#license)
+**Type:** [[License]!](/docusaurus-graphql-plugin/github-example/objects#license)
 
 Return a list of known open source licenses
 
 ## marketplaceCategories
 
-**Type:** [[MarketplaceCategory!]!](/docusaurus-plugin-content-graphql/github-example/objects#marketplacecategory)
+**Type:** [[MarketplaceCategory!]!](/docusaurus-graphql-plugin/github-example/objects#marketplacecategory)
 
 Get alphabetically sorted list of Marketplace categories
 
@@ -172,7 +172,7 @@ Get alphabetically sorted list of Marketplace categories
 <tr>
 <td>
 excludeEmpty<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Exclude categories with no listings.</p>
@@ -181,7 +181,7 @@ excludeEmpty<br />
 <tr>
 <td>
 excludeSubcategories<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Returns top level categories only, excluding any subcategories.</p>
@@ -190,7 +190,7 @@ excludeSubcategories<br />
 <tr>
 <td>
 includeCategories<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>[String!]</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>[String!]</code></a>
 </td>
 <td>
 <p>Return only the specified categories.</p>
@@ -201,7 +201,7 @@ includeCategories<br />
 
 ## marketplaceCategory
 
-**Type:** [MarketplaceCategory](/docusaurus-plugin-content-graphql/github-example/objects#marketplacecategory)
+**Type:** [MarketplaceCategory](/docusaurus-graphql-plugin/github-example/objects#marketplacecategory)
 
 Look up a Marketplace category by its slug.
 
@@ -213,7 +213,7 @@ Look up a Marketplace category by its slug.
 <tr>
 <td>
 slug<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The URL slug of the category.</p>
@@ -222,7 +222,7 @@ slug<br />
 <tr>
 <td>
 useTopicAliases<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Also check topic aliases for the category slug</p>
@@ -233,7 +233,7 @@ useTopicAliases<br />
 
 ## marketplaceListing
 
-**Type:** [MarketplaceListing](/docusaurus-plugin-content-graphql/github-example/objects#marketplacelisting)
+**Type:** [MarketplaceListing](/docusaurus-graphql-plugin/github-example/objects#marketplacelisting)
 
 Look up a single Marketplace listing
 
@@ -245,7 +245,7 @@ Look up a single Marketplace listing
 <tr>
 <td>
 slug<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>Select the listing that matches this slug. It&#39;s the short name of the listing used in its URL.</p>
@@ -256,7 +256,7 @@ slug<br />
 
 ## marketplaceListings
 
-**Type:** [MarketplaceListingConnection!](/docusaurus-plugin-content-graphql/github-example/objects#marketplacelistingconnection)
+**Type:** [MarketplaceListingConnection!](/docusaurus-graphql-plugin/github-example/objects#marketplacelistingconnection)
 
 Look up Marketplace listings
 
@@ -268,7 +268,7 @@ Look up Marketplace listings
 <tr>
 <td>
 adminId<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#id"><code>ID</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#id"><code>ID</code></a>
 </td>
 <td>
 <p>Select listings that can be administered by the specified user.</p>
@@ -277,7 +277,7 @@ adminId<br />
 <tr>
 <td>
 after<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come after the specified cursor.</p>
@@ -286,7 +286,7 @@ after<br />
 <tr>
 <td>
 allStates<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Select listings visible to the viewer even if they are not approved. If omitted or
@@ -296,7 +296,7 @@ false, only approved listings will be returned.</p>
 <tr>
 <td>
 before<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come before the specified cursor.</p>
@@ -305,7 +305,7 @@ before<br />
 <tr>
 <td>
 categorySlug<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Select only listings with the given category.</p>
@@ -314,7 +314,7 @@ categorySlug<br />
 <tr>
 <td>
 first<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the first <em>n</em> elements from the list.</p>
@@ -323,7 +323,7 @@ first<br />
 <tr>
 <td>
 last<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the last <em>n</em> elements from the list.</p>
@@ -332,7 +332,7 @@ last<br />
 <tr>
 <td>
 organizationId<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#id"><code>ID</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#id"><code>ID</code></a>
 </td>
 <td>
 <p>Select listings for products owned by the specified organization.</p>
@@ -341,7 +341,7 @@ organizationId<br />
 <tr>
 <td>
 primaryCategoryOnly<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Select only listings where the primary category matches the given category slug.</p>
@@ -350,7 +350,7 @@ primaryCategoryOnly<br />
 <tr>
 <td>
 slugs<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>[String]</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>[String]</code></a>
 </td>
 <td>
 <p>Select the listings with these slugs, if they are visible to the viewer.</p>
@@ -359,7 +359,7 @@ slugs<br />
 <tr>
 <td>
 useTopicAliases<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Also check topic aliases for the category slug</p>
@@ -368,7 +368,7 @@ useTopicAliases<br />
 <tr>
 <td>
 viewerCanAdmin<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Select listings to which user has admin access. If omitted, listings visible to the
@@ -378,7 +378,7 @@ viewer are returned.</p>
 <tr>
 <td>
 withFreeTrialsOnly<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Select only listings that offer a free trial.</p>
@@ -389,13 +389,13 @@ withFreeTrialsOnly<br />
 
 ## meta
 
-**Type:** [GitHubMetadata!](/docusaurus-plugin-content-graphql/github-example/objects#githubmetadata)
+**Type:** [GitHubMetadata!](/docusaurus-graphql-plugin/github-example/objects#githubmetadata)
 
 Return information about the GitHub instance
 
 ## node
 
-**Type:** [Node](/docusaurus-plugin-content-graphql/github-example/interfaces#node)
+**Type:** [Node](/docusaurus-graphql-plugin/github-example/interfaces#node)
 
 Fetches an object given its ID.
 
@@ -407,7 +407,7 @@ Fetches an object given its ID.
 <tr>
 <td>
 id<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#id"><code>ID!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#id"><code>ID!</code></a>
 </td>
 <td>
 <p>ID of the object.</p>
@@ -418,7 +418,7 @@ id<br />
 
 ## nodes
 
-**Type:** [[Node]!](/docusaurus-plugin-content-graphql/github-example/interfaces#node)
+**Type:** [[Node]!](/docusaurus-graphql-plugin/github-example/interfaces#node)
 
 Lookup nodes by a list of IDs.
 
@@ -430,7 +430,7 @@ Lookup nodes by a list of IDs.
 <tr>
 <td>
 ids<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#id"><code>[ID!]!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#id"><code>[ID!]!</code></a>
 </td>
 <td>
 <p>The list of node IDs.</p>
@@ -441,7 +441,7 @@ ids<br />
 
 ## organization
 
-**Type:** [Organization](/docusaurus-plugin-content-graphql/github-example/objects#organization)
+**Type:** [Organization](/docusaurus-graphql-plugin/github-example/objects#organization)
 
 Lookup a organization by login.
 
@@ -453,7 +453,7 @@ Lookup a organization by login.
 <tr>
 <td>
 login<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The organization&#39;s login.</p>
@@ -464,7 +464,7 @@ login<br />
 
 ## rateLimit
 
-**Type:** [RateLimit](/docusaurus-plugin-content-graphql/github-example/objects#ratelimit)
+**Type:** [RateLimit](/docusaurus-graphql-plugin/github-example/objects#ratelimit)
 
 The client's rate limit information.
 
@@ -476,7 +476,7 @@ The client's rate limit information.
 <tr>
 <td>
 dryRun<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>If true, calculate the cost for the query without evaluating it</p>
@@ -487,13 +487,13 @@ dryRun<br />
 
 ## relay
 
-**Type:** [Query!](/docusaurus-plugin-content-graphql/github-example/objects#query)
+**Type:** [Query!](/docusaurus-graphql-plugin/github-example/objects#query)
 
 Hack to workaround https://github.com/facebook/relay/issues/112 re-exposing the root query object
 
 ## repository
 
-**Type:** [Repository](/docusaurus-plugin-content-graphql/github-example/objects#repository)
+**Type:** [Repository](/docusaurus-graphql-plugin/github-example/objects#repository)
 
 Lookup a given repository by the owner and repository name.
 
@@ -505,7 +505,7 @@ Lookup a given repository by the owner and repository name.
 <tr>
 <td>
 name<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The name of the repository</p>
@@ -514,7 +514,7 @@ name<br />
 <tr>
 <td>
 owner<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The login field of a user or organization</p>
@@ -525,7 +525,7 @@ owner<br />
 
 ## repositoryOwner
 
-**Type:** [RepositoryOwner](/docusaurus-plugin-content-graphql/github-example/interfaces#repositoryowner)
+**Type:** [RepositoryOwner](/docusaurus-graphql-plugin/github-example/interfaces#repositoryowner)
 
 Lookup a repository owner (ie. either a User or an Organization) by login.
 
@@ -537,7 +537,7 @@ Lookup a repository owner (ie. either a User or an Organization) by login.
 <tr>
 <td>
 login<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The username to lookup the owner by.</p>
@@ -548,7 +548,7 @@ login<br />
 
 ## resource
 
-**Type:** [UniformResourceLocatable](/docusaurus-plugin-content-graphql/github-example/interfaces#uniformresourcelocatable)
+**Type:** [UniformResourceLocatable](/docusaurus-graphql-plugin/github-example/interfaces#uniformresourcelocatable)
 
 Lookup resource by a URL.
 
@@ -560,7 +560,7 @@ Lookup resource by a URL.
 <tr>
 <td>
 url<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#uri"><code>URI!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#uri"><code>URI!</code></a>
 </td>
 <td>
 <p>The URL.</p>
@@ -571,7 +571,7 @@ url<br />
 
 ## search
 
-**Type:** [SearchResultItemConnection!](/docusaurus-plugin-content-graphql/github-example/objects#searchresultitemconnection)
+**Type:** [SearchResultItemConnection!](/docusaurus-graphql-plugin/github-example/objects#searchresultitemconnection)
 
 Perform a search across resources.
 
@@ -583,7 +583,7 @@ Perform a search across resources.
 <tr>
 <td>
 after<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come after the specified cursor.</p>
@@ -592,7 +592,7 @@ after<br />
 <tr>
 <td>
 before<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come before the specified cursor.</p>
@@ -601,7 +601,7 @@ before<br />
 <tr>
 <td>
 first<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the first <em>n</em> elements from the list.</p>
@@ -610,7 +610,7 @@ first<br />
 <tr>
 <td>
 last<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the last <em>n</em> elements from the list.</p>
@@ -619,7 +619,7 @@ last<br />
 <tr>
 <td>
 query<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The search string to look for.</p>
@@ -628,7 +628,7 @@ query<br />
 <tr>
 <td>
 type<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/enums#searchtype"><code>SearchType!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/enums#searchtype"><code>SearchType!</code></a>
 </td>
 <td>
 <p>The types of search items to search within.</p>
@@ -639,7 +639,7 @@ type<br />
 
 ## securityAdvisories
 
-**Type:** [SecurityAdvisoryConnection!](/docusaurus-plugin-content-graphql/github-example/objects#securityadvisoryconnection)
+**Type:** [SecurityAdvisoryConnection!](/docusaurus-graphql-plugin/github-example/objects#securityadvisoryconnection)
 
 GitHub Security Advisories
 
@@ -651,7 +651,7 @@ GitHub Security Advisories
 <tr>
 <td>
 after<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come after the specified cursor.</p>
@@ -660,7 +660,7 @@ after<br />
 <tr>
 <td>
 before<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come before the specified cursor.</p>
@@ -669,7 +669,7 @@ before<br />
 <tr>
 <td>
 first<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the first <em>n</em> elements from the list.</p>
@@ -678,7 +678,7 @@ first<br />
 <tr>
 <td>
 identifier<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#securityadvisoryidentifierfilter"><code>SecurityAdvisoryIdentifierFilter</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#securityadvisoryidentifierfilter"><code>SecurityAdvisoryIdentifierFilter</code></a>
 </td>
 <td>
 <p>Filter advisories by identifier, e.g. GHSA or CVE.</p>
@@ -687,7 +687,7 @@ identifier<br />
 <tr>
 <td>
 last<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the last <em>n</em> elements from the list.</p>
@@ -696,7 +696,7 @@ last<br />
 <tr>
 <td>
 orderBy<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#securityadvisoryorder"><code>SecurityAdvisoryOrder</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#securityadvisoryorder"><code>SecurityAdvisoryOrder</code></a>
 </td>
 <td>
 <p>Ordering options for the returned topics.</p>
@@ -705,7 +705,7 @@ orderBy<br />
 <tr>
 <td>
 publishedSince<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#datetime"><code>DateTime</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#datetime"><code>DateTime</code></a>
 </td>
 <td>
 <p>Filter advisories to those published since a time in the past.</p>
@@ -714,7 +714,7 @@ publishedSince<br />
 <tr>
 <td>
 updatedSince<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#datetime"><code>DateTime</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#datetime"><code>DateTime</code></a>
 </td>
 <td>
 <p>Filter advisories to those updated since a time in the past.</p>
@@ -725,7 +725,7 @@ updatedSince<br />
 
 ## securityAdvisory
 
-**Type:** [SecurityAdvisory](/docusaurus-plugin-content-graphql/github-example/objects#securityadvisory)
+**Type:** [SecurityAdvisory](/docusaurus-graphql-plugin/github-example/objects#securityadvisory)
 
 Fetch a Security Advisory by its GHSA ID
 
@@ -737,7 +737,7 @@ Fetch a Security Advisory by its GHSA ID
 <tr>
 <td>
 ghsaId<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>GitHub Security Advisory ID.</p>
@@ -748,7 +748,7 @@ ghsaId<br />
 
 ## securityVulnerabilities
 
-**Type:** [SecurityVulnerabilityConnection!](/docusaurus-plugin-content-graphql/github-example/objects#securityvulnerabilityconnection)
+**Type:** [SecurityVulnerabilityConnection!](/docusaurus-graphql-plugin/github-example/objects#securityvulnerabilityconnection)
 
 Software Vulnerabilities documented by GitHub Security Advisories
 
@@ -760,7 +760,7 @@ Software Vulnerabilities documented by GitHub Security Advisories
 <tr>
 <td>
 after<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come after the specified cursor.</p>
@@ -769,7 +769,7 @@ after<br />
 <tr>
 <td>
 before<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come before the specified cursor.</p>
@@ -778,7 +778,7 @@ before<br />
 <tr>
 <td>
 ecosystem<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/enums#securityadvisoryecosystem"><code>SecurityAdvisoryEcosystem</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/enums#securityadvisoryecosystem"><code>SecurityAdvisoryEcosystem</code></a>
 </td>
 <td>
 <p>An ecosystem to filter vulnerabilities by.</p>
@@ -787,7 +787,7 @@ ecosystem<br />
 <tr>
 <td>
 first<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the first <em>n</em> elements from the list.</p>
@@ -796,7 +796,7 @@ first<br />
 <tr>
 <td>
 last<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the last <em>n</em> elements from the list.</p>
@@ -805,7 +805,7 @@ last<br />
 <tr>
 <td>
 orderBy<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#securityvulnerabilityorder"><code>SecurityVulnerabilityOrder</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#securityvulnerabilityorder"><code>SecurityVulnerabilityOrder</code></a>
 </td>
 <td>
 <p>Ordering options for the returned topics.</p>
@@ -814,7 +814,7 @@ orderBy<br />
 <tr>
 <td>
 package<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>A package name to filter vulnerabilities by.</p>
@@ -823,7 +823,7 @@ package<br />
 <tr>
 <td>
 severities<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/enums#securityadvisoryseverity"><code>[SecurityAdvisorySeverity!]</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/enums#securityadvisoryseverity"><code>[SecurityAdvisorySeverity!]</code></a>
 </td>
 <td>
 <p>A list of severities to filter vulnerabilities by.</p>
@@ -834,7 +834,7 @@ severities<br />
 
 ## sponsorables
 
-**Type:** [SponsorableItemConnection!](/docusaurus-plugin-content-graphql/github-example/objects#sponsorableitemconnection)
+**Type:** [SponsorableItemConnection!](/docusaurus-graphql-plugin/github-example/objects#sponsorableitemconnection)
 
 Users and organizations who can be sponsored via GitHub Sponsors.
 
@@ -846,7 +846,7 @@ Users and organizations who can be sponsored via GitHub Sponsors.
 <tr>
 <td>
 after<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come after the specified cursor.</p>
@@ -855,7 +855,7 @@ after<br />
 <tr>
 <td>
 before<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Returns the elements in the list that come before the specified cursor.</p>
@@ -864,7 +864,7 @@ before<br />
 <tr>
 <td>
 dependencyEcosystem<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/enums#securityadvisoryecosystem"><code>SecurityAdvisoryEcosystem</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/enums#securityadvisoryecosystem"><code>SecurityAdvisoryEcosystem</code></a>
 </td>
 <td>
 <p>Optional filter for which dependencies should be checked for sponsorable
@@ -875,7 +875,7 @@ included. Used when onlyDependencies = true.</p>
 <tr>
 <td>
 first<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the first <em>n</em> elements from the list.</p>
@@ -884,7 +884,7 @@ first<br />
 <tr>
 <td>
 last<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#int"><code>Int</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#int"><code>Int</code></a>
 </td>
 <td>
 <p>Returns the last <em>n</em> elements from the list.</p>
@@ -893,7 +893,7 @@ last<br />
 <tr>
 <td>
 onlyDependencies<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#boolean"><code>Boolean</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#boolean"><code>Boolean</code></a>
 </td>
 <td>
 <p>Whether only sponsorables who own the viewer&#39;s dependencies will be
@@ -905,7 +905,7 @@ orgLoginForDependencies.</p>
 <tr>
 <td>
 orderBy<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#sponsorableorder"><code>SponsorableOrder</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#sponsorableorder"><code>SponsorableOrder</code></a>
 </td>
 <td>
 <p>Ordering options for users and organizations returned from the connection.</p>
@@ -914,7 +914,7 @@ orderBy<br />
 <tr>
 <td>
 orgLoginForDependencies<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String</code></a>
 </td>
 <td>
 <p>Optional organization username for whose dependencies should be checked.
@@ -928,7 +928,7 @@ public repositories will be considered.</p>
 
 ## sponsorsListing
 
-**Type:** [SponsorsListing](/docusaurus-plugin-content-graphql/github-example/objects#sponsorslisting)
+**Type:** [SponsorsListing](/docusaurus-graphql-plugin/github-example/objects#sponsorslisting)
 
 Look up a single Sponsors Listing
 
@@ -940,7 +940,7 @@ Look up a single Sponsors Listing
 <tr>
 <td>
 slug<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>Select the Sponsors listing which matches this slug</p>
@@ -951,7 +951,7 @@ slug<br />
 
 ## topic
 
-**Type:** [Topic](/docusaurus-plugin-content-graphql/github-example/objects#topic)
+**Type:** [Topic](/docusaurus-graphql-plugin/github-example/objects#topic)
 
 Look up a topic by name.
 
@@ -963,7 +963,7 @@ Look up a topic by name.
 <tr>
 <td>
 name<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The topic&#39;s name.</p>
@@ -974,7 +974,7 @@ name<br />
 
 ## user
 
-**Type:** [User](/docusaurus-plugin-content-graphql/github-example/objects#user)
+**Type:** [User](/docusaurus-graphql-plugin/github-example/objects#user)
 
 Lookup a user by login.
 
@@ -986,7 +986,7 @@ Lookup a user by login.
 <tr>
 <td>
 login<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/scalars#string"><code>String!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/scalars#string"><code>String!</code></a>
 </td>
 <td>
 <p>The user&#39;s login.</p>
@@ -997,7 +997,7 @@ login<br />
 
 ## viewer
 
-**Type:** [User!](/docusaurus-plugin-content-graphql/github-example/objects#user)
+**Type:** [User!](/docusaurus-graphql-plugin/github-example/objects#user)
 
 The currently authenticated user.
 

@@ -6,7 +6,7 @@ slug: mutations
 
 ## acceptEnterpriseAdministratorInvitation
 
-**Type:** [AcceptEnterpriseAdministratorInvitationPayload](/docusaurus-plugin-content-graphql/github-example/objects#acceptenterpriseadministratorinvitationpayload)
+**Type:** [AcceptEnterpriseAdministratorInvitationPayload](/docusaurus-graphql-plugin/github-example/objects#acceptenterpriseadministratorinvitationpayload)
 
 Accepts a pending invitation for a user to become an administrator of an enterprise.
 
@@ -18,7 +18,7 @@ Accepts a pending invitation for a user to become an administrator of an enterpr
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#acceptenterpriseadministratorinvitationinput"><code>AcceptEnterpriseAdministratorInvitationInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#acceptenterpriseadministratorinvitationinput"><code>AcceptEnterpriseAdministratorInvitationInput!</code></a>
 </td>
 <td>
 <p>Parameters for AcceptEnterpriseAdministratorInvitation</p>
@@ -29,7 +29,7 @@ input<br />
 
 ## acceptTopicSuggestion
 
-**Type:** [AcceptTopicSuggestionPayload](/docusaurus-plugin-content-graphql/github-example/objects#accepttopicsuggestionpayload)
+**Type:** [AcceptTopicSuggestionPayload](/docusaurus-graphql-plugin/github-example/objects#accepttopicsuggestionpayload)
 
 Applies a suggested topic to the repository.
 
@@ -41,7 +41,7 @@ Applies a suggested topic to the repository.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#accepttopicsuggestioninput"><code>AcceptTopicSuggestionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#accepttopicsuggestioninput"><code>AcceptTopicSuggestionInput!</code></a>
 </td>
 <td>
 <p>Parameters for AcceptTopicSuggestion</p>
@@ -52,7 +52,7 @@ input<br />
 
 ## addAssigneesToAssignable
 
-**Type:** [AddAssigneesToAssignablePayload](/docusaurus-plugin-content-graphql/github-example/objects#addassigneestoassignablepayload)
+**Type:** [AddAssigneesToAssignablePayload](/docusaurus-graphql-plugin/github-example/objects#addassigneestoassignablepayload)
 
 Adds assignees to an assignable object.
 
@@ -64,7 +64,7 @@ Adds assignees to an assignable object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addassigneestoassignableinput"><code>AddAssigneesToAssignableInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addassigneestoassignableinput"><code>AddAssigneesToAssignableInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddAssigneesToAssignable</p>
@@ -75,7 +75,7 @@ input<br />
 
 ## addComment
 
-**Type:** [AddCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#addcommentpayload)
+**Type:** [AddCommentPayload](/docusaurus-graphql-plugin/github-example/objects#addcommentpayload)
 
 Adds a comment to an Issue or Pull Request.
 
@@ -87,7 +87,7 @@ Adds a comment to an Issue or Pull Request.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addcommentinput"><code>AddCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addcommentinput"><code>AddCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddComment</p>
@@ -98,7 +98,7 @@ input<br />
 
 ## addEnterpriseSupportEntitlement
 
-**Type:** [AddEnterpriseSupportEntitlementPayload](/docusaurus-plugin-content-graphql/github-example/objects#addenterprisesupportentitlementpayload)
+**Type:** [AddEnterpriseSupportEntitlementPayload](/docusaurus-graphql-plugin/github-example/objects#addenterprisesupportentitlementpayload)
 
 Adds a support entitlement to an enterprise member.
 
@@ -110,7 +110,7 @@ Adds a support entitlement to an enterprise member.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addenterprisesupportentitlementinput"><code>AddEnterpriseSupportEntitlementInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addenterprisesupportentitlementinput"><code>AddEnterpriseSupportEntitlementInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddEnterpriseSupportEntitlement</p>
@@ -121,7 +121,7 @@ input<br />
 
 ## addLabelsToLabelable
 
-**Type:** [AddLabelsToLabelablePayload](/docusaurus-plugin-content-graphql/github-example/objects#addlabelstolabelablepayload)
+**Type:** [AddLabelsToLabelablePayload](/docusaurus-graphql-plugin/github-example/objects#addlabelstolabelablepayload)
 
 Adds labels to a labelable object.
 
@@ -133,7 +133,7 @@ Adds labels to a labelable object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addlabelstolabelableinput"><code>AddLabelsToLabelableInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addlabelstolabelableinput"><code>AddLabelsToLabelableInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddLabelsToLabelable</p>
@@ -144,7 +144,7 @@ input<br />
 
 ## addProjectCard
 
-**Type:** [AddProjectCardPayload](/docusaurus-plugin-content-graphql/github-example/objects#addprojectcardpayload)
+**Type:** [AddProjectCardPayload](/docusaurus-graphql-plugin/github-example/objects#addprojectcardpayload)
 
 Adds a card to a ProjectColumn. Either `contentId` or `note` must be provided but **not** both.
 
@@ -156,7 +156,7 @@ Adds a card to a ProjectColumn. Either `contentId` or `note` must be provided bu
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addprojectcardinput"><code>AddProjectCardInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addprojectcardinput"><code>AddProjectCardInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddProjectCard</p>
@@ -167,7 +167,7 @@ input<br />
 
 ## addProjectColumn
 
-**Type:** [AddProjectColumnPayload](/docusaurus-plugin-content-graphql/github-example/objects#addprojectcolumnpayload)
+**Type:** [AddProjectColumnPayload](/docusaurus-graphql-plugin/github-example/objects#addprojectcolumnpayload)
 
 Adds a column to a Project.
 
@@ -179,7 +179,7 @@ Adds a column to a Project.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addprojectcolumninput"><code>AddProjectColumnInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addprojectcolumninput"><code>AddProjectColumnInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddProjectColumn</p>
@@ -190,7 +190,7 @@ input<br />
 
 ## addPullRequestReview
 
-**Type:** [AddPullRequestReviewPayload](/docusaurus-plugin-content-graphql/github-example/objects#addpullrequestreviewpayload)
+**Type:** [AddPullRequestReviewPayload](/docusaurus-graphql-plugin/github-example/objects#addpullrequestreviewpayload)
 
 Adds a review to a Pull Request.
 
@@ -202,7 +202,7 @@ Adds a review to a Pull Request.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addpullrequestreviewinput"><code>AddPullRequestReviewInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addpullrequestreviewinput"><code>AddPullRequestReviewInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddPullRequestReview</p>
@@ -213,7 +213,7 @@ input<br />
 
 ## addPullRequestReviewComment
 
-**Type:** [AddPullRequestReviewCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#addpullrequestreviewcommentpayload)
+**Type:** [AddPullRequestReviewCommentPayload](/docusaurus-graphql-plugin/github-example/objects#addpullrequestreviewcommentpayload)
 
 Adds a comment to a review.
 
@@ -225,7 +225,7 @@ Adds a comment to a review.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addpullrequestreviewcommentinput"><code>AddPullRequestReviewCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addpullrequestreviewcommentinput"><code>AddPullRequestReviewCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddPullRequestReviewComment</p>
@@ -236,7 +236,7 @@ input<br />
 
 ## addPullRequestReviewThread
 
-**Type:** [AddPullRequestReviewThreadPayload](/docusaurus-plugin-content-graphql/github-example/objects#addpullrequestreviewthreadpayload)
+**Type:** [AddPullRequestReviewThreadPayload](/docusaurus-graphql-plugin/github-example/objects#addpullrequestreviewthreadpayload)
 
 Adds a new thread to a pending Pull Request Review.
 
@@ -248,7 +248,7 @@ Adds a new thread to a pending Pull Request Review.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addpullrequestreviewthreadinput"><code>AddPullRequestReviewThreadInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addpullrequestreviewthreadinput"><code>AddPullRequestReviewThreadInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddPullRequestReviewThread</p>
@@ -259,7 +259,7 @@ input<br />
 
 ## addReaction
 
-**Type:** [AddReactionPayload](/docusaurus-plugin-content-graphql/github-example/objects#addreactionpayload)
+**Type:** [AddReactionPayload](/docusaurus-graphql-plugin/github-example/objects#addreactionpayload)
 
 Adds a reaction to a subject.
 
@@ -271,7 +271,7 @@ Adds a reaction to a subject.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addreactioninput"><code>AddReactionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addreactioninput"><code>AddReactionInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddReaction</p>
@@ -282,7 +282,7 @@ input<br />
 
 ## addStar
 
-**Type:** [AddStarPayload](/docusaurus-plugin-content-graphql/github-example/objects#addstarpayload)
+**Type:** [AddStarPayload](/docusaurus-graphql-plugin/github-example/objects#addstarpayload)
 
 Adds a star to a Starrable.
 
@@ -294,7 +294,7 @@ Adds a star to a Starrable.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addstarinput"><code>AddStarInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addstarinput"><code>AddStarInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddStar</p>
@@ -305,7 +305,7 @@ input<br />
 
 ## addVerifiableDomain
 
-**Type:** [AddVerifiableDomainPayload](/docusaurus-plugin-content-graphql/github-example/objects#addverifiabledomainpayload)
+**Type:** [AddVerifiableDomainPayload](/docusaurus-graphql-plugin/github-example/objects#addverifiabledomainpayload)
 
 Adds a verifiable domain to an owning account.
 
@@ -317,7 +317,7 @@ Adds a verifiable domain to an owning account.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#addverifiabledomaininput"><code>AddVerifiableDomainInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#addverifiabledomaininput"><code>AddVerifiableDomainInput!</code></a>
 </td>
 <td>
 <p>Parameters for AddVerifiableDomain</p>
@@ -328,7 +328,7 @@ input<br />
 
 ## approveVerifiableDomain
 
-**Type:** [ApproveVerifiableDomainPayload](/docusaurus-plugin-content-graphql/github-example/objects#approveverifiabledomainpayload)
+**Type:** [ApproveVerifiableDomainPayload](/docusaurus-graphql-plugin/github-example/objects#approveverifiabledomainpayload)
 
 Approve a verifiable domain for notification delivery.
 
@@ -340,7 +340,7 @@ Approve a verifiable domain for notification delivery.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#approveverifiabledomaininput"><code>ApproveVerifiableDomainInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#approveverifiabledomaininput"><code>ApproveVerifiableDomainInput!</code></a>
 </td>
 <td>
 <p>Parameters for ApproveVerifiableDomain</p>
@@ -351,7 +351,7 @@ input<br />
 
 ## archiveRepository
 
-**Type:** [ArchiveRepositoryPayload](/docusaurus-plugin-content-graphql/github-example/objects#archiverepositorypayload)
+**Type:** [ArchiveRepositoryPayload](/docusaurus-graphql-plugin/github-example/objects#archiverepositorypayload)
 
 Marks a repository as archived.
 
@@ -363,7 +363,7 @@ Marks a repository as archived.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#archiverepositoryinput"><code>ArchiveRepositoryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#archiverepositoryinput"><code>ArchiveRepositoryInput!</code></a>
 </td>
 <td>
 <p>Parameters for ArchiveRepository</p>
@@ -374,7 +374,7 @@ input<br />
 
 ## cancelEnterpriseAdminInvitation
 
-**Type:** [CancelEnterpriseAdminInvitationPayload](/docusaurus-plugin-content-graphql/github-example/objects#cancelenterpriseadmininvitationpayload)
+**Type:** [CancelEnterpriseAdminInvitationPayload](/docusaurus-graphql-plugin/github-example/objects#cancelenterpriseadmininvitationpayload)
 
 Cancels a pending invitation for an administrator to join an enterprise.
 
@@ -386,7 +386,7 @@ Cancels a pending invitation for an administrator to join an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#cancelenterpriseadmininvitationinput"><code>CancelEnterpriseAdminInvitationInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#cancelenterpriseadmininvitationinput"><code>CancelEnterpriseAdminInvitationInput!</code></a>
 </td>
 <td>
 <p>Parameters for CancelEnterpriseAdminInvitation</p>
@@ -397,7 +397,7 @@ input<br />
 
 ## changeUserStatus
 
-**Type:** [ChangeUserStatusPayload](/docusaurus-plugin-content-graphql/github-example/objects#changeuserstatuspayload)
+**Type:** [ChangeUserStatusPayload](/docusaurus-graphql-plugin/github-example/objects#changeuserstatuspayload)
 
 Update your status on GitHub.
 
@@ -409,7 +409,7 @@ Update your status on GitHub.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#changeuserstatusinput"><code>ChangeUserStatusInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#changeuserstatusinput"><code>ChangeUserStatusInput!</code></a>
 </td>
 <td>
 <p>Parameters for ChangeUserStatus</p>
@@ -420,7 +420,7 @@ input<br />
 
 ## clearLabelsFromLabelable
 
-**Type:** [ClearLabelsFromLabelablePayload](/docusaurus-plugin-content-graphql/github-example/objects#clearlabelsfromlabelablepayload)
+**Type:** [ClearLabelsFromLabelablePayload](/docusaurus-graphql-plugin/github-example/objects#clearlabelsfromlabelablepayload)
 
 Clears all labels from a labelable object.
 
@@ -432,7 +432,7 @@ Clears all labels from a labelable object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#clearlabelsfromlabelableinput"><code>ClearLabelsFromLabelableInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#clearlabelsfromlabelableinput"><code>ClearLabelsFromLabelableInput!</code></a>
 </td>
 <td>
 <p>Parameters for ClearLabelsFromLabelable</p>
@@ -443,7 +443,7 @@ input<br />
 
 ## cloneProject
 
-**Type:** [CloneProjectPayload](/docusaurus-plugin-content-graphql/github-example/objects#cloneprojectpayload)
+**Type:** [CloneProjectPayload](/docusaurus-graphql-plugin/github-example/objects#cloneprojectpayload)
 
 Creates a new project by cloning configuration from an existing project.
 
@@ -455,7 +455,7 @@ Creates a new project by cloning configuration from an existing project.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#cloneprojectinput"><code>CloneProjectInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#cloneprojectinput"><code>CloneProjectInput!</code></a>
 </td>
 <td>
 <p>Parameters for CloneProject</p>
@@ -466,7 +466,7 @@ input<br />
 
 ## cloneTemplateRepository
 
-**Type:** [CloneTemplateRepositoryPayload](/docusaurus-plugin-content-graphql/github-example/objects#clonetemplaterepositorypayload)
+**Type:** [CloneTemplateRepositoryPayload](/docusaurus-graphql-plugin/github-example/objects#clonetemplaterepositorypayload)
 
 Create a new repository with the same files and directory structure as a template repository.
 
@@ -478,7 +478,7 @@ Create a new repository with the same files and directory structure as a templat
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#clonetemplaterepositoryinput"><code>CloneTemplateRepositoryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#clonetemplaterepositoryinput"><code>CloneTemplateRepositoryInput!</code></a>
 </td>
 <td>
 <p>Parameters for CloneTemplateRepository</p>
@@ -489,7 +489,7 @@ input<br />
 
 ## closeIssue
 
-**Type:** [CloseIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#closeissuepayload)
+**Type:** [CloseIssuePayload](/docusaurus-graphql-plugin/github-example/objects#closeissuepayload)
 
 Close an issue.
 
@@ -501,7 +501,7 @@ Close an issue.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#closeissueinput"><code>CloseIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#closeissueinput"><code>CloseIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for CloseIssue</p>
@@ -512,7 +512,7 @@ input<br />
 
 ## closePullRequest
 
-**Type:** [ClosePullRequestPayload](/docusaurus-plugin-content-graphql/github-example/objects#closepullrequestpayload)
+**Type:** [ClosePullRequestPayload](/docusaurus-graphql-plugin/github-example/objects#closepullrequestpayload)
 
 Close a pull request.
 
@@ -524,7 +524,7 @@ Close a pull request.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#closepullrequestinput"><code>ClosePullRequestInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#closepullrequestinput"><code>ClosePullRequestInput!</code></a>
 </td>
 <td>
 <p>Parameters for ClosePullRequest</p>
@@ -535,7 +535,7 @@ input<br />
 
 ## convertProjectCardNoteToIssue
 
-**Type:** [ConvertProjectCardNoteToIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#convertprojectcardnotetoissuepayload)
+**Type:** [ConvertProjectCardNoteToIssuePayload](/docusaurus-graphql-plugin/github-example/objects#convertprojectcardnotetoissuepayload)
 
 Convert a project note card to one associated with a newly created issue.
 
@@ -547,7 +547,7 @@ Convert a project note card to one associated with a newly created issue.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#convertprojectcardnotetoissueinput"><code>ConvertProjectCardNoteToIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#convertprojectcardnotetoissueinput"><code>ConvertProjectCardNoteToIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for ConvertProjectCardNoteToIssue</p>
@@ -558,7 +558,7 @@ input<br />
 
 ## createBranchProtectionRule
 
-**Type:** [CreateBranchProtectionRulePayload](/docusaurus-plugin-content-graphql/github-example/objects#createbranchprotectionrulepayload)
+**Type:** [CreateBranchProtectionRulePayload](/docusaurus-graphql-plugin/github-example/objects#createbranchprotectionrulepayload)
 
 Create a new branch protection rule
 
@@ -570,7 +570,7 @@ Create a new branch protection rule
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createbranchprotectionruleinput"><code>CreateBranchProtectionRuleInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createbranchprotectionruleinput"><code>CreateBranchProtectionRuleInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateBranchProtectionRule</p>
@@ -581,7 +581,7 @@ input<br />
 
 ## createCheckRun
 
-**Type:** [CreateCheckRunPayload](/docusaurus-plugin-content-graphql/github-example/objects#createcheckrunpayload)
+**Type:** [CreateCheckRunPayload](/docusaurus-graphql-plugin/github-example/objects#createcheckrunpayload)
 
 Create a check run.
 
@@ -593,7 +593,7 @@ Create a check run.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createcheckruninput"><code>CreateCheckRunInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createcheckruninput"><code>CreateCheckRunInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateCheckRun</p>
@@ -604,7 +604,7 @@ input<br />
 
 ## createCheckSuite
 
-**Type:** [CreateCheckSuitePayload](/docusaurus-plugin-content-graphql/github-example/objects#createchecksuitepayload)
+**Type:** [CreateCheckSuitePayload](/docusaurus-graphql-plugin/github-example/objects#createchecksuitepayload)
 
 Create a check suite
 
@@ -616,7 +616,7 @@ Create a check suite
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createchecksuiteinput"><code>CreateCheckSuiteInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createchecksuiteinput"><code>CreateCheckSuiteInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateCheckSuite</p>
@@ -627,7 +627,7 @@ input<br />
 
 ## createContentAttachment
 
-**Type:** [CreateContentAttachmentPayload](/docusaurus-plugin-content-graphql/github-example/objects#createcontentattachmentpayload)
+**Type:** [CreateContentAttachmentPayload](/docusaurus-graphql-plugin/github-example/objects#createcontentattachmentpayload)
 
 Create a content attachment.
 
@@ -639,7 +639,7 @@ Create a content attachment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createcontentattachmentinput"><code>CreateContentAttachmentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createcontentattachmentinput"><code>CreateContentAttachmentInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateContentAttachment</p>
@@ -650,7 +650,7 @@ input<br />
 
 ## createDeployment
 
-**Type:** [CreateDeploymentPayload](/docusaurus-plugin-content-graphql/github-example/objects#createdeploymentpayload)
+**Type:** [CreateDeploymentPayload](/docusaurus-graphql-plugin/github-example/objects#createdeploymentpayload)
 
 Creates a new deployment event.
 
@@ -662,7 +662,7 @@ Creates a new deployment event.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createdeploymentinput"><code>CreateDeploymentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createdeploymentinput"><code>CreateDeploymentInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateDeployment</p>
@@ -673,7 +673,7 @@ input<br />
 
 ## createDeploymentStatus
 
-**Type:** [CreateDeploymentStatusPayload](/docusaurus-plugin-content-graphql/github-example/objects#createdeploymentstatuspayload)
+**Type:** [CreateDeploymentStatusPayload](/docusaurus-graphql-plugin/github-example/objects#createdeploymentstatuspayload)
 
 Create a deployment status.
 
@@ -685,7 +685,7 @@ Create a deployment status.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createdeploymentstatusinput"><code>CreateDeploymentStatusInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createdeploymentstatusinput"><code>CreateDeploymentStatusInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateDeploymentStatus</p>
@@ -696,7 +696,7 @@ input<br />
 
 ## createEnterpriseOrganization
 
-**Type:** [CreateEnterpriseOrganizationPayload](/docusaurus-plugin-content-graphql/github-example/objects#createenterpriseorganizationpayload)
+**Type:** [CreateEnterpriseOrganizationPayload](/docusaurus-graphql-plugin/github-example/objects#createenterpriseorganizationpayload)
 
 Creates an organization as part of an enterprise account.
 
@@ -708,7 +708,7 @@ Creates an organization as part of an enterprise account.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createenterpriseorganizationinput"><code>CreateEnterpriseOrganizationInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createenterpriseorganizationinput"><code>CreateEnterpriseOrganizationInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateEnterpriseOrganization</p>
@@ -719,7 +719,7 @@ input<br />
 
 ## createIpAllowListEntry
 
-**Type:** [CreateIpAllowListEntryPayload](/docusaurus-plugin-content-graphql/github-example/objects#createipallowlistentrypayload)
+**Type:** [CreateIpAllowListEntryPayload](/docusaurus-graphql-plugin/github-example/objects#createipallowlistentrypayload)
 
 Creates a new IP allow list entry.
 
@@ -731,7 +731,7 @@ Creates a new IP allow list entry.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createipallowlistentryinput"><code>CreateIpAllowListEntryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createipallowlistentryinput"><code>CreateIpAllowListEntryInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateIpAllowListEntry</p>
@@ -742,7 +742,7 @@ input<br />
 
 ## createIssue
 
-**Type:** [CreateIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#createissuepayload)
+**Type:** [CreateIssuePayload](/docusaurus-graphql-plugin/github-example/objects#createissuepayload)
 
 Creates a new issue.
 
@@ -754,7 +754,7 @@ Creates a new issue.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createissueinput"><code>CreateIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createissueinput"><code>CreateIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateIssue</p>
@@ -765,7 +765,7 @@ input<br />
 
 ## createLabel
 
-**Type:** [CreateLabelPayload](/docusaurus-plugin-content-graphql/github-example/objects#createlabelpayload)
+**Type:** [CreateLabelPayload](/docusaurus-graphql-plugin/github-example/objects#createlabelpayload)
 
 Creates a new label.
 
@@ -777,7 +777,7 @@ Creates a new label.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createlabelinput"><code>CreateLabelInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createlabelinput"><code>CreateLabelInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateLabel</p>
@@ -788,7 +788,7 @@ input<br />
 
 ## createProject
 
-**Type:** [CreateProjectPayload](/docusaurus-plugin-content-graphql/github-example/objects#createprojectpayload)
+**Type:** [CreateProjectPayload](/docusaurus-graphql-plugin/github-example/objects#createprojectpayload)
 
 Creates a new project.
 
@@ -800,7 +800,7 @@ Creates a new project.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createprojectinput"><code>CreateProjectInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createprojectinput"><code>CreateProjectInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateProject</p>
@@ -811,7 +811,7 @@ input<br />
 
 ## createPullRequest
 
-**Type:** [CreatePullRequestPayload](/docusaurus-plugin-content-graphql/github-example/objects#createpullrequestpayload)
+**Type:** [CreatePullRequestPayload](/docusaurus-graphql-plugin/github-example/objects#createpullrequestpayload)
 
 Create a new pull request
 
@@ -823,7 +823,7 @@ Create a new pull request
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createpullrequestinput"><code>CreatePullRequestInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createpullrequestinput"><code>CreatePullRequestInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreatePullRequest</p>
@@ -834,7 +834,7 @@ input<br />
 
 ## createRef
 
-**Type:** [CreateRefPayload](/docusaurus-plugin-content-graphql/github-example/objects#createrefpayload)
+**Type:** [CreateRefPayload](/docusaurus-graphql-plugin/github-example/objects#createrefpayload)
 
 Create a new Git Ref.
 
@@ -846,7 +846,7 @@ Create a new Git Ref.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createrefinput"><code>CreateRefInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createrefinput"><code>CreateRefInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateRef</p>
@@ -857,7 +857,7 @@ input<br />
 
 ## createRepository
 
-**Type:** [CreateRepositoryPayload](/docusaurus-plugin-content-graphql/github-example/objects#createrepositorypayload)
+**Type:** [CreateRepositoryPayload](/docusaurus-graphql-plugin/github-example/objects#createrepositorypayload)
 
 Create a new repository.
 
@@ -869,7 +869,7 @@ Create a new repository.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createrepositoryinput"><code>CreateRepositoryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createrepositoryinput"><code>CreateRepositoryInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateRepository</p>
@@ -880,7 +880,7 @@ input<br />
 
 ## createTeamDiscussion
 
-**Type:** [CreateTeamDiscussionPayload](/docusaurus-plugin-content-graphql/github-example/objects#createteamdiscussionpayload)
+**Type:** [CreateTeamDiscussionPayload](/docusaurus-graphql-plugin/github-example/objects#createteamdiscussionpayload)
 
 Creates a new team discussion.
 
@@ -892,7 +892,7 @@ Creates a new team discussion.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createteamdiscussioninput"><code>CreateTeamDiscussionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createteamdiscussioninput"><code>CreateTeamDiscussionInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateTeamDiscussion</p>
@@ -903,7 +903,7 @@ input<br />
 
 ## createTeamDiscussionComment
 
-**Type:** [CreateTeamDiscussionCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#createteamdiscussioncommentpayload)
+**Type:** [CreateTeamDiscussionCommentPayload](/docusaurus-graphql-plugin/github-example/objects#createteamdiscussioncommentpayload)
 
 Creates a new team discussion comment.
 
@@ -915,7 +915,7 @@ Creates a new team discussion comment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#createteamdiscussioncommentinput"><code>CreateTeamDiscussionCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#createteamdiscussioncommentinput"><code>CreateTeamDiscussionCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for CreateTeamDiscussionComment</p>
@@ -926,7 +926,7 @@ input<br />
 
 ## declineTopicSuggestion
 
-**Type:** [DeclineTopicSuggestionPayload](/docusaurus-plugin-content-graphql/github-example/objects#declinetopicsuggestionpayload)
+**Type:** [DeclineTopicSuggestionPayload](/docusaurus-graphql-plugin/github-example/objects#declinetopicsuggestionpayload)
 
 Rejects a suggested topic for the repository.
 
@@ -938,7 +938,7 @@ Rejects a suggested topic for the repository.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#declinetopicsuggestioninput"><code>DeclineTopicSuggestionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#declinetopicsuggestioninput"><code>DeclineTopicSuggestionInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeclineTopicSuggestion</p>
@@ -949,7 +949,7 @@ input<br />
 
 ## deleteBranchProtectionRule
 
-**Type:** [DeleteBranchProtectionRulePayload](/docusaurus-plugin-content-graphql/github-example/objects#deletebranchprotectionrulepayload)
+**Type:** [DeleteBranchProtectionRulePayload](/docusaurus-graphql-plugin/github-example/objects#deletebranchprotectionrulepayload)
 
 Delete a branch protection rule
 
@@ -961,7 +961,7 @@ Delete a branch protection rule
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deletebranchprotectionruleinput"><code>DeleteBranchProtectionRuleInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deletebranchprotectionruleinput"><code>DeleteBranchProtectionRuleInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteBranchProtectionRule</p>
@@ -972,7 +972,7 @@ input<br />
 
 ## deleteDeployment
 
-**Type:** [DeleteDeploymentPayload](/docusaurus-plugin-content-graphql/github-example/objects#deletedeploymentpayload)
+**Type:** [DeleteDeploymentPayload](/docusaurus-graphql-plugin/github-example/objects#deletedeploymentpayload)
 
 Deletes a deployment.
 
@@ -984,7 +984,7 @@ Deletes a deployment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deletedeploymentinput"><code>DeleteDeploymentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deletedeploymentinput"><code>DeleteDeploymentInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteDeployment</p>
@@ -995,7 +995,7 @@ input<br />
 
 ## deleteIpAllowListEntry
 
-**Type:** [DeleteIpAllowListEntryPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteipallowlistentrypayload)
+**Type:** [DeleteIpAllowListEntryPayload](/docusaurus-graphql-plugin/github-example/objects#deleteipallowlistentrypayload)
 
 Deletes an IP allow list entry.
 
@@ -1007,7 +1007,7 @@ Deletes an IP allow list entry.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteipallowlistentryinput"><code>DeleteIpAllowListEntryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteipallowlistentryinput"><code>DeleteIpAllowListEntryInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteIpAllowListEntry</p>
@@ -1018,7 +1018,7 @@ input<br />
 
 ## deleteIssue
 
-**Type:** [DeleteIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteissuepayload)
+**Type:** [DeleteIssuePayload](/docusaurus-graphql-plugin/github-example/objects#deleteissuepayload)
 
 Deletes an Issue object.
 
@@ -1030,7 +1030,7 @@ Deletes an Issue object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteissueinput"><code>DeleteIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteissueinput"><code>DeleteIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteIssue</p>
@@ -1041,7 +1041,7 @@ input<br />
 
 ## deleteIssueComment
 
-**Type:** [DeleteIssueCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteissuecommentpayload)
+**Type:** [DeleteIssueCommentPayload](/docusaurus-graphql-plugin/github-example/objects#deleteissuecommentpayload)
 
 Deletes an IssueComment object.
 
@@ -1053,7 +1053,7 @@ Deletes an IssueComment object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteissuecommentinput"><code>DeleteIssueCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteissuecommentinput"><code>DeleteIssueCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteIssueComment</p>
@@ -1064,7 +1064,7 @@ input<br />
 
 ## deleteLabel
 
-**Type:** [DeleteLabelPayload](/docusaurus-plugin-content-graphql/github-example/objects#deletelabelpayload)
+**Type:** [DeleteLabelPayload](/docusaurus-graphql-plugin/github-example/objects#deletelabelpayload)
 
 Deletes a label.
 
@@ -1076,7 +1076,7 @@ Deletes a label.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deletelabelinput"><code>DeleteLabelInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deletelabelinput"><code>DeleteLabelInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteLabel</p>
@@ -1087,7 +1087,7 @@ input<br />
 
 ## deletePackageVersion
 
-**Type:** [DeletePackageVersionPayload](/docusaurus-plugin-content-graphql/github-example/objects#deletepackageversionpayload)
+**Type:** [DeletePackageVersionPayload](/docusaurus-graphql-plugin/github-example/objects#deletepackageversionpayload)
 
 Delete a package version.
 
@@ -1099,7 +1099,7 @@ Delete a package version.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deletepackageversioninput"><code>DeletePackageVersionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deletepackageversioninput"><code>DeletePackageVersionInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeletePackageVersion</p>
@@ -1110,7 +1110,7 @@ input<br />
 
 ## deleteProject
 
-**Type:** [DeleteProjectPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteprojectpayload)
+**Type:** [DeleteProjectPayload](/docusaurus-graphql-plugin/github-example/objects#deleteprojectpayload)
 
 Deletes a project.
 
@@ -1122,7 +1122,7 @@ Deletes a project.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteprojectinput"><code>DeleteProjectInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteprojectinput"><code>DeleteProjectInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteProject</p>
@@ -1133,7 +1133,7 @@ input<br />
 
 ## deleteProjectCard
 
-**Type:** [DeleteProjectCardPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteprojectcardpayload)
+**Type:** [DeleteProjectCardPayload](/docusaurus-graphql-plugin/github-example/objects#deleteprojectcardpayload)
 
 Deletes a project card.
 
@@ -1145,7 +1145,7 @@ Deletes a project card.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteprojectcardinput"><code>DeleteProjectCardInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteprojectcardinput"><code>DeleteProjectCardInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteProjectCard</p>
@@ -1156,7 +1156,7 @@ input<br />
 
 ## deleteProjectColumn
 
-**Type:** [DeleteProjectColumnPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteprojectcolumnpayload)
+**Type:** [DeleteProjectColumnPayload](/docusaurus-graphql-plugin/github-example/objects#deleteprojectcolumnpayload)
 
 Deletes a project column.
 
@@ -1168,7 +1168,7 @@ Deletes a project column.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteprojectcolumninput"><code>DeleteProjectColumnInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteprojectcolumninput"><code>DeleteProjectColumnInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteProjectColumn</p>
@@ -1179,7 +1179,7 @@ input<br />
 
 ## deletePullRequestReview
 
-**Type:** [DeletePullRequestReviewPayload](/docusaurus-plugin-content-graphql/github-example/objects#deletepullrequestreviewpayload)
+**Type:** [DeletePullRequestReviewPayload](/docusaurus-graphql-plugin/github-example/objects#deletepullrequestreviewpayload)
 
 Deletes a pull request review.
 
@@ -1191,7 +1191,7 @@ Deletes a pull request review.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deletepullrequestreviewinput"><code>DeletePullRequestReviewInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deletepullrequestreviewinput"><code>DeletePullRequestReviewInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeletePullRequestReview</p>
@@ -1202,7 +1202,7 @@ input<br />
 
 ## deletePullRequestReviewComment
 
-**Type:** [DeletePullRequestReviewCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#deletepullrequestreviewcommentpayload)
+**Type:** [DeletePullRequestReviewCommentPayload](/docusaurus-graphql-plugin/github-example/objects#deletepullrequestreviewcommentpayload)
 
 Deletes a pull request review comment.
 
@@ -1214,7 +1214,7 @@ Deletes a pull request review comment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deletepullrequestreviewcommentinput"><code>DeletePullRequestReviewCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deletepullrequestreviewcommentinput"><code>DeletePullRequestReviewCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeletePullRequestReviewComment</p>
@@ -1225,7 +1225,7 @@ input<br />
 
 ## deleteRef
 
-**Type:** [DeleteRefPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleterefpayload)
+**Type:** [DeleteRefPayload](/docusaurus-graphql-plugin/github-example/objects#deleterefpayload)
 
 Delete a Git Ref.
 
@@ -1237,7 +1237,7 @@ Delete a Git Ref.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleterefinput"><code>DeleteRefInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleterefinput"><code>DeleteRefInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteRef</p>
@@ -1248,7 +1248,7 @@ input<br />
 
 ## deleteTeamDiscussion
 
-**Type:** [DeleteTeamDiscussionPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteteamdiscussionpayload)
+**Type:** [DeleteTeamDiscussionPayload](/docusaurus-graphql-plugin/github-example/objects#deleteteamdiscussionpayload)
 
 Deletes a team discussion.
 
@@ -1260,7 +1260,7 @@ Deletes a team discussion.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteteamdiscussioninput"><code>DeleteTeamDiscussionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteteamdiscussioninput"><code>DeleteTeamDiscussionInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteTeamDiscussion</p>
@@ -1271,7 +1271,7 @@ input<br />
 
 ## deleteTeamDiscussionComment
 
-**Type:** [DeleteTeamDiscussionCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteteamdiscussioncommentpayload)
+**Type:** [DeleteTeamDiscussionCommentPayload](/docusaurus-graphql-plugin/github-example/objects#deleteteamdiscussioncommentpayload)
 
 Deletes a team discussion comment.
 
@@ -1283,7 +1283,7 @@ Deletes a team discussion comment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteteamdiscussioncommentinput"><code>DeleteTeamDiscussionCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteteamdiscussioncommentinput"><code>DeleteTeamDiscussionCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteTeamDiscussionComment</p>
@@ -1294,7 +1294,7 @@ input<br />
 
 ## deleteVerifiableDomain
 
-**Type:** [DeleteVerifiableDomainPayload](/docusaurus-plugin-content-graphql/github-example/objects#deleteverifiabledomainpayload)
+**Type:** [DeleteVerifiableDomainPayload](/docusaurus-graphql-plugin/github-example/objects#deleteverifiabledomainpayload)
 
 Deletes a verifiable domain.
 
@@ -1306,7 +1306,7 @@ Deletes a verifiable domain.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#deleteverifiabledomaininput"><code>DeleteVerifiableDomainInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#deleteverifiabledomaininput"><code>DeleteVerifiableDomainInput!</code></a>
 </td>
 <td>
 <p>Parameters for DeleteVerifiableDomain</p>
@@ -1317,7 +1317,7 @@ input<br />
 
 ## disablePullRequestAutoMerge
 
-**Type:** [DisablePullRequestAutoMergePayload](/docusaurus-plugin-content-graphql/github-example/objects#disablepullrequestautomergepayload)
+**Type:** [DisablePullRequestAutoMergePayload](/docusaurus-graphql-plugin/github-example/objects#disablepullrequestautomergepayload)
 
 Disable auto merge on the given pull request
 
@@ -1329,7 +1329,7 @@ Disable auto merge on the given pull request
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#disablepullrequestautomergeinput"><code>DisablePullRequestAutoMergeInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#disablepullrequestautomergeinput"><code>DisablePullRequestAutoMergeInput!</code></a>
 </td>
 <td>
 <p>Parameters for DisablePullRequestAutoMerge</p>
@@ -1340,7 +1340,7 @@ input<br />
 
 ## dismissPullRequestReview
 
-**Type:** [DismissPullRequestReviewPayload](/docusaurus-plugin-content-graphql/github-example/objects#dismisspullrequestreviewpayload)
+**Type:** [DismissPullRequestReviewPayload](/docusaurus-graphql-plugin/github-example/objects#dismisspullrequestreviewpayload)
 
 Dismisses an approved or rejected pull request review.
 
@@ -1352,7 +1352,7 @@ Dismisses an approved or rejected pull request review.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#dismisspullrequestreviewinput"><code>DismissPullRequestReviewInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#dismisspullrequestreviewinput"><code>DismissPullRequestReviewInput!</code></a>
 </td>
 <td>
 <p>Parameters for DismissPullRequestReview</p>
@@ -1363,7 +1363,7 @@ input<br />
 
 ## enablePullRequestAutoMerge
 
-**Type:** [EnablePullRequestAutoMergePayload](/docusaurus-plugin-content-graphql/github-example/objects#enablepullrequestautomergepayload)
+**Type:** [EnablePullRequestAutoMergePayload](/docusaurus-graphql-plugin/github-example/objects#enablepullrequestautomergepayload)
 
 Enable the default auto-merge on a pull request.
 
@@ -1375,7 +1375,7 @@ Enable the default auto-merge on a pull request.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#enablepullrequestautomergeinput"><code>EnablePullRequestAutoMergeInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#enablepullrequestautomergeinput"><code>EnablePullRequestAutoMergeInput!</code></a>
 </td>
 <td>
 <p>Parameters for EnablePullRequestAutoMerge</p>
@@ -1386,7 +1386,7 @@ input<br />
 
 ## followUser
 
-**Type:** [FollowUserPayload](/docusaurus-plugin-content-graphql/github-example/objects#followuserpayload)
+**Type:** [FollowUserPayload](/docusaurus-graphql-plugin/github-example/objects#followuserpayload)
 
 Follow a user.
 
@@ -1398,7 +1398,7 @@ Follow a user.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#followuserinput"><code>FollowUserInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#followuserinput"><code>FollowUserInput!</code></a>
 </td>
 <td>
 <p>Parameters for FollowUser</p>
@@ -1409,7 +1409,7 @@ input<br />
 
 ## importProject
 
-**Type:** [ImportProjectPayload](/docusaurus-plugin-content-graphql/github-example/objects#importprojectpayload)
+**Type:** [ImportProjectPayload](/docusaurus-graphql-plugin/github-example/objects#importprojectpayload)
 
 Creates a new project by importing columns and a list of issues/PRs.
 
@@ -1421,7 +1421,7 @@ Creates a new project by importing columns and a list of issues/PRs.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#importprojectinput"><code>ImportProjectInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#importprojectinput"><code>ImportProjectInput!</code></a>
 </td>
 <td>
 <p>Parameters for ImportProject</p>
@@ -1432,7 +1432,7 @@ input<br />
 
 ## inviteEnterpriseAdmin
 
-**Type:** [InviteEnterpriseAdminPayload](/docusaurus-plugin-content-graphql/github-example/objects#inviteenterpriseadminpayload)
+**Type:** [InviteEnterpriseAdminPayload](/docusaurus-graphql-plugin/github-example/objects#inviteenterpriseadminpayload)
 
 Invite someone to become an administrator of the enterprise.
 
@@ -1444,7 +1444,7 @@ Invite someone to become an administrator of the enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#inviteenterpriseadmininput"><code>InviteEnterpriseAdminInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#inviteenterpriseadmininput"><code>InviteEnterpriseAdminInput!</code></a>
 </td>
 <td>
 <p>Parameters for InviteEnterpriseAdmin</p>
@@ -1455,7 +1455,7 @@ input<br />
 
 ## linkRepositoryToProject
 
-**Type:** [LinkRepositoryToProjectPayload](/docusaurus-plugin-content-graphql/github-example/objects#linkrepositorytoprojectpayload)
+**Type:** [LinkRepositoryToProjectPayload](/docusaurus-graphql-plugin/github-example/objects#linkrepositorytoprojectpayload)
 
 Creates a repository link for a project.
 
@@ -1467,7 +1467,7 @@ Creates a repository link for a project.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#linkrepositorytoprojectinput"><code>LinkRepositoryToProjectInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#linkrepositorytoprojectinput"><code>LinkRepositoryToProjectInput!</code></a>
 </td>
 <td>
 <p>Parameters for LinkRepositoryToProject</p>
@@ -1478,7 +1478,7 @@ input<br />
 
 ## lockLockable
 
-**Type:** [LockLockablePayload](/docusaurus-plugin-content-graphql/github-example/objects#locklockablepayload)
+**Type:** [LockLockablePayload](/docusaurus-graphql-plugin/github-example/objects#locklockablepayload)
 
 Lock a lockable object
 
@@ -1490,7 +1490,7 @@ Lock a lockable object
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#locklockableinput"><code>LockLockableInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#locklockableinput"><code>LockLockableInput!</code></a>
 </td>
 <td>
 <p>Parameters for LockLockable</p>
@@ -1501,7 +1501,7 @@ input<br />
 
 ## markFileAsViewed
 
-**Type:** [MarkFileAsViewedPayload](/docusaurus-plugin-content-graphql/github-example/objects#markfileasviewedpayload)
+**Type:** [MarkFileAsViewedPayload](/docusaurus-graphql-plugin/github-example/objects#markfileasviewedpayload)
 
 Mark a pull request file as viewed
 
@@ -1513,7 +1513,7 @@ Mark a pull request file as viewed
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#markfileasviewedinput"><code>MarkFileAsViewedInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#markfileasviewedinput"><code>MarkFileAsViewedInput!</code></a>
 </td>
 <td>
 <p>Parameters for MarkFileAsViewed</p>
@@ -1524,7 +1524,7 @@ input<br />
 
 ## markPullRequestReadyForReview
 
-**Type:** [MarkPullRequestReadyForReviewPayload](/docusaurus-plugin-content-graphql/github-example/objects#markpullrequestreadyforreviewpayload)
+**Type:** [MarkPullRequestReadyForReviewPayload](/docusaurus-graphql-plugin/github-example/objects#markpullrequestreadyforreviewpayload)
 
 Marks a pull request ready for review.
 
@@ -1536,7 +1536,7 @@ Marks a pull request ready for review.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#markpullrequestreadyforreviewinput"><code>MarkPullRequestReadyForReviewInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#markpullrequestreadyforreviewinput"><code>MarkPullRequestReadyForReviewInput!</code></a>
 </td>
 <td>
 <p>Parameters for MarkPullRequestReadyForReview</p>
@@ -1547,7 +1547,7 @@ input<br />
 
 ## mergeBranch
 
-**Type:** [MergeBranchPayload](/docusaurus-plugin-content-graphql/github-example/objects#mergebranchpayload)
+**Type:** [MergeBranchPayload](/docusaurus-graphql-plugin/github-example/objects#mergebranchpayload)
 
 Merge a head into a branch.
 
@@ -1559,7 +1559,7 @@ Merge a head into a branch.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#mergebranchinput"><code>MergeBranchInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#mergebranchinput"><code>MergeBranchInput!</code></a>
 </td>
 <td>
 <p>Parameters for MergeBranch</p>
@@ -1570,7 +1570,7 @@ input<br />
 
 ## mergePullRequest
 
-**Type:** [MergePullRequestPayload](/docusaurus-plugin-content-graphql/github-example/objects#mergepullrequestpayload)
+**Type:** [MergePullRequestPayload](/docusaurus-graphql-plugin/github-example/objects#mergepullrequestpayload)
 
 Merge a pull request.
 
@@ -1582,7 +1582,7 @@ Merge a pull request.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#mergepullrequestinput"><code>MergePullRequestInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#mergepullrequestinput"><code>MergePullRequestInput!</code></a>
 </td>
 <td>
 <p>Parameters for MergePullRequest</p>
@@ -1593,7 +1593,7 @@ input<br />
 
 ## minimizeComment
 
-**Type:** [MinimizeCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#minimizecommentpayload)
+**Type:** [MinimizeCommentPayload](/docusaurus-graphql-plugin/github-example/objects#minimizecommentpayload)
 
 Minimizes a comment on an Issue, Commit, Pull Request, or Gist
 
@@ -1605,7 +1605,7 @@ Minimizes a comment on an Issue, Commit, Pull Request, or Gist
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#minimizecommentinput"><code>MinimizeCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#minimizecommentinput"><code>MinimizeCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for MinimizeComment</p>
@@ -1616,7 +1616,7 @@ input<br />
 
 ## moveProjectCard
 
-**Type:** [MoveProjectCardPayload](/docusaurus-plugin-content-graphql/github-example/objects#moveprojectcardpayload)
+**Type:** [MoveProjectCardPayload](/docusaurus-graphql-plugin/github-example/objects#moveprojectcardpayload)
 
 Moves a project card to another place.
 
@@ -1628,7 +1628,7 @@ Moves a project card to another place.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#moveprojectcardinput"><code>MoveProjectCardInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#moveprojectcardinput"><code>MoveProjectCardInput!</code></a>
 </td>
 <td>
 <p>Parameters for MoveProjectCard</p>
@@ -1639,7 +1639,7 @@ input<br />
 
 ## moveProjectColumn
 
-**Type:** [MoveProjectColumnPayload](/docusaurus-plugin-content-graphql/github-example/objects#moveprojectcolumnpayload)
+**Type:** [MoveProjectColumnPayload](/docusaurus-graphql-plugin/github-example/objects#moveprojectcolumnpayload)
 
 Moves a project column to another place.
 
@@ -1651,7 +1651,7 @@ Moves a project column to another place.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#moveprojectcolumninput"><code>MoveProjectColumnInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#moveprojectcolumninput"><code>MoveProjectColumnInput!</code></a>
 </td>
 <td>
 <p>Parameters for MoveProjectColumn</p>
@@ -1662,7 +1662,7 @@ input<br />
 
 ## pinIssue
 
-**Type:** [PinIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#pinissuepayload)
+**Type:** [PinIssuePayload](/docusaurus-graphql-plugin/github-example/objects#pinissuepayload)
 
 Pin an issue to a repository
 
@@ -1674,7 +1674,7 @@ Pin an issue to a repository
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#pinissueinput"><code>PinIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#pinissueinput"><code>PinIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for PinIssue</p>
@@ -1685,7 +1685,7 @@ input<br />
 
 ## regenerateEnterpriseIdentityProviderRecoveryCodes
 
-**Type:** [RegenerateEnterpriseIdentityProviderRecoveryCodesPayload](/docusaurus-plugin-content-graphql/github-example/objects#regenerateenterpriseidentityproviderrecoverycodespayload)
+**Type:** [RegenerateEnterpriseIdentityProviderRecoveryCodesPayload](/docusaurus-graphql-plugin/github-example/objects#regenerateenterpriseidentityproviderrecoverycodespayload)
 
 Regenerates the identity provider recovery codes for an enterprise
 
@@ -1697,7 +1697,7 @@ Regenerates the identity provider recovery codes for an enterprise
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#regenerateenterpriseidentityproviderrecoverycodesinput"><code>RegenerateEnterpriseIdentityProviderRecoveryCodesInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#regenerateenterpriseidentityproviderrecoverycodesinput"><code>RegenerateEnterpriseIdentityProviderRecoveryCodesInput!</code></a>
 </td>
 <td>
 <p>Parameters for RegenerateEnterpriseIdentityProviderRecoveryCodes</p>
@@ -1708,7 +1708,7 @@ input<br />
 
 ## regenerateVerifiableDomainToken
 
-**Type:** [RegenerateVerifiableDomainTokenPayload](/docusaurus-plugin-content-graphql/github-example/objects#regenerateverifiabledomaintokenpayload)
+**Type:** [RegenerateVerifiableDomainTokenPayload](/docusaurus-graphql-plugin/github-example/objects#regenerateverifiabledomaintokenpayload)
 
 Regenerates a verifiable domain's verification token.
 
@@ -1720,7 +1720,7 @@ Regenerates a verifiable domain's verification token.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#regenerateverifiabledomaintokeninput"><code>RegenerateVerifiableDomainTokenInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#regenerateverifiabledomaintokeninput"><code>RegenerateVerifiableDomainTokenInput!</code></a>
 </td>
 <td>
 <p>Parameters for RegenerateVerifiableDomainToken</p>
@@ -1731,7 +1731,7 @@ input<br />
 
 ## removeAssigneesFromAssignable
 
-**Type:** [RemoveAssigneesFromAssignablePayload](/docusaurus-plugin-content-graphql/github-example/objects#removeassigneesfromassignablepayload)
+**Type:** [RemoveAssigneesFromAssignablePayload](/docusaurus-graphql-plugin/github-example/objects#removeassigneesfromassignablepayload)
 
 Removes assignees from an assignable object.
 
@@ -1743,7 +1743,7 @@ Removes assignees from an assignable object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removeassigneesfromassignableinput"><code>RemoveAssigneesFromAssignableInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removeassigneesfromassignableinput"><code>RemoveAssigneesFromAssignableInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveAssigneesFromAssignable</p>
@@ -1754,7 +1754,7 @@ input<br />
 
 ## removeEnterpriseAdmin
 
-**Type:** [RemoveEnterpriseAdminPayload](/docusaurus-plugin-content-graphql/github-example/objects#removeenterpriseadminpayload)
+**Type:** [RemoveEnterpriseAdminPayload](/docusaurus-graphql-plugin/github-example/objects#removeenterpriseadminpayload)
 
 Removes an administrator from the enterprise.
 
@@ -1766,7 +1766,7 @@ Removes an administrator from the enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removeenterpriseadmininput"><code>RemoveEnterpriseAdminInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removeenterpriseadmininput"><code>RemoveEnterpriseAdminInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveEnterpriseAdmin</p>
@@ -1777,7 +1777,7 @@ input<br />
 
 ## removeEnterpriseIdentityProvider
 
-**Type:** [RemoveEnterpriseIdentityProviderPayload](/docusaurus-plugin-content-graphql/github-example/objects#removeenterpriseidentityproviderpayload)
+**Type:** [RemoveEnterpriseIdentityProviderPayload](/docusaurus-graphql-plugin/github-example/objects#removeenterpriseidentityproviderpayload)
 
 Removes the identity provider from an enterprise
 
@@ -1789,7 +1789,7 @@ Removes the identity provider from an enterprise
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removeenterpriseidentityproviderinput"><code>RemoveEnterpriseIdentityProviderInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removeenterpriseidentityproviderinput"><code>RemoveEnterpriseIdentityProviderInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveEnterpriseIdentityProvider</p>
@@ -1800,7 +1800,7 @@ input<br />
 
 ## removeEnterpriseOrganization
 
-**Type:** [RemoveEnterpriseOrganizationPayload](/docusaurus-plugin-content-graphql/github-example/objects#removeenterpriseorganizationpayload)
+**Type:** [RemoveEnterpriseOrganizationPayload](/docusaurus-graphql-plugin/github-example/objects#removeenterpriseorganizationpayload)
 
 Removes an organization from the enterprise
 
@@ -1812,7 +1812,7 @@ Removes an organization from the enterprise
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removeenterpriseorganizationinput"><code>RemoveEnterpriseOrganizationInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removeenterpriseorganizationinput"><code>RemoveEnterpriseOrganizationInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveEnterpriseOrganization</p>
@@ -1823,7 +1823,7 @@ input<br />
 
 ## removeEnterpriseSupportEntitlement
 
-**Type:** [RemoveEnterpriseSupportEntitlementPayload](/docusaurus-plugin-content-graphql/github-example/objects#removeenterprisesupportentitlementpayload)
+**Type:** [RemoveEnterpriseSupportEntitlementPayload](/docusaurus-graphql-plugin/github-example/objects#removeenterprisesupportentitlementpayload)
 
 Removes a support entitlement from an enterprise member.
 
@@ -1835,7 +1835,7 @@ Removes a support entitlement from an enterprise member.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removeenterprisesupportentitlementinput"><code>RemoveEnterpriseSupportEntitlementInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removeenterprisesupportentitlementinput"><code>RemoveEnterpriseSupportEntitlementInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveEnterpriseSupportEntitlement</p>
@@ -1846,7 +1846,7 @@ input<br />
 
 ## removeLabelsFromLabelable
 
-**Type:** [RemoveLabelsFromLabelablePayload](/docusaurus-plugin-content-graphql/github-example/objects#removelabelsfromlabelablepayload)
+**Type:** [RemoveLabelsFromLabelablePayload](/docusaurus-graphql-plugin/github-example/objects#removelabelsfromlabelablepayload)
 
 Removes labels from a Labelable object.
 
@@ -1858,7 +1858,7 @@ Removes labels from a Labelable object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removelabelsfromlabelableinput"><code>RemoveLabelsFromLabelableInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removelabelsfromlabelableinput"><code>RemoveLabelsFromLabelableInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveLabelsFromLabelable</p>
@@ -1869,7 +1869,7 @@ input<br />
 
 ## removeOutsideCollaborator
 
-**Type:** [RemoveOutsideCollaboratorPayload](/docusaurus-plugin-content-graphql/github-example/objects#removeoutsidecollaboratorpayload)
+**Type:** [RemoveOutsideCollaboratorPayload](/docusaurus-graphql-plugin/github-example/objects#removeoutsidecollaboratorpayload)
 
 Removes outside collaborator from all repositories in an organization.
 
@@ -1881,7 +1881,7 @@ Removes outside collaborator from all repositories in an organization.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removeoutsidecollaboratorinput"><code>RemoveOutsideCollaboratorInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removeoutsidecollaboratorinput"><code>RemoveOutsideCollaboratorInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveOutsideCollaborator</p>
@@ -1892,7 +1892,7 @@ input<br />
 
 ## removeReaction
 
-**Type:** [RemoveReactionPayload](/docusaurus-plugin-content-graphql/github-example/objects#removereactionpayload)
+**Type:** [RemoveReactionPayload](/docusaurus-graphql-plugin/github-example/objects#removereactionpayload)
 
 Removes a reaction from a subject.
 
@@ -1904,7 +1904,7 @@ Removes a reaction from a subject.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removereactioninput"><code>RemoveReactionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removereactioninput"><code>RemoveReactionInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveReaction</p>
@@ -1915,7 +1915,7 @@ input<br />
 
 ## removeStar
 
-**Type:** [RemoveStarPayload](/docusaurus-plugin-content-graphql/github-example/objects#removestarpayload)
+**Type:** [RemoveStarPayload](/docusaurus-graphql-plugin/github-example/objects#removestarpayload)
 
 Removes a star from a Starrable.
 
@@ -1927,7 +1927,7 @@ Removes a star from a Starrable.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#removestarinput"><code>RemoveStarInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#removestarinput"><code>RemoveStarInput!</code></a>
 </td>
 <td>
 <p>Parameters for RemoveStar</p>
@@ -1938,7 +1938,7 @@ input<br />
 
 ## reopenIssue
 
-**Type:** [ReopenIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#reopenissuepayload)
+**Type:** [ReopenIssuePayload](/docusaurus-graphql-plugin/github-example/objects#reopenissuepayload)
 
 Reopen a issue.
 
@@ -1950,7 +1950,7 @@ Reopen a issue.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#reopenissueinput"><code>ReopenIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#reopenissueinput"><code>ReopenIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for ReopenIssue</p>
@@ -1961,7 +1961,7 @@ input<br />
 
 ## reopenPullRequest
 
-**Type:** [ReopenPullRequestPayload](/docusaurus-plugin-content-graphql/github-example/objects#reopenpullrequestpayload)
+**Type:** [ReopenPullRequestPayload](/docusaurus-graphql-plugin/github-example/objects#reopenpullrequestpayload)
 
 Reopen a pull request.
 
@@ -1973,7 +1973,7 @@ Reopen a pull request.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#reopenpullrequestinput"><code>ReopenPullRequestInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#reopenpullrequestinput"><code>ReopenPullRequestInput!</code></a>
 </td>
 <td>
 <p>Parameters for ReopenPullRequest</p>
@@ -1984,7 +1984,7 @@ input<br />
 
 ## requestReviews
 
-**Type:** [RequestReviewsPayload](/docusaurus-plugin-content-graphql/github-example/objects#requestreviewspayload)
+**Type:** [RequestReviewsPayload](/docusaurus-graphql-plugin/github-example/objects#requestreviewspayload)
 
 Set review requests on a pull request.
 
@@ -1996,7 +1996,7 @@ Set review requests on a pull request.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#requestreviewsinput"><code>RequestReviewsInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#requestreviewsinput"><code>RequestReviewsInput!</code></a>
 </td>
 <td>
 <p>Parameters for RequestReviews</p>
@@ -2007,7 +2007,7 @@ input<br />
 
 ## rerequestCheckSuite
 
-**Type:** [RerequestCheckSuitePayload](/docusaurus-plugin-content-graphql/github-example/objects#rerequestchecksuitepayload)
+**Type:** [RerequestCheckSuitePayload](/docusaurus-graphql-plugin/github-example/objects#rerequestchecksuitepayload)
 
 Rerequests an existing check suite.
 
@@ -2019,7 +2019,7 @@ Rerequests an existing check suite.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#rerequestchecksuiteinput"><code>RerequestCheckSuiteInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#rerequestchecksuiteinput"><code>RerequestCheckSuiteInput!</code></a>
 </td>
 <td>
 <p>Parameters for RerequestCheckSuite</p>
@@ -2030,7 +2030,7 @@ input<br />
 
 ## resolveReviewThread
 
-**Type:** [ResolveReviewThreadPayload](/docusaurus-plugin-content-graphql/github-example/objects#resolvereviewthreadpayload)
+**Type:** [ResolveReviewThreadPayload](/docusaurus-graphql-plugin/github-example/objects#resolvereviewthreadpayload)
 
 Marks a review thread as resolved.
 
@@ -2042,7 +2042,7 @@ Marks a review thread as resolved.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#resolvereviewthreadinput"><code>ResolveReviewThreadInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#resolvereviewthreadinput"><code>ResolveReviewThreadInput!</code></a>
 </td>
 <td>
 <p>Parameters for ResolveReviewThread</p>
@@ -2053,7 +2053,7 @@ input<br />
 
 ## setEnterpriseIdentityProvider
 
-**Type:** [SetEnterpriseIdentityProviderPayload](/docusaurus-plugin-content-graphql/github-example/objects#setenterpriseidentityproviderpayload)
+**Type:** [SetEnterpriseIdentityProviderPayload](/docusaurus-graphql-plugin/github-example/objects#setenterpriseidentityproviderpayload)
 
 Creates or updates the identity provider for an enterprise.
 
@@ -2065,7 +2065,7 @@ Creates or updates the identity provider for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#setenterpriseidentityproviderinput"><code>SetEnterpriseIdentityProviderInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#setenterpriseidentityproviderinput"><code>SetEnterpriseIdentityProviderInput!</code></a>
 </td>
 <td>
 <p>Parameters for SetEnterpriseIdentityProvider</p>
@@ -2076,7 +2076,7 @@ input<br />
 
 ## setOrganizationInteractionLimit
 
-**Type:** [SetOrganizationInteractionLimitPayload](/docusaurus-plugin-content-graphql/github-example/objects#setorganizationinteractionlimitpayload)
+**Type:** [SetOrganizationInteractionLimitPayload](/docusaurus-graphql-plugin/github-example/objects#setorganizationinteractionlimitpayload)
 
 Set an organization level interaction limit for an organization's public repositories.
 
@@ -2088,7 +2088,7 @@ Set an organization level interaction limit for an organization's public reposit
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#setorganizationinteractionlimitinput"><code>SetOrganizationInteractionLimitInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#setorganizationinteractionlimitinput"><code>SetOrganizationInteractionLimitInput!</code></a>
 </td>
 <td>
 <p>Parameters for SetOrganizationInteractionLimit</p>
@@ -2099,7 +2099,7 @@ input<br />
 
 ## setRepositoryInteractionLimit
 
-**Type:** [SetRepositoryInteractionLimitPayload](/docusaurus-plugin-content-graphql/github-example/objects#setrepositoryinteractionlimitpayload)
+**Type:** [SetRepositoryInteractionLimitPayload](/docusaurus-graphql-plugin/github-example/objects#setrepositoryinteractionlimitpayload)
 
 Sets an interaction limit setting for a repository.
 
@@ -2111,7 +2111,7 @@ Sets an interaction limit setting for a repository.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#setrepositoryinteractionlimitinput"><code>SetRepositoryInteractionLimitInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#setrepositoryinteractionlimitinput"><code>SetRepositoryInteractionLimitInput!</code></a>
 </td>
 <td>
 <p>Parameters for SetRepositoryInteractionLimit</p>
@@ -2122,7 +2122,7 @@ input<br />
 
 ## setUserInteractionLimit
 
-**Type:** [SetUserInteractionLimitPayload](/docusaurus-plugin-content-graphql/github-example/objects#setuserinteractionlimitpayload)
+**Type:** [SetUserInteractionLimitPayload](/docusaurus-graphql-plugin/github-example/objects#setuserinteractionlimitpayload)
 
 Set a user level interaction limit for an user's public repositories.
 
@@ -2134,7 +2134,7 @@ Set a user level interaction limit for an user's public repositories.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#setuserinteractionlimitinput"><code>SetUserInteractionLimitInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#setuserinteractionlimitinput"><code>SetUserInteractionLimitInput!</code></a>
 </td>
 <td>
 <p>Parameters for SetUserInteractionLimit</p>
@@ -2145,7 +2145,7 @@ input<br />
 
 ## submitPullRequestReview
 
-**Type:** [SubmitPullRequestReviewPayload](/docusaurus-plugin-content-graphql/github-example/objects#submitpullrequestreviewpayload)
+**Type:** [SubmitPullRequestReviewPayload](/docusaurus-graphql-plugin/github-example/objects#submitpullrequestreviewpayload)
 
 Submits a pending pull request review.
 
@@ -2157,7 +2157,7 @@ Submits a pending pull request review.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#submitpullrequestreviewinput"><code>SubmitPullRequestReviewInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#submitpullrequestreviewinput"><code>SubmitPullRequestReviewInput!</code></a>
 </td>
 <td>
 <p>Parameters for SubmitPullRequestReview</p>
@@ -2168,7 +2168,7 @@ input<br />
 
 ## transferIssue
 
-**Type:** [TransferIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#transferissuepayload)
+**Type:** [TransferIssuePayload](/docusaurus-graphql-plugin/github-example/objects#transferissuepayload)
 
 Transfer an issue to a different repository
 
@@ -2180,7 +2180,7 @@ Transfer an issue to a different repository
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#transferissueinput"><code>TransferIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#transferissueinput"><code>TransferIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for TransferIssue</p>
@@ -2191,7 +2191,7 @@ input<br />
 
 ## unarchiveRepository
 
-**Type:** [UnarchiveRepositoryPayload](/docusaurus-plugin-content-graphql/github-example/objects#unarchiverepositorypayload)
+**Type:** [UnarchiveRepositoryPayload](/docusaurus-graphql-plugin/github-example/objects#unarchiverepositorypayload)
 
 Unarchives a repository.
 
@@ -2203,7 +2203,7 @@ Unarchives a repository.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unarchiverepositoryinput"><code>UnarchiveRepositoryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unarchiverepositoryinput"><code>UnarchiveRepositoryInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnarchiveRepository</p>
@@ -2214,7 +2214,7 @@ input<br />
 
 ## unfollowUser
 
-**Type:** [UnfollowUserPayload](/docusaurus-plugin-content-graphql/github-example/objects#unfollowuserpayload)
+**Type:** [UnfollowUserPayload](/docusaurus-graphql-plugin/github-example/objects#unfollowuserpayload)
 
 Unfollow a user.
 
@@ -2226,7 +2226,7 @@ Unfollow a user.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unfollowuserinput"><code>UnfollowUserInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unfollowuserinput"><code>UnfollowUserInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnfollowUser</p>
@@ -2237,7 +2237,7 @@ input<br />
 
 ## unlinkRepositoryFromProject
 
-**Type:** [UnlinkRepositoryFromProjectPayload](/docusaurus-plugin-content-graphql/github-example/objects#unlinkrepositoryfromprojectpayload)
+**Type:** [UnlinkRepositoryFromProjectPayload](/docusaurus-graphql-plugin/github-example/objects#unlinkrepositoryfromprojectpayload)
 
 Deletes a repository link from a project.
 
@@ -2249,7 +2249,7 @@ Deletes a repository link from a project.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unlinkrepositoryfromprojectinput"><code>UnlinkRepositoryFromProjectInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unlinkrepositoryfromprojectinput"><code>UnlinkRepositoryFromProjectInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnlinkRepositoryFromProject</p>
@@ -2260,7 +2260,7 @@ input<br />
 
 ## unlockLockable
 
-**Type:** [UnlockLockablePayload](/docusaurus-plugin-content-graphql/github-example/objects#unlocklockablepayload)
+**Type:** [UnlockLockablePayload](/docusaurus-graphql-plugin/github-example/objects#unlocklockablepayload)
 
 Unlock a lockable object
 
@@ -2272,7 +2272,7 @@ Unlock a lockable object
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unlocklockableinput"><code>UnlockLockableInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unlocklockableinput"><code>UnlockLockableInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnlockLockable</p>
@@ -2283,7 +2283,7 @@ input<br />
 
 ## unmarkFileAsViewed
 
-**Type:** [UnmarkFileAsViewedPayload](/docusaurus-plugin-content-graphql/github-example/objects#unmarkfileasviewedpayload)
+**Type:** [UnmarkFileAsViewedPayload](/docusaurus-graphql-plugin/github-example/objects#unmarkfileasviewedpayload)
 
 Unmark a pull request file as viewed
 
@@ -2295,7 +2295,7 @@ Unmark a pull request file as viewed
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unmarkfileasviewedinput"><code>UnmarkFileAsViewedInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unmarkfileasviewedinput"><code>UnmarkFileAsViewedInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnmarkFileAsViewed</p>
@@ -2306,7 +2306,7 @@ input<br />
 
 ## unmarkIssueAsDuplicate
 
-**Type:** [UnmarkIssueAsDuplicatePayload](/docusaurus-plugin-content-graphql/github-example/objects#unmarkissueasduplicatepayload)
+**Type:** [UnmarkIssueAsDuplicatePayload](/docusaurus-graphql-plugin/github-example/objects#unmarkissueasduplicatepayload)
 
 Unmark an issue as a duplicate of another issue.
 
@@ -2318,7 +2318,7 @@ Unmark an issue as a duplicate of another issue.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unmarkissueasduplicateinput"><code>UnmarkIssueAsDuplicateInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unmarkissueasduplicateinput"><code>UnmarkIssueAsDuplicateInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnmarkIssueAsDuplicate</p>
@@ -2329,7 +2329,7 @@ input<br />
 
 ## unminimizeComment
 
-**Type:** [UnminimizeCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#unminimizecommentpayload)
+**Type:** [UnminimizeCommentPayload](/docusaurus-graphql-plugin/github-example/objects#unminimizecommentpayload)
 
 Unminimizes a comment on an Issue, Commit, Pull Request, or Gist
 
@@ -2341,7 +2341,7 @@ Unminimizes a comment on an Issue, Commit, Pull Request, or Gist
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unminimizecommentinput"><code>UnminimizeCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unminimizecommentinput"><code>UnminimizeCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnminimizeComment</p>
@@ -2352,7 +2352,7 @@ input<br />
 
 ## unpinIssue
 
-**Type:** [UnpinIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#unpinissuepayload)
+**Type:** [UnpinIssuePayload](/docusaurus-graphql-plugin/github-example/objects#unpinissuepayload)
 
 Unpin a pinned issue from a repository
 
@@ -2364,7 +2364,7 @@ Unpin a pinned issue from a repository
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unpinissueinput"><code>UnpinIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unpinissueinput"><code>UnpinIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnpinIssue</p>
@@ -2375,7 +2375,7 @@ input<br />
 
 ## unresolveReviewThread
 
-**Type:** [UnresolveReviewThreadPayload](/docusaurus-plugin-content-graphql/github-example/objects#unresolvereviewthreadpayload)
+**Type:** [UnresolveReviewThreadPayload](/docusaurus-graphql-plugin/github-example/objects#unresolvereviewthreadpayload)
 
 Marks a review thread as unresolved.
 
@@ -2387,7 +2387,7 @@ Marks a review thread as unresolved.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#unresolvereviewthreadinput"><code>UnresolveReviewThreadInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#unresolvereviewthreadinput"><code>UnresolveReviewThreadInput!</code></a>
 </td>
 <td>
 <p>Parameters for UnresolveReviewThread</p>
@@ -2398,7 +2398,7 @@ input<br />
 
 ## updateBranchProtectionRule
 
-**Type:** [UpdateBranchProtectionRulePayload](/docusaurus-plugin-content-graphql/github-example/objects#updatebranchprotectionrulepayload)
+**Type:** [UpdateBranchProtectionRulePayload](/docusaurus-graphql-plugin/github-example/objects#updatebranchprotectionrulepayload)
 
 Create a new branch protection rule
 
@@ -2410,7 +2410,7 @@ Create a new branch protection rule
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatebranchprotectionruleinput"><code>UpdateBranchProtectionRuleInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatebranchprotectionruleinput"><code>UpdateBranchProtectionRuleInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateBranchProtectionRule</p>
@@ -2421,7 +2421,7 @@ input<br />
 
 ## updateCheckRun
 
-**Type:** [UpdateCheckRunPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatecheckrunpayload)
+**Type:** [UpdateCheckRunPayload](/docusaurus-graphql-plugin/github-example/objects#updatecheckrunpayload)
 
 Update a check run
 
@@ -2433,7 +2433,7 @@ Update a check run
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatecheckruninput"><code>UpdateCheckRunInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatecheckruninput"><code>UpdateCheckRunInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateCheckRun</p>
@@ -2444,7 +2444,7 @@ input<br />
 
 ## updateCheckSuitePreferences
 
-**Type:** [UpdateCheckSuitePreferencesPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatechecksuitepreferencespayload)
+**Type:** [UpdateCheckSuitePreferencesPayload](/docusaurus-graphql-plugin/github-example/objects#updatechecksuitepreferencespayload)
 
 Modifies the settings of an existing check suite
 
@@ -2456,7 +2456,7 @@ Modifies the settings of an existing check suite
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatechecksuitepreferencesinput"><code>UpdateCheckSuitePreferencesInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatechecksuitepreferencesinput"><code>UpdateCheckSuitePreferencesInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateCheckSuitePreferences</p>
@@ -2467,7 +2467,7 @@ input<br />
 
 ## updateEnterpriseAdministratorRole
 
-**Type:** [UpdateEnterpriseAdministratorRolePayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterpriseadministratorrolepayload)
+**Type:** [UpdateEnterpriseAdministratorRolePayload](/docusaurus-graphql-plugin/github-example/objects#updateenterpriseadministratorrolepayload)
 
 Updates the role of an enterprise administrator.
 
@@ -2479,7 +2479,7 @@ Updates the role of an enterprise administrator.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterpriseadministratorroleinput"><code>UpdateEnterpriseAdministratorRoleInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterpriseadministratorroleinput"><code>UpdateEnterpriseAdministratorRoleInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseAdministratorRole</p>
@@ -2490,7 +2490,7 @@ input<br />
 
 ## updateEnterpriseAllowPrivateRepositoryForkingSetting
 
-**Type:** [UpdateEnterpriseAllowPrivateRepositoryForkingSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterpriseallowprivaterepositoryforkingsettingpayload)
+**Type:** [UpdateEnterpriseAllowPrivateRepositoryForkingSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterpriseallowprivaterepositoryforkingsettingpayload)
 
 Sets whether private repository forks are enabled for an enterprise.
 
@@ -2502,7 +2502,7 @@ Sets whether private repository forks are enabled for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterpriseallowprivaterepositoryforkingsettinginput"><code>UpdateEnterpriseAllowPrivateRepositoryForkingSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterpriseallowprivaterepositoryforkingsettinginput"><code>UpdateEnterpriseAllowPrivateRepositoryForkingSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseAllowPrivateRepositoryForkingSetting</p>
@@ -2513,7 +2513,7 @@ input<br />
 
 ## updateEnterpriseDefaultRepositoryPermissionSetting
 
-**Type:** [UpdateEnterpriseDefaultRepositoryPermissionSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisedefaultrepositorypermissionsettingpayload)
+**Type:** [UpdateEnterpriseDefaultRepositoryPermissionSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisedefaultrepositorypermissionsettingpayload)
 
 Sets the default repository permission for organizations in an enterprise.
 
@@ -2525,7 +2525,7 @@ Sets the default repository permission for organizations in an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisedefaultrepositorypermissionsettinginput"><code>UpdateEnterpriseDefaultRepositoryPermissionSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisedefaultrepositorypermissionsettinginput"><code>UpdateEnterpriseDefaultRepositoryPermissionSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseDefaultRepositoryPermissionSetting</p>
@@ -2536,7 +2536,7 @@ input<br />
 
 ## updateEnterpriseMembersCanChangeRepositoryVisibilitySetting
 
-**Type:** [UpdateEnterpriseMembersCanChangeRepositoryVisibilitySettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscanchangerepositoryvisibilitysettingpayload)
+**Type:** [UpdateEnterpriseMembersCanChangeRepositoryVisibilitySettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscanchangerepositoryvisibilitysettingpayload)
 
 Sets whether organization members with admin permissions on a repository can change repository visibility.
 
@@ -2548,7 +2548,7 @@ Sets whether organization members with admin permissions on a repository can cha
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscanchangerepositoryvisibilitysettinginput"><code>UpdateEnterpriseMembersCanChangeRepositoryVisibilitySettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscanchangerepositoryvisibilitysettinginput"><code>UpdateEnterpriseMembersCanChangeRepositoryVisibilitySettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanChangeRepositoryVisibilitySetting</p>
@@ -2559,7 +2559,7 @@ input<br />
 
 ## updateEnterpriseMembersCanCreateRepositoriesSetting
 
-**Type:** [UpdateEnterpriseMembersCanCreateRepositoriesSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscancreaterepositoriessettingpayload)
+**Type:** [UpdateEnterpriseMembersCanCreateRepositoriesSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscancreaterepositoriessettingpayload)
 
 Sets the members can create repositories setting for an enterprise.
 
@@ -2571,7 +2571,7 @@ Sets the members can create repositories setting for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscancreaterepositoriessettinginput"><code>UpdateEnterpriseMembersCanCreateRepositoriesSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscancreaterepositoriessettinginput"><code>UpdateEnterpriseMembersCanCreateRepositoriesSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanCreateRepositoriesSetting</p>
@@ -2582,7 +2582,7 @@ input<br />
 
 ## updateEnterpriseMembersCanDeleteIssuesSetting
 
-**Type:** [UpdateEnterpriseMembersCanDeleteIssuesSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscandeleteissuessettingpayload)
+**Type:** [UpdateEnterpriseMembersCanDeleteIssuesSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscandeleteissuessettingpayload)
 
 Sets the members can delete issues setting for an enterprise.
 
@@ -2594,7 +2594,7 @@ Sets the members can delete issues setting for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscandeleteissuessettinginput"><code>UpdateEnterpriseMembersCanDeleteIssuesSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscandeleteissuessettinginput"><code>UpdateEnterpriseMembersCanDeleteIssuesSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanDeleteIssuesSetting</p>
@@ -2605,7 +2605,7 @@ input<br />
 
 ## updateEnterpriseMembersCanDeleteRepositoriesSetting
 
-**Type:** [UpdateEnterpriseMembersCanDeleteRepositoriesSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscandeleterepositoriessettingpayload)
+**Type:** [UpdateEnterpriseMembersCanDeleteRepositoriesSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscandeleterepositoriessettingpayload)
 
 Sets the members can delete repositories setting for an enterprise.
 
@@ -2617,7 +2617,7 @@ Sets the members can delete repositories setting for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscandeleterepositoriessettinginput"><code>UpdateEnterpriseMembersCanDeleteRepositoriesSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscandeleterepositoriessettinginput"><code>UpdateEnterpriseMembersCanDeleteRepositoriesSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanDeleteRepositoriesSetting</p>
@@ -2628,7 +2628,7 @@ input<br />
 
 ## updateEnterpriseMembersCanInviteCollaboratorsSetting
 
-**Type:** [UpdateEnterpriseMembersCanInviteCollaboratorsSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscaninvitecollaboratorssettingpayload)
+**Type:** [UpdateEnterpriseMembersCanInviteCollaboratorsSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscaninvitecollaboratorssettingpayload)
 
 Sets whether members can invite collaborators are enabled for an enterprise.
 
@@ -2640,7 +2640,7 @@ Sets whether members can invite collaborators are enabled for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscaninvitecollaboratorssettinginput"><code>UpdateEnterpriseMembersCanInviteCollaboratorsSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscaninvitecollaboratorssettinginput"><code>UpdateEnterpriseMembersCanInviteCollaboratorsSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanInviteCollaboratorsSetting</p>
@@ -2651,7 +2651,7 @@ input<br />
 
 ## updateEnterpriseMembersCanMakePurchasesSetting
 
-**Type:** [UpdateEnterpriseMembersCanMakePurchasesSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscanmakepurchasessettingpayload)
+**Type:** [UpdateEnterpriseMembersCanMakePurchasesSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscanmakepurchasessettingpayload)
 
 Sets whether or not an organization admin can make purchases.
 
@@ -2663,7 +2663,7 @@ Sets whether or not an organization admin can make purchases.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscanmakepurchasessettinginput"><code>UpdateEnterpriseMembersCanMakePurchasesSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscanmakepurchasessettinginput"><code>UpdateEnterpriseMembersCanMakePurchasesSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanMakePurchasesSetting</p>
@@ -2674,7 +2674,7 @@ input<br />
 
 ## updateEnterpriseMembersCanUpdateProtectedBranchesSetting
 
-**Type:** [UpdateEnterpriseMembersCanUpdateProtectedBranchesSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscanupdateprotectedbranchessettingpayload)
+**Type:** [UpdateEnterpriseMembersCanUpdateProtectedBranchesSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscanupdateprotectedbranchessettingpayload)
 
 Sets the members can update protected branches setting for an enterprise.
 
@@ -2686,7 +2686,7 @@ Sets the members can update protected branches setting for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscanupdateprotectedbranchessettinginput"><code>UpdateEnterpriseMembersCanUpdateProtectedBranchesSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscanupdateprotectedbranchessettinginput"><code>UpdateEnterpriseMembersCanUpdateProtectedBranchesSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanUpdateProtectedBranchesSetting</p>
@@ -2697,7 +2697,7 @@ input<br />
 
 ## updateEnterpriseMembersCanViewDependencyInsightsSetting
 
-**Type:** [UpdateEnterpriseMembersCanViewDependencyInsightsSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisememberscanviewdependencyinsightssettingpayload)
+**Type:** [UpdateEnterpriseMembersCanViewDependencyInsightsSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisememberscanviewdependencyinsightssettingpayload)
 
 Sets the members can view dependency insights for an enterprise.
 
@@ -2709,7 +2709,7 @@ Sets the members can view dependency insights for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisememberscanviewdependencyinsightssettinginput"><code>UpdateEnterpriseMembersCanViewDependencyInsightsSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisememberscanviewdependencyinsightssettinginput"><code>UpdateEnterpriseMembersCanViewDependencyInsightsSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseMembersCanViewDependencyInsightsSetting</p>
@@ -2720,7 +2720,7 @@ input<br />
 
 ## updateEnterpriseOrganizationProjectsSetting
 
-**Type:** [UpdateEnterpriseOrganizationProjectsSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterpriseorganizationprojectssettingpayload)
+**Type:** [UpdateEnterpriseOrganizationProjectsSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterpriseorganizationprojectssettingpayload)
 
 Sets whether organization projects are enabled for an enterprise.
 
@@ -2732,7 +2732,7 @@ Sets whether organization projects are enabled for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterpriseorganizationprojectssettinginput"><code>UpdateEnterpriseOrganizationProjectsSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterpriseorganizationprojectssettinginput"><code>UpdateEnterpriseOrganizationProjectsSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseOrganizationProjectsSetting</p>
@@ -2743,7 +2743,7 @@ input<br />
 
 ## updateEnterpriseProfile
 
-**Type:** [UpdateEnterpriseProfilePayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterpriseprofilepayload)
+**Type:** [UpdateEnterpriseProfilePayload](/docusaurus-graphql-plugin/github-example/objects#updateenterpriseprofilepayload)
 
 Updates an enterprise's profile.
 
@@ -2755,7 +2755,7 @@ Updates an enterprise's profile.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterpriseprofileinput"><code>UpdateEnterpriseProfileInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterpriseprofileinput"><code>UpdateEnterpriseProfileInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseProfile</p>
@@ -2766,7 +2766,7 @@ input<br />
 
 ## updateEnterpriseRepositoryProjectsSetting
 
-**Type:** [UpdateEnterpriseRepositoryProjectsSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterpriserepositoryprojectssettingpayload)
+**Type:** [UpdateEnterpriseRepositoryProjectsSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterpriserepositoryprojectssettingpayload)
 
 Sets whether repository projects are enabled for a enterprise.
 
@@ -2778,7 +2778,7 @@ Sets whether repository projects are enabled for a enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterpriserepositoryprojectssettinginput"><code>UpdateEnterpriseRepositoryProjectsSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterpriserepositoryprojectssettinginput"><code>UpdateEnterpriseRepositoryProjectsSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseRepositoryProjectsSetting</p>
@@ -2789,7 +2789,7 @@ input<br />
 
 ## updateEnterpriseTeamDiscussionsSetting
 
-**Type:** [UpdateEnterpriseTeamDiscussionsSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterpriseteamdiscussionssettingpayload)
+**Type:** [UpdateEnterpriseTeamDiscussionsSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterpriseteamdiscussionssettingpayload)
 
 Sets whether team discussions are enabled for an enterprise.
 
@@ -2801,7 +2801,7 @@ Sets whether team discussions are enabled for an enterprise.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterpriseteamdiscussionssettinginput"><code>UpdateEnterpriseTeamDiscussionsSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterpriseteamdiscussionssettinginput"><code>UpdateEnterpriseTeamDiscussionsSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseTeamDiscussionsSetting</p>
@@ -2812,7 +2812,7 @@ input<br />
 
 ## updateEnterpriseTwoFactorAuthenticationRequiredSetting
 
-**Type:** [UpdateEnterpriseTwoFactorAuthenticationRequiredSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateenterprisetwofactorauthenticationrequiredsettingpayload)
+**Type:** [UpdateEnterpriseTwoFactorAuthenticationRequiredSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateenterprisetwofactorauthenticationrequiredsettingpayload)
 
 Sets whether two factor authentication is required for all users in an enterprise.
 
@@ -2824,7 +2824,7 @@ Sets whether two factor authentication is required for all users in an enterpris
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateenterprisetwofactorauthenticationrequiredsettinginput"><code>UpdateEnterpriseTwoFactorAuthenticationRequiredSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateenterprisetwofactorauthenticationrequiredsettinginput"><code>UpdateEnterpriseTwoFactorAuthenticationRequiredSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateEnterpriseTwoFactorAuthenticationRequiredSetting</p>
@@ -2835,7 +2835,7 @@ input<br />
 
 ## updateIpAllowListEnabledSetting
 
-**Type:** [UpdateIpAllowListEnabledSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateipallowlistenabledsettingpayload)
+**Type:** [UpdateIpAllowListEnabledSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updateipallowlistenabledsettingpayload)
 
 Sets whether an IP allow list is enabled on an owner.
 
@@ -2847,7 +2847,7 @@ Sets whether an IP allow list is enabled on an owner.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateipallowlistenabledsettinginput"><code>UpdateIpAllowListEnabledSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateipallowlistenabledsettinginput"><code>UpdateIpAllowListEnabledSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateIpAllowListEnabledSetting</p>
@@ -2858,7 +2858,7 @@ input<br />
 
 ## updateIpAllowListEntry
 
-**Type:** [UpdateIpAllowListEntryPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateipallowlistentrypayload)
+**Type:** [UpdateIpAllowListEntryPayload](/docusaurus-graphql-plugin/github-example/objects#updateipallowlistentrypayload)
 
 Updates an IP allow list entry.
 
@@ -2870,7 +2870,7 @@ Updates an IP allow list entry.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateipallowlistentryinput"><code>UpdateIpAllowListEntryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateipallowlistentryinput"><code>UpdateIpAllowListEntryInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateIpAllowListEntry</p>
@@ -2881,7 +2881,7 @@ input<br />
 
 ## updateIssue
 
-**Type:** [UpdateIssuePayload](/docusaurus-plugin-content-graphql/github-example/objects#updateissuepayload)
+**Type:** [UpdateIssuePayload](/docusaurus-graphql-plugin/github-example/objects#updateissuepayload)
 
 Updates an Issue.
 
@@ -2893,7 +2893,7 @@ Updates an Issue.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateissueinput"><code>UpdateIssueInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateissueinput"><code>UpdateIssueInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateIssue</p>
@@ -2904,7 +2904,7 @@ input<br />
 
 ## updateIssueComment
 
-**Type:** [UpdateIssueCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateissuecommentpayload)
+**Type:** [UpdateIssueCommentPayload](/docusaurus-graphql-plugin/github-example/objects#updateissuecommentpayload)
 
 Updates an IssueComment object.
 
@@ -2916,7 +2916,7 @@ Updates an IssueComment object.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateissuecommentinput"><code>UpdateIssueCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateissuecommentinput"><code>UpdateIssueCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateIssueComment</p>
@@ -2927,7 +2927,7 @@ input<br />
 
 ## updateLabel
 
-**Type:** [UpdateLabelPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatelabelpayload)
+**Type:** [UpdateLabelPayload](/docusaurus-graphql-plugin/github-example/objects#updatelabelpayload)
 
 Updates an existing label.
 
@@ -2939,7 +2939,7 @@ Updates an existing label.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatelabelinput"><code>UpdateLabelInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatelabelinput"><code>UpdateLabelInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateLabel</p>
@@ -2950,7 +2950,7 @@ input<br />
 
 ## updateNotificationRestrictionSetting
 
-**Type:** [UpdateNotificationRestrictionSettingPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatenotificationrestrictionsettingpayload)
+**Type:** [UpdateNotificationRestrictionSettingPayload](/docusaurus-graphql-plugin/github-example/objects#updatenotificationrestrictionsettingpayload)
 
 Update the setting to restrict notifications to only verified domains available to an owner.
 
@@ -2962,7 +2962,7 @@ Update the setting to restrict notifications to only verified domains available 
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatenotificationrestrictionsettinginput"><code>UpdateNotificationRestrictionSettingInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatenotificationrestrictionsettinginput"><code>UpdateNotificationRestrictionSettingInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateNotificationRestrictionSetting</p>
@@ -2973,7 +2973,7 @@ input<br />
 
 ## updateProject
 
-**Type:** [UpdateProjectPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateprojectpayload)
+**Type:** [UpdateProjectPayload](/docusaurus-graphql-plugin/github-example/objects#updateprojectpayload)
 
 Updates an existing project.
 
@@ -2985,7 +2985,7 @@ Updates an existing project.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateprojectinput"><code>UpdateProjectInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateprojectinput"><code>UpdateProjectInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateProject</p>
@@ -2996,7 +2996,7 @@ input<br />
 
 ## updateProjectCard
 
-**Type:** [UpdateProjectCardPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateprojectcardpayload)
+**Type:** [UpdateProjectCardPayload](/docusaurus-graphql-plugin/github-example/objects#updateprojectcardpayload)
 
 Updates an existing project card.
 
@@ -3008,7 +3008,7 @@ Updates an existing project card.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateprojectcardinput"><code>UpdateProjectCardInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateprojectcardinput"><code>UpdateProjectCardInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateProjectCard</p>
@@ -3019,7 +3019,7 @@ input<br />
 
 ## updateProjectColumn
 
-**Type:** [UpdateProjectColumnPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateprojectcolumnpayload)
+**Type:** [UpdateProjectColumnPayload](/docusaurus-graphql-plugin/github-example/objects#updateprojectcolumnpayload)
 
 Updates an existing project column.
 
@@ -3031,7 +3031,7 @@ Updates an existing project column.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateprojectcolumninput"><code>UpdateProjectColumnInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateprojectcolumninput"><code>UpdateProjectColumnInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateProjectColumn</p>
@@ -3042,7 +3042,7 @@ input<br />
 
 ## updatePullRequest
 
-**Type:** [UpdatePullRequestPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatepullrequestpayload)
+**Type:** [UpdatePullRequestPayload](/docusaurus-graphql-plugin/github-example/objects#updatepullrequestpayload)
 
 Update a pull request
 
@@ -3054,7 +3054,7 @@ Update a pull request
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatepullrequestinput"><code>UpdatePullRequestInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatepullrequestinput"><code>UpdatePullRequestInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdatePullRequest</p>
@@ -3065,7 +3065,7 @@ input<br />
 
 ## updatePullRequestReview
 
-**Type:** [UpdatePullRequestReviewPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatepullrequestreviewpayload)
+**Type:** [UpdatePullRequestReviewPayload](/docusaurus-graphql-plugin/github-example/objects#updatepullrequestreviewpayload)
 
 Updates the body of a pull request review.
 
@@ -3077,7 +3077,7 @@ Updates the body of a pull request review.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatepullrequestreviewinput"><code>UpdatePullRequestReviewInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatepullrequestreviewinput"><code>UpdatePullRequestReviewInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdatePullRequestReview</p>
@@ -3088,7 +3088,7 @@ input<br />
 
 ## updatePullRequestReviewComment
 
-**Type:** [UpdatePullRequestReviewCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatepullrequestreviewcommentpayload)
+**Type:** [UpdatePullRequestReviewCommentPayload](/docusaurus-graphql-plugin/github-example/objects#updatepullrequestreviewcommentpayload)
 
 Updates a pull request review comment.
 
@@ -3100,7 +3100,7 @@ Updates a pull request review comment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatepullrequestreviewcommentinput"><code>UpdatePullRequestReviewCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatepullrequestreviewcommentinput"><code>UpdatePullRequestReviewCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdatePullRequestReviewComment</p>
@@ -3111,7 +3111,7 @@ input<br />
 
 ## updateRef
 
-**Type:** [UpdateRefPayload](/docusaurus-plugin-content-graphql/github-example/objects#updaterefpayload)
+**Type:** [UpdateRefPayload](/docusaurus-graphql-plugin/github-example/objects#updaterefpayload)
 
 Update a Git Ref.
 
@@ -3123,7 +3123,7 @@ Update a Git Ref.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updaterefinput"><code>UpdateRefInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updaterefinput"><code>UpdateRefInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateRef</p>
@@ -3134,7 +3134,7 @@ input<br />
 
 ## updateRefs
 
-**Type:** [UpdateRefsPayload](/docusaurus-plugin-content-graphql/github-example/objects#updaterefspayload)
+**Type:** [UpdateRefsPayload](/docusaurus-graphql-plugin/github-example/objects#updaterefspayload)
 
 Creates, updates and/or deletes multiple refs in a repository.
 
@@ -3163,7 +3163,7 @@ for the given reference will be allowed.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updaterefsinput"><code>UpdateRefsInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updaterefsinput"><code>UpdateRefsInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateRefs</p>
@@ -3174,7 +3174,7 @@ input<br />
 
 ## updateRepository
 
-**Type:** [UpdateRepositoryPayload](/docusaurus-plugin-content-graphql/github-example/objects#updaterepositorypayload)
+**Type:** [UpdateRepositoryPayload](/docusaurus-graphql-plugin/github-example/objects#updaterepositorypayload)
 
 Update information about a repository.
 
@@ -3186,7 +3186,7 @@ Update information about a repository.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updaterepositoryinput"><code>UpdateRepositoryInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updaterepositoryinput"><code>UpdateRepositoryInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateRepository</p>
@@ -3197,7 +3197,7 @@ input<br />
 
 ## updateSubscription
 
-**Type:** [UpdateSubscriptionPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatesubscriptionpayload)
+**Type:** [UpdateSubscriptionPayload](/docusaurus-graphql-plugin/github-example/objects#updatesubscriptionpayload)
 
 Updates the state for subscribable subjects.
 
@@ -3209,7 +3209,7 @@ Updates the state for subscribable subjects.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatesubscriptioninput"><code>UpdateSubscriptionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatesubscriptioninput"><code>UpdateSubscriptionInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateSubscription</p>
@@ -3220,7 +3220,7 @@ input<br />
 
 ## updateTeamDiscussion
 
-**Type:** [UpdateTeamDiscussionPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateteamdiscussionpayload)
+**Type:** [UpdateTeamDiscussionPayload](/docusaurus-graphql-plugin/github-example/objects#updateteamdiscussionpayload)
 
 Updates a team discussion.
 
@@ -3232,7 +3232,7 @@ Updates a team discussion.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateteamdiscussioninput"><code>UpdateTeamDiscussionInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateteamdiscussioninput"><code>UpdateTeamDiscussionInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateTeamDiscussion</p>
@@ -3243,7 +3243,7 @@ input<br />
 
 ## updateTeamDiscussionComment
 
-**Type:** [UpdateTeamDiscussionCommentPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateteamdiscussioncommentpayload)
+**Type:** [UpdateTeamDiscussionCommentPayload](/docusaurus-graphql-plugin/github-example/objects#updateteamdiscussioncommentpayload)
 
 Updates a discussion comment.
 
@@ -3255,7 +3255,7 @@ Updates a discussion comment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateteamdiscussioncommentinput"><code>UpdateTeamDiscussionCommentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateteamdiscussioncommentinput"><code>UpdateTeamDiscussionCommentInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateTeamDiscussionComment</p>
@@ -3266,7 +3266,7 @@ input<br />
 
 ## updateTeamReviewAssignment
 
-**Type:** [UpdateTeamReviewAssignmentPayload](/docusaurus-plugin-content-graphql/github-example/objects#updateteamreviewassignmentpayload)
+**Type:** [UpdateTeamReviewAssignmentPayload](/docusaurus-graphql-plugin/github-example/objects#updateteamreviewassignmentpayload)
 
 Updates team review assignment.
 
@@ -3278,7 +3278,7 @@ Updates team review assignment.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updateteamreviewassignmentinput"><code>UpdateTeamReviewAssignmentInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updateteamreviewassignmentinput"><code>UpdateTeamReviewAssignmentInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateTeamReviewAssignment</p>
@@ -3289,7 +3289,7 @@ input<br />
 
 ## updateTopics
 
-**Type:** [UpdateTopicsPayload](/docusaurus-plugin-content-graphql/github-example/objects#updatetopicspayload)
+**Type:** [UpdateTopicsPayload](/docusaurus-graphql-plugin/github-example/objects#updatetopicspayload)
 
 Replaces the repository's topics with the given topics.
 
@@ -3301,7 +3301,7 @@ Replaces the repository's topics with the given topics.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#updatetopicsinput"><code>UpdateTopicsInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#updatetopicsinput"><code>UpdateTopicsInput!</code></a>
 </td>
 <td>
 <p>Parameters for UpdateTopics</p>
@@ -3312,7 +3312,7 @@ input<br />
 
 ## verifyVerifiableDomain
 
-**Type:** [VerifyVerifiableDomainPayload](/docusaurus-plugin-content-graphql/github-example/objects#verifyverifiabledomainpayload)
+**Type:** [VerifyVerifiableDomainPayload](/docusaurus-graphql-plugin/github-example/objects#verifyverifiabledomainpayload)
 
 Verify that a verifiable domain has the expected DNS record.
 
@@ -3324,7 +3324,7 @@ Verify that a verifiable domain has the expected DNS record.
 <tr>
 <td>
 input<br />
-<a href="/docusaurus-plugin-content-graphql/github-example/inputObjects#verifyverifiabledomaininput"><code>VerifyVerifiableDomainInput!</code></a>
+<a href="/docusaurus-graphql-plugin/github-example/inputObjects#verifyverifiabledomaininput"><code>VerifyVerifiableDomainInput!</code></a>
 </td>
 <td>
 <p>Parameters for VerifyVerifiableDomain</p>

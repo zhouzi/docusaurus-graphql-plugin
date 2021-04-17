@@ -1,6 +1,6 @@
 {
-  "name": "docusaurus-plugin-content-graphql",
-  "version": "0.4.0",
+  "name": "docusaurus-graphql-plugin",
+  "version": "0.1.0",
   "description": "Docusaurus plugin generating Markdown documentation from a GraphQL schema.",
   "keywords": [
     "docusaurus",
@@ -10,13 +10,13 @@
     "graphql",
     "documentation"
   ],
-  "homepage": "https://github.com/zhouzi/docusaurus-plugin-content-graphql/",
-  "bugs": "https://github.com/zhouzi/docusaurus-plugin-content-graphql/issues/",
+  "homepage": "https://github.com/zhouzi/docusaurus-graphql-plugin/",
+  "bugs": "https://github.com/zhouzi/docusaurus-graphql-plugin/issues/",
   "license": "MIT",
   "author": "Gabin Aureche <hello@gabinaureche.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zhouzi/docusaurus-plugin-content-graphql.git"
+    "url": "https://github.com/Zhouzi/docusaurus-graphql-plugin.git"
   },
   "scripts": {
     "test": "jest",

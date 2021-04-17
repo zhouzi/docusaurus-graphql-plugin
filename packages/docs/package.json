@@ -18,7 +18,7 @@
     "@docusaurus/preset-classic": "2.0.0-alpha.72",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
-    "docusaurus-plugin-content-graphql": "link:../docusaurus-plugin-content-graphql",
+    "docusaurus-graphql-plugin": "link:../docusaurus-graphql-plugin",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

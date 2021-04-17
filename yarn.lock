@@ -4684,8 +4684,8 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-"docusaurus-plugin-content-graphql@link:packages/docusaurus-plugin-content-graphql":
-  version "0.4.0"
+"docusaurus-graphql-plugin@link:packages/docusaurus-graphql-plugin":
+  version "0.1.0"
   dependencies:
     "@graphql-tools/graphql-file-loader" "^6.2.7"
     "@graphql-tools/json-file-loader" "^6.2.6"

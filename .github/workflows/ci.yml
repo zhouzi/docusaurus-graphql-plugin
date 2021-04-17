@@ -27,4 +27,4 @@ jobs:
         with:
           node-version: "14"
       - run: yarn
-      - run: yarn --cwd ./packages/docusaurus-plugin-content-graphql test --ci
+      - run: yarn --cwd ./packages/docusaurus-graphql-plugin test --ci

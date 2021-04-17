@@ -11,7 +11,7 @@ yarn --cwd ./packages/scripts generateDocs
 1. In an existing Docusaurus project, install the plugin:
 
 ```
-yarn add docusaurus-plugin-content-graphql
+yarn add docusaurus-graphql-plugin
 ```
 
 2. Add the plugin to your `docusaurus.config.js` file:
@@ -20,7 +20,7 @@ yarn add docusaurus-plugin-content-graphql
 module.exports = {
   plugins: [
     [
-      "docusaurus-plugin-content-graphql",
+      "docusaurus-graphql-plugin",
       {
         // can be a path, a glob or an URL
         schema: "schema.graphql",
@@ -90,7 +90,7 @@ module.exports = {
   ],
   plugins: [
     [
-      "docusaurus-plugin-content-graphql",
+      "docusaurus-graphql-plugin",
       {
         schema: "schema.graphql",
 

@@ -103,7 +103,7 @@ export default function plugin(
   options: PluginOptions
 ): Plugin<PluginContent> {
   return {
-    name: "docusaurus-plugin-content-graphql",
+    name: "docusaurus-graphql-plugin",
     loadContent: async () => {
       const schema = await loadSchema(options.schema, {
         loaders: [

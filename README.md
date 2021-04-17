@@ -1,4 +1,4 @@
-# docusaurus-plugin-content-graphql
+# docusaurus-graphql-plugin
 
 Docusaurus plugin generating Markdown documentation from a GraphQL schema.
 
@@ -12,7 +12,7 @@ The templates it generates is heavily inspired by [GitHub's documentation](https
 1. In an existing Docusaurus project, install the plugin:
 
 ```
-yarn add docusaurus-plugin-content-graphql
+yarn add docusaurus-graphql-plugin
 ```
 
 2. Add the plugin to your `docusaurus.config.js` file:
@@ -21,7 +21,7 @@ yarn add docusaurus-plugin-content-graphql
 module.exports = {
   plugins: [
     [
-      "docusaurus-plugin-content-graphql",
+      "docusaurus-graphql-plugin",
       {
         // can be a path, a glob or an URL
         schema: "schema.graphql",
@@ -91,7 +91,7 @@ module.exports = {
   ],
   plugins: [
     [
-      "docusaurus-plugin-content-graphql",
+      "docusaurus-graphql-plugin",
       {
         schema: "schema.graphql",
 
