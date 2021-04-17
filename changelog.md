@@ -13,5 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Merged the name and type column together.
-- Decreased the margin between tables/lists and their title.
+- Merge the name and type column together.
+- Decrease the margin between tables/lists and their title.
