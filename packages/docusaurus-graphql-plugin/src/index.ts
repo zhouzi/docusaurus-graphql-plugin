@@ -98,156 +98,167 @@ interface MarkdownOptions {
   ) => string;
 }
 
+async function loadContent(context: LoadContext, options: PluginOptions) {
+  const schema = await loadSchema(options.schema, {
+    loaders: [new UrlLoader(), new GraphQLFileLoader(), new JsonFileLoader()],
+  });
+  return { schema };
+}
+
+async function contentLoaded(
+  context: LoadContext,
+  options: PluginOptions,
+  content: PluginContent
+) {
+  const slugger = new Slugger();
+  const sluggify = (name: string) => slugger.slug(name, { dryrun: true });
+  const baseUrl = joinURL(context.baseUrl, options.routeBasePath);
+  const outputPath = path.join(
+    context.siteDir,
+    "docs",
+
+    ...options.routeBasePath
+
+      // the files are generated in the docs folder even if the routeBasePath doesn't contain /docs
+      // e.g /docs/api and /api both result in the files being generated in docs/api
+      .replace(/^\/docs/, "")
+
+      // routeBasePath is an URL path so the delimiter is known
+      // but outputPath is used to write files, with OS dependent delimiters
+      // so that's taken care of by path.join
+      .split("/")
+  );
+
+  const getTypePath = (
+    type:
+      | GraphQLScalarType
+      | GraphQLObjectType
+      | GraphQLInterfaceType
+      | GraphQLUnionType
+      | GraphQLEnumType
+      | GraphQLList<any>
+      | GraphQLInputObjectType
+      | GraphQLNonNull<any>
+  ): string => {
+    if (isListType(type)) {
+      return getTypePath(type.ofType);
+    }
+
+    if (isNonNullType(type)) {
+      return getTypePath(type.ofType);
+    }
+
+    if (isScalarType(type)) {
+      return joinURL(baseUrl, `/scalars#${sluggify(type.name)}`);
+    }
+
+    if (isObjectType(type)) {
+      return joinURL(baseUrl, `/objects#${sluggify(type.name)}`);
+    }
+
+    if (isInterfaceType(type)) {
+      return joinURL(baseUrl, `/interfaces#${sluggify(type.name)}`);
+    }
+
+    if (isUnionType(type)) {
+      return joinURL(baseUrl, `/unions#${sluggify(type.name)}`);
+    }
+
+    if (isEnumType(type)) {
+      return joinURL(baseUrl, `/enums#${sluggify(type.name)}`);
+    }
+
+    return joinURL(baseUrl, `/inputObjects#${sluggify(type.name)}`);
+  };
+  const {
+    queries,
+    mutations,
+    objects,
+    interfaces,
+    enums,
+    unions,
+    inputObjects,
+    scalars,
+  } = sortGroupedTypes(groupTypes(Object.values(content.schema.getTypeMap())));
+  const files = [
+    {
+      id: "queries",
+      title: "Queries",
+      content: convertQueriesToMarkdown(queries, { getTypePath }),
+    },
+    {
+      id: "mutations",
+      title: "Mutations",
+      content: convertMutationsToMarkdown(mutations, { getTypePath }),
+    },
+    {
+      id: "objects",
+      title: "Objects",
+      content: convertObjectsToMarkdown(objects, { getTypePath }),
+    },
+    {
+      id: "interfaces",
+      title: "Interfaces",
+      content: convertInterfacesToMarkdown(interfaces, { getTypePath }),
+    },
+    {
+      id: "enums",
+      title: "Enums",
+      content: convertEnumsToMarkdown(enums, { getTypePath }),
+    },
+    {
+      id: "unions",
+      title: "Unions",
+      content: convertUnionsToMarkdown(unions, { getTypePath }),
+    },
+    {
+      id: "inputObjects",
+      title: "Input objects",
+      content: convertInputObjectsToMarkdown(inputObjects, { getTypePath }),
+    },
+    {
+      id: "scalars",
+      title: "Scalars",
+      content: convertScalarsToMarkdown(scalars, { getTypePath }),
+    },
+  ];
+
+  for (const file of files) {
+    await fse.outputFile(
+      path.join(outputPath, `${file.id}.md`),
+      [
+        `---`,
+        `\n`,
+        `id: ${file.id}`,
+        `\n`,
+        `title: ${file.title}`,
+        `\n`,
+        `slug: ${file.id}`,
+        `\n`,
+        `---`,
+        `\n\n`,
+        file.content,
+      ].join("")
+    );
+  }
+}
+
 export default function plugin(
   context: LoadContext,
   options: PluginOptions
 ): Plugin<PluginContent> {
   return {
     name: "docusaurus-graphql-plugin",
-    loadContent: async () => {
-      const schema = await loadSchema(options.schema, {
-        loaders: [
-          new UrlLoader(),
-          new GraphQLFileLoader(),
-          new JsonFileLoader(),
-        ],
-      });
-      return { schema };
-    },
-    contentLoaded: async ({ content }) => {
-      const slugger = new Slugger();
-      const sluggify = (name: string) => slugger.slug(name, { dryrun: true });
-      const baseUrl = joinURL(context.baseUrl, options.routeBasePath);
-      const outputPath = path.join(
-        context.siteDir,
-        "docs",
-
-        ...options.routeBasePath
-
-          // the files are generated in the docs folder even if the routeBasePath doesn't contain /docs
-          // e.g /docs/api and /api both result in the files being generated in docs/api
-          .replace(/^\/docs/, "")
-
-          // routeBasePath is an URL path so the delimiter is known
-          // but outputPath is used to write files, with OS dependent delimiters
-          // so that's taken care of by path.join
-          .split("/")
-      );
-
-      const getTypePath = (
-        type:
-          | GraphQLScalarType
-          | GraphQLObjectType
-          | GraphQLInterfaceType
-          | GraphQLUnionType
-          | GraphQLEnumType
-          | GraphQLList<any>
-          | GraphQLInputObjectType
-          | GraphQLNonNull<any>
-      ): string => {
-        if (isListType(type)) {
-          return getTypePath(type.ofType);
-        }
-
-        if (isNonNullType(type)) {
-          return getTypePath(type.ofType);
-        }
-
-        if (isScalarType(type)) {
-          return joinURL(baseUrl, `/scalars#${sluggify(type.name)}`);
-        }
-
-        if (isObjectType(type)) {
-          return joinURL(baseUrl, `/objects#${sluggify(type.name)}`);
-        }
-
-        if (isInterfaceType(type)) {
-          return joinURL(baseUrl, `/interfaces#${sluggify(type.name)}`);
-        }
-
-        if (isUnionType(type)) {
-          return joinURL(baseUrl, `/unions#${sluggify(type.name)}`);
-        }
-
-        if (isEnumType(type)) {
-          return joinURL(baseUrl, `/enums#${sluggify(type.name)}`);
-        }
-
-        return joinURL(baseUrl, `/inputObjects#${sluggify(type.name)}`);
-      };
-      const {
-        queries,
-        mutations,
-        objects,
-        interfaces,
-        enums,
-        unions,
-        inputObjects,
-        scalars,
-      } = sortGroupedTypes(
-        groupTypes(Object.values(content.schema.getTypeMap()))
-      );
-      const files = [
-        {
-          id: "queries",
-          title: "Queries",
-          content: convertQueriesToMarkdown(queries, { getTypePath }),
-        },
-        {
-          id: "mutations",
-          title: "Mutations",
-          content: convertMutationsToMarkdown(mutations, { getTypePath }),
-        },
-        {
-          id: "objects",
-          title: "Objects",
-          content: convertObjectsToMarkdown(objects, { getTypePath }),
-        },
-        {
-          id: "interfaces",
-          title: "Interfaces",
-          content: convertInterfacesToMarkdown(interfaces, { getTypePath }),
-        },
-        {
-          id: "enums",
-          title: "Enums",
-          content: convertEnumsToMarkdown(enums, { getTypePath }),
-        },
-        {
-          id: "unions",
-          title: "Unions",
-          content: convertUnionsToMarkdown(unions, { getTypePath }),
-        },
-        {
-          id: "inputObjects",
-          title: "Input objects",
-          content: convertInputObjectsToMarkdown(inputObjects, { getTypePath }),
-        },
-        {
-          id: "scalars",
-          title: "Scalars",
-          content: convertScalarsToMarkdown(scalars, { getTypePath }),
-        },
-      ];
-
-      for (const file of files) {
-        await fse.outputFile(
-          path.join(outputPath, `${file.id}.md`),
-          [
-            `---`,
-            `\n`,
-            `id: ${file.id}`,
-            `\n`,
-            `title: ${file.title}`,
-            `\n`,
-            `slug: ${file.id}`,
-            `\n`,
-            `---`,
-            `\n\n`,
-            file.content,
-          ].join("")
-        );
-      }
+    loadContent: () => loadContent(context, options),
+    contentLoaded: ({ content }) => contentLoaded(context, options, content),
+    extendCli: (cli) => {
+      cli
+        .command("docs:generate:graphql")
+        .description("Generate the GraphQL documentation based on the schema")
+        .action(async () => {
+          const content = await loadContent(context, options);
+          await contentLoaded(context, options, content);
+        });
     },
   };
 }

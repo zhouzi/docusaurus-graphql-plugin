@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Add the `docs:generate:graphql` command to generate the documentation.
+
 ## 0.2.0 - 2021-04-18
 
 ### Fixed
