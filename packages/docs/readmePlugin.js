@@ -40,8 +40,7 @@ function contentLoaded({ readme }) {
         "",
         "<!--",
         "This file was automatically generated from the README.md.",
-        "Do not edit it but make your changes to the README.md instead and run the command:",
-        "yarn --cwd ./packages/scripts generateDocs",
+        "Do not edit it but make your changes to the README.md instead.",
         "-->",
       ]
         .concat(content)
