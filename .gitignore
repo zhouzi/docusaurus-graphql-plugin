@@ -104,5 +104,5 @@ dist
 .tern-port
 
 build
-packages/docs/docs
+packages/docs/docs/**/*.md
 packages/docusaurus-graphql-plugin/README.md
