@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "docusaurus-graphql-plugin",
   "version": "0.2.0",
   "description": "Docusaurus plugin generating Markdown documentation from a GraphQL schema.",
@@ -22,7 +23,7 @@
     "test": "jest",
     "prebuild": "rm -rf build",
     "build": "tsc",
-    "postbuild": "cp ../../README.md .",
+    "postbuild": "node ./scripts/postbuild",
     "prepare": "yarn run build"
   },
   "main": "build/index.js",
