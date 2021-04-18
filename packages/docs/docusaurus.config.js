@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require("path");
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: "docusaurus-graphql-plugin",
@@ -47,5 +50,6 @@ module.exports = {
         routeBasePath: "/github-example",
       },
     ],
+    path.join(__dirname, "readmePlugin"),
   ],
 };
