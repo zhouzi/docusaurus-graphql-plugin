@@ -52,8 +52,8 @@ function contentLoaded({ readme }) {
 module.exports = function plugin() {
   return {
     name: "docusaurus-readme-plugin",
-    loadContent: () => loadContent(),
-    contentLoaded: ({ content }) => contentLoaded(content),
+    // loadContent: () => loadContent(),
+    // contentLoaded: ({ content }) => contentLoaded(content),
     extendCli: (cli) => {
       cli
         .command("docs:generate:readme")

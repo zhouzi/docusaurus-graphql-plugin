@@ -26,10 +26,6 @@
     "postbuild": "node ./scripts/postbuild",
     "prepare": "yarn run build"
   },
-  "main": "build/index.js",
-  "files": [
-    "build"
-  ],
   "devDependencies": {
     "@docusaurus/types": "^2.0.0-alpha.72",
     "@types/fs-extra": "^9.0.11",

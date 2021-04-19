@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## Changed
+
+- Split the plugin in three separate plugins: cli-only, content-only, and both (default).
+
 ### Fixed
 
 - Fix support for multiple instances of the plugin.
