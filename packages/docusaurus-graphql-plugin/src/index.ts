@@ -42,11 +42,13 @@ interface PluginContent {
 }
 
 interface PluginOptions {
+  id: string;
   schema: string;
   routeBasePath: string;
 }
 
 const OptionsSchema = Joi.object({
+  id: Joi.string(),
   schema: Joi.string().required(),
   routeBasePath: Joi.string().default("/docs/api/"),
 });
@@ -253,7 +255,7 @@ export default function plugin(
     contentLoaded: ({ content }) => contentLoaded(context, options, content),
     extendCli: (cli) => {
       cli
-        .command("docs:generate:graphql")
+        .command(["docs", "generate", "graphql", options.id].join(":"))
         .description("Generate the GraphQL documentation based on the schema")
         .action(async () => {
           const content = await loadContent(context, options);
