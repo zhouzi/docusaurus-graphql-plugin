@@ -44,7 +44,7 @@ module.exports = {
   ],
   plugins: [
     [
-      "docusaurus-graphql-plugin/cli",
+      "docusaurus-graphql-plugin",
       {
         schema: "github.graphql",
         routeBasePath: "/github-example",

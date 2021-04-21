@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-## Changed
+### Removed
 
-- Split the plugin in three separate plugins: cli-only, content-only, and both (default).
+- Remove the runtime part of the plugin to only keep the cli.
 
 ### Fixed
 
