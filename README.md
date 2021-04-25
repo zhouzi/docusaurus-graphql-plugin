@@ -4,8 +4,18 @@ Docusaurus plugin generating Markdown documentation from a GraphQL schema.
 
 ## Motivation
 
-The goal of this plugin is to generate a documentation that is pleasant to browse, based on a GraphQL schema.
-The templates it generates is heavily inspired by [GitHub's documentation](https://docs.github.com/en/graphql/reference), which I enjoy browsing.
+Documentation is at the heart of GraphQL. Its core features makes up for great self documented APIs.
+From a consumer's perspective, it usually comes in the form of types, clear expectations and precise error messages.
+The standards also make it easy to build playgrounds, which come with many implementations.
+The typical playground offers a way to browse the API and learn more about its queries and mutations.
+
+But while playgrounds are a great way to play around with an API, they are not necessarily the best first-time experience.
+This is especially true for GraphQL which may look a bit alien compared to the traditional, popular and mature REST approach.
+So a playground alone might not be enough, especially for public APIs targeted to teams with varying backgrounds and technologies.
+
+This is the gap that this plugin tries to fill.
+Its goal is to generate documentation that is easy to browse and share with minimum prior experience.
+To reach this goal, it takes most of its ideas from [GitHub's GraphQL API documentation](https://docs.github.com/en/graphql).
 
 ## Usage
 
@@ -33,13 +43,9 @@ module.exports = {
 };
 ```
 
-3. Start the application:
+3. Run the command `npx docusaurus docs:generate:graphql`
 
-```
-yarn start
-```
-
-4. The plugin will generate Markdown files in the `docs/api` folder. So you can now add these files to your `sidebars.js`:
+4. The command will have generated files that you can now add to your `sidebars.js`:
 
 ```js
 modules.exports = {
@@ -58,7 +64,46 @@ modules.exports = {
 };
 ```
 
+5. You can now run `yarn start` to serve your documentation
+
 ### Options
+
+#### `id`
+
+This option is common to docusaurus plugins and can be used to differentiate multiple instance of the plugin.
+For example:
+
+```js
+module.exports = {
+  plugins: [
+    [
+      "docusaurus-graphql-plugin",
+      {
+        id: "first-api",
+        schema: "first-api.graphql",
+        // it's important that routeBasePath has a different
+        // value for each instance of the plugin
+        routeBasePath: "/docs/first-api",
+      },
+    ],
+    [
+      "docusaurus-graphql-plugin",
+      {
+        id: "second-api",
+        schema: "second-api.graphql",
+        // it's important that routeBasePath has a different
+        // value for each instance of the plugin
+        routeBasePath: "/docs/second-api",
+      },
+    ],
+  ],
+};
+```
+
+With the configuration above you would end up with two different commands:
+
+- `docs:generate:graphql:first-api`
+- `docs:generate:graphql:second-api`
 
 #### `schema`
 
