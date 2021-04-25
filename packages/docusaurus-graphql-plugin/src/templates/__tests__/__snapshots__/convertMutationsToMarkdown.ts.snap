@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertMutationsToMarkdown should render mutations 1`] = `
+"## createUser
+
+**Type:** [User!](#)
+
+Mutation to create a new user.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"#\\"><code>String!</code></a>
+</td>
+<td>
+<p>The new user&#39;s name</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;

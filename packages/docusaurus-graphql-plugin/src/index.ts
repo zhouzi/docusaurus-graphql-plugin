@@ -7,20 +7,15 @@ import {
   ValidationResult,
 } from "@docusaurus/types";
 import {
-  GraphQLArgument,
   GraphQLEnumType,
-  GraphQLField,
-  GraphQLInputField,
   GraphQLInputObjectType,
   GraphQLInterfaceType,
   GraphQLList,
-  GraphQLNamedType,
   GraphQLNonNull,
   GraphQLObjectType,
   GraphQLScalarType,
   GraphQLUnionType,
   isEnumType,
-  isInputObjectType,
   isInterfaceType,
   isListType,
   isNonNullType,
@@ -33,63 +28,22 @@ import { loadSchema } from "@graphql-tools/load";
 import { UrlLoader } from "@graphql-tools/url-loader";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 import { JsonFileLoader } from "@graphql-tools/json-file-loader";
-import marked, { Slugger } from "marked";
+import { Slugger } from "marked";
 import joinURL from "url-join";
+import { PluginOptions } from "./types";
+import {
+  convertEnumsToMarkdown,
+  convertInputObjectsToMarkdown,
+  convertInterfacesToMarkdown,
+  convertMutationsToMarkdown,
+  convertObjectsToMarkdown,
+  convertQueriesToMarkdown,
+  convertScalarsToMarkdown,
+  convertUnionsToMarkdown,
+} from "./templates";
+import { groupSortedTypes } from "./groupSortedTypes";
 
-interface TypeItem<T> {
-  type: T;
-}
-
-interface QueryItem extends TypeItem<GraphQLField<any, any>> {}
-
-interface MutationItem extends TypeItem<GraphQLField<any, any>> {}
-
-interface ObjectItem extends TypeItem<GraphQLObjectType> {}
-
-interface InterfaceItem extends TypeItem<GraphQLInterfaceType> {
-  implementedBy: GraphQLObjectType[];
-}
-
-interface EnumItem extends TypeItem<GraphQLEnumType> {}
-
-interface UnionItem extends TypeItem<GraphQLUnionType> {}
-
-interface InputObjectItem extends TypeItem<GraphQLInputObjectType> {}
-
-interface ScalarItem extends TypeItem<GraphQLScalarType> {}
-
-interface GroupedTypes {
-  queries: QueryItem[];
-  mutations: MutationItem[];
-  objects: ObjectItem[];
-  interfaces: InterfaceItem[];
-  enums: EnumItem[];
-  unions: UnionItem[];
-  inputObjects: InputObjectItem[];
-  scalars: ScalarItem[];
-}
-
-interface MarkdownOptions {
-  getTypePath: (
-    type:
-      | GraphQLScalarType
-      | GraphQLObjectType
-      | GraphQLInterfaceType
-      | GraphQLUnionType
-      | GraphQLEnumType
-      | GraphQLList<any>
-      | GraphQLInputObjectType
-      | GraphQLNonNull<any>
-  ) => string;
-}
-
-export interface PluginOptions {
-  id: string;
-  schema: string;
-  routeBasePath: string;
-}
-
-const OptionsSchema = Joi.object({
+const OptionsSchema = Joi.object<PluginOptions>({
   id: Joi.string(),
   schema: Joi.string().required(),
   routeBasePath: Joi.string().default("/docs/api/"),
@@ -100,453 +54,6 @@ export function validateOptions({
   validate,
 }: OptionValidationContext<PluginOptions>): ValidationResult<PluginOptions> {
   return validate(OptionsSchema, options);
-}
-
-export function groupTypes(types: GraphQLNamedType[]): GroupedTypes {
-  return types.reduce<GroupedTypes>(
-    (acc, type) => {
-      if (type.name.startsWith("__")) {
-        return acc;
-      }
-
-      if (isObjectType(type)) {
-        if (type.name === "Query") {
-          return {
-            ...acc,
-            queries: Object.values(type.getFields()).map((query) => ({
-              type: query,
-            })),
-          };
-        }
-
-        if (type.name === "Mutation") {
-          return {
-            ...acc,
-            mutations: Object.values(type.getFields()).map((mutation) => ({
-              type: mutation,
-            })),
-          };
-        }
-
-        type.getInterfaces().forEach((inter) => {
-          acc.interfaces.forEach((otherInter) => {
-            if (otherInter.type.name === inter.name) {
-              otherInter.implementedBy.push(type);
-            }
-          });
-        });
-
-        return {
-          ...acc,
-          objects: acc.objects.concat([{ type }]),
-        };
-      }
-
-      if (isInterfaceType(type)) {
-        const interfaceItem: InterfaceItem = {
-          type,
-          implementedBy: [],
-        };
-
-        acc.objects.forEach(({ type: object }) => {
-          object.getInterfaces().forEach((otherInterface) => {
-            if (otherInterface.name === interfaceItem.type.name) {
-              interfaceItem.implementedBy.push(object);
-            }
-          });
-        });
-
-        return {
-          ...acc,
-          interfaces: acc.interfaces.concat([interfaceItem]),
-        };
-      }
-
-      if (isEnumType(type)) {
-        return {
-          ...acc,
-          enums: acc.enums.concat([{ type }]),
-        };
-      }
-
-      if (isUnionType(type)) {
-        return {
-          ...acc,
-          unions: acc.unions.concat([{ type }]),
-        };
-      }
-
-      if (isInputObjectType(type)) {
-        return {
-          ...acc,
-          inputObjects: acc.inputObjects.concat([{ type }]),
-        };
-      }
-
-      if (isScalarType(type)) {
-        return {
-          ...acc,
-          scalars: acc.scalars.concat([{ type }]),
-        };
-      }
-
-      return acc;
-    },
-    {
-      queries: [],
-      mutations: [],
-      objects: [],
-      interfaces: [],
-      enums: [],
-      unions: [],
-      inputObjects: [],
-      scalars: [],
-    }
-  );
-}
-
-export function sortGroupedTypes(groupedTypes: GroupedTypes): GroupedTypes {
-  return {
-    queries: sortByName(groupedTypes.queries),
-    mutations: sortByName(groupedTypes.mutations),
-    objects: sortByName(groupedTypes.objects),
-    interfaces: sortByName(groupedTypes.interfaces),
-    enums: sortByName(groupedTypes.enums),
-    unions: sortByName(groupedTypes.unions),
-    inputObjects: sortByName(groupedTypes.inputObjects),
-    scalars: sortByName(groupedTypes.scalars),
-  };
-}
-
-function sortByName<T extends TypeItem<{ name: string }>>(types: T[]): T[] {
-  return types.sort((a, b) => a.type.name.localeCompare(b.type.name));
-}
-
-export function convertQueriesToMarkdown(
-  queries: QueryItem[],
-  { getTypePath }: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  queries.forEach(({ type: query }) => {
-    lines.push(`## ${query.name}`, `\n\n`);
-    lines.push(
-      `**Type:** [${query.type.inspect()}](${getTypePath(query.type)})`,
-      `\n\n`
-    );
-    lines.push(query.description || "", `\n\n`);
-
-    if (query.args.length > 0) {
-      pushArguments(lines, query.args, { getTypePath });
-    }
-  });
-
-  return lines.join("");
-}
-
-export function convertMutationsToMarkdown(
-  mutations: MutationItem[],
-  { getTypePath }: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  mutations.forEach(({ type: mutation }) => {
-    lines.push(`## ${mutation.name}`, `\n\n`);
-    lines.push(
-      `**Type:** [${mutation.type.inspect()}](${getTypePath(mutation.type)})`,
-      `\n\n`
-    );
-    lines.push(mutation.description || "", `\n\n`);
-
-    if (mutation.args.length > 0) {
-      pushArguments(lines, mutation.args, { getTypePath });
-    }
-  });
-
-  return lines.join("");
-}
-
-function pushArguments(
-  lines: string[],
-  args: Array<GraphQLArgument | GraphQLInputField>,
-  { getTypePath }: MarkdownOptions
-) {
-  lines.push(
-    `<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>`,
-    `\n\n`
-  );
-
-  lines.push(`<table>`, `\n`);
-  lines.push(`<thead><tr><th>Name</th><th>Description</th></tr></thead>`, `\n`);
-  lines.push(`<tbody>`, `\n`);
-
-  args.forEach((arg) => {
-    lines.push(`<tr>`, `\n`);
-    lines.push(
-      `<td>`,
-      `\n`,
-      `${arg.name}`,
-      `<br />\n`,
-      `<a href="${getTypePath(
-        arg.type
-      )}"><code>${arg.type.inspect()}</code></a>`,
-      `\n`,
-      `</td>`,
-      `\n`
-    );
-
-    lines.push(`<td>`, `\n`);
-
-    if (arg.deprecationReason) {
-      lines.push(
-        `<blockquote>Deprecated: ${arg.deprecationReason}</blockquote>`,
-        `\n\n`
-      );
-    }
-
-    lines.push(parseMarkdown(arg.description || ""), `\n`);
-
-    lines.push(`</td>`, `\n`);
-
-    lines.push(`</tr>`, `\n`);
-  });
-
-  lines.push(`</tbody>`, `\n`);
-  lines.push(`</table>`, `\n\n`);
-}
-
-export function convertObjectsToMarkdown(
-  objects: ObjectItem[],
-  { getTypePath }: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  objects.forEach(({ type: object }) => {
-    lines.push(`## ${object.name}`, `\n\n`);
-    lines.push(object.description || "", `\n\n`);
-
-    const interfaces = object.getInterfaces();
-    if (interfaces.length > 0) {
-      pushInterfaces(lines, interfaces, { getTypePath });
-    }
-
-    const fields = Object.values(object.getFields());
-    pushFields(lines, fields, { getTypePath });
-  });
-
-  return lines.join("");
-}
-
-export function convertInterfacesToMarkdown(
-  interfaces: InterfaceItem[],
-  { getTypePath }: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  interfaces.forEach(({ type: inter, implementedBy }) => {
-    lines.push(`## ${inter.name}`, `\n\n`);
-    lines.push(inter.description || "", `\n\n`);
-
-    const subInterfaces = inter.getInterfaces();
-    if (subInterfaces.length > 0) {
-      pushInterfaces(lines, subInterfaces, { getTypePath });
-    }
-
-    if (implementedBy.length > 0) {
-      lines.push(
-        `<p style={{ marginBottom: "0.4em" }}><strong>Implemented by</strong></p>`,
-        `\n\n`
-      );
-      implementedBy.forEach((object) => {
-        lines.push(`- [${object.name}](${getTypePath(object)})`, `\n`);
-      });
-      lines.push(`\n`);
-    }
-
-    const fields = Object.values(inter.getFields());
-    pushFields(lines, fields, { getTypePath });
-  });
-
-  return lines.join("");
-}
-
-function pushInterfaces(
-  lines: string[],
-  interfaces: GraphQLInterfaceType[],
-  { getTypePath }: MarkdownOptions
-) {
-  lines.push(
-    `<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>`,
-    `\n\n`
-  );
-  interfaces.forEach((inter) => {
-    lines.push(`- [${inter.name}](${getTypePath(inter)})`, `\n`);
-  });
-  lines.push(`\n`);
-}
-
-function pushFields(
-  lines: string[],
-  fields: GraphQLField<any, any>[],
-  { getTypePath }: MarkdownOptions
-) {
-  lines.push(
-    `<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>`,
-    `\n\n`
-  );
-
-  lines.push(`<table>`, `\n`);
-  lines.push(`<thead><tr><th>Name</th><th>Description</th></tr></thead>`, `\n`);
-  lines.push(`<tbody>`, `\n`);
-
-  fields.forEach((field) => {
-    lines.push(`<tr>`, `\n`);
-    lines.push(
-      `<td>`,
-      `\n`,
-      `${field.name}`,
-      `<br />\n`,
-      `<a href="${getTypePath(
-        field.type
-      )}"><code>${field.type.inspect()}</code></a>`,
-      `\n`,
-      `</td>`,
-      `\n`
-    );
-
-    lines.push(`<td>`, `\n`);
-
-    if (field.deprecationReason) {
-      lines.push(
-        `<blockquote>Deprecated: ${field.deprecationReason}</blockquote>`,
-        `\n\n`
-      );
-    }
-
-    lines.push(parseMarkdown(field.description || ""), `\n`);
-
-    if (field.args.length > 0) {
-      lines.push(`\n`);
-      pushArguments(lines, field.args, { getTypePath });
-    }
-
-    lines.push(`</td>`, `\n`);
-
-    lines.push(`</tr>`, `\n`);
-  });
-
-  lines.push(`</tbody>`, `\n`);
-  lines.push(`</table>`, `\n\n`);
-}
-
-export function convertEnumsToMarkdown(
-  enums: EnumItem[],
-  _: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  enums.forEach(({ type: en }) => {
-    lines.push(`## ${en.name}`, `\n\n`);
-    lines.push(en.description || "", `\n\n`);
-
-    lines.push(
-      `<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>`,
-      `\n\n`
-    );
-
-    lines.push(`<table>`, `\n`);
-    lines.push(
-      `<thead><tr><th>Value</th><th>Description</th></tr></thead>`,
-      `\n`
-    );
-    lines.push(`<tbody>`, `\n`);
-
-    en.getValues().forEach((value) => {
-      lines.push(`<tr>`, `\n`);
-      lines.push(`<td>${value.value}</td>`, `\n`);
-      lines.push(`<td>`, `\n`);
-      lines.push(parseMarkdown(value.description || ""), `\n`);
-      lines.push(`</td>`, `\n`);
-      lines.push(`</tr>`, `\n`);
-    });
-
-    lines.push(`</tbody>`, `\n`);
-    lines.push(`</table>`, `\n\n`);
-  });
-
-  return lines.join("");
-}
-
-export function convertUnionsToMarkdown(
-  unions: UnionItem[],
-  { getTypePath }: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  unions.forEach(({ type: union }) => {
-    lines.push(`## ${union.name}`, `\n\n`);
-    lines.push(union.description || "", `\n\n`);
-
-    lines.push(
-      `<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>`,
-      `\n\n`
-    );
-    union.getTypes().forEach((type) => {
-      lines.push(`- [${type.name}](${getTypePath(type)})`, `\n`);
-    });
-    lines.push(`\n`);
-  });
-
-  return lines.join("");
-}
-
-export function convertInputObjectsToMarkdown(
-  inputObjects: InputObjectItem[],
-  { getTypePath }: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  inputObjects.forEach(({ type: inputObject }) => {
-    lines.push(`## ${inputObject.name}`, `\n\n`);
-    lines.push(inputObject.description || "", `\n\n`);
-
-    pushArguments(lines, Object.values(inputObject.getFields()), {
-      getTypePath,
-    });
-  });
-
-  return lines.join("");
-}
-
-export function convertScalarsToMarkdown(
-  scalars: ScalarItem[],
-  _: MarkdownOptions
-): string {
-  const lines: string[] = [];
-
-  scalars.forEach(({ type: scalar }) => {
-    lines.push(`## ${scalar.name}`, `\n\n`);
-    lines.push(scalar.description || "", `\n\n`);
-  });
-
-  return lines.join("");
-}
-
-function parseMarkdown(markdown: string): string {
-  const walkTokens = (token: marked.Token) => {
-    if (token.type === "text") {
-      // make the Markdown compatible with MDX by escaping curly braces
-      token.text = token.text
-        .replace(/\{/g, "&lbrace;")
-        .replace(/\}/g, "&rbrace;");
-    }
-  };
-  return marked
-    .parse(markdown, {
-      // marked's types are buggy
-      walkTokens: walkTokens as any,
-    })
-    .trim();
 }
 
 export default function plugin(
@@ -595,7 +102,6 @@ export default function plugin(
               // so that's taken care of by path.join
               .split("/")
           );
-
           const getTypePath = (
             type:
               | GraphQLScalarType
@@ -646,7 +152,7 @@ export default function plugin(
             unions,
             inputObjects,
             scalars,
-          } = sortGroupedTypes(groupTypes(Object.values(schema.getTypeMap())));
+          } = groupSortedTypes(Object.values(schema.getTypeMap()));
           const files = [
             {
               id: "queries",

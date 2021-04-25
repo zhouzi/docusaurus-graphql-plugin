@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertEnumsToMarkdown should render enums 1`] = `
+"## UserRole
+
+Represents a user's role.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Values</strong></p>
+
+<table>
+<thead><tr><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td>
+<p>User has admin rights.</p>
+</td>
+</tr>
+<tr>
+<td>User</td>
+<td>
+<p>User has no particular rights.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;

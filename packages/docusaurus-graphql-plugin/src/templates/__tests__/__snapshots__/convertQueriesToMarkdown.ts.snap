@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertQueriesToMarkdown should render queries 1`] = `
+"## user
+
+**Type:** [User!](#)
+
+Query to get a user.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href=\\"#\\"><code>ID!</code></a>
+</td>
+<td>
+<p>The user&#39;s id.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;

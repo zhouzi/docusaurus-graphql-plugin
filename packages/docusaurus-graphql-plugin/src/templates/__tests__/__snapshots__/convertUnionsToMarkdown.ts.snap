@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertUnionsToMarkdown should render unions 1`] = `
+"## Humanoid
+
+Combination of the possible humanoids.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Possible types</strong></p>
+
+- [User](#)
+- [Droid](#)
+
+"
+`;
