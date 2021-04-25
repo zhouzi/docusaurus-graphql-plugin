@@ -52,4 +52,31 @@ describe("convertInterfacesToMarkdown", () => {
       })
     ).toMatchSnapshot();
   });
+
+  it("should list the interface's implementations", () => {
+    const schema = buildSchema(`
+      """
+      Properties that are common to the different kind of users.
+      """
+      interface User {
+        "The user's name."
+        name: String!
+      }
+      
+      """
+      A special kind of user.
+      """
+      type Admin implements User {
+        "The admin's name."
+        name: String!
+      }
+    `);
+    const { interfaces } = groupSortedTypes(Object.values(schema.getTypeMap()));
+
+    expect(
+      convertInterfacesToMarkdown(interfaces, {
+        getTypePath,
+      })
+    ).toMatchSnapshot();
+  });
 });
