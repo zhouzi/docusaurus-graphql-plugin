@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fix support for multiple instances of the plugin.
+- Add interfaces to the interfaces' "implemented by" list.
 
 ## 0.3.0 - 2021-04-18
 

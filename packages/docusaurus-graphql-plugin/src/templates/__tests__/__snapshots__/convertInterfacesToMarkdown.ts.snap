@@ -84,6 +84,10 @@ power<br />
 
 Properties that are common to the different kind of users.
 
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
+
+- [Admin](#)
+
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
 <table>

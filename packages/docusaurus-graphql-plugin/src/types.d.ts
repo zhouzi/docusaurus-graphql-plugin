@@ -17,7 +17,7 @@ export interface QueryItem extends TypeItem<GraphQLField<any, any>> {}
 export interface MutationItem extends TypeItem<GraphQLField<any, any>> {}
 export interface ObjectItem extends TypeItem<GraphQLObjectType> {}
 export interface InterfaceItem extends TypeItem<GraphQLInterfaceType> {
-  implementedBy: GraphQLObjectType[];
+  implementedBy: Array<GraphQLObjectType | GraphQLInterfaceType>;
 }
 export interface EnumItem extends TypeItem<GraphQLEnumType> {}
 export interface UnionItem extends TypeItem<GraphQLUnionType> {}

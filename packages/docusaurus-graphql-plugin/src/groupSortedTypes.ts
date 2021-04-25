@@ -7,10 +7,10 @@ import {
   isScalarType,
   isUnionType,
 } from "graphql";
-import { GroupedTypes, InterfaceItem, TypeItem } from "./types";
+import { GroupedTypes, TypeItem } from "./types";
 
 function groupTypes(types: GraphQLNamedType[]): GroupedTypes {
-  return types.reduce<GroupedTypes>(
+  const groups = types.reduce<GroupedTypes>(
     (acc, type) => {
       if (type.name.startsWith("__")) {
         return acc;
@@ -35,14 +35,6 @@ function groupTypes(types: GraphQLNamedType[]): GroupedTypes {
           };
         }
 
-        type.getInterfaces().forEach((inter) => {
-          acc.interfaces.forEach((otherInter) => {
-            if (otherInter.type.name === inter.name) {
-              otherInter.implementedBy.push(type);
-            }
-          });
-        });
-
         return {
           ...acc,
           objects: acc.objects.concat([{ type }]),
@@ -50,22 +42,14 @@ function groupTypes(types: GraphQLNamedType[]): GroupedTypes {
       }
 
       if (isInterfaceType(type)) {
-        const interfaceItem: InterfaceItem = {
-          type,
-          implementedBy: [],
-        };
-
-        acc.objects.forEach(({ type: object }) => {
-          object.getInterfaces().forEach((otherInterface) => {
-            if (otherInterface.name === interfaceItem.type.name) {
-              interfaceItem.implementedBy.push(object);
-            }
-          });
-        });
-
         return {
           ...acc,
-          interfaces: acc.interfaces.concat([interfaceItem]),
+          interfaces: acc.interfaces.concat([
+            {
+              type,
+              implementedBy: [],
+            },
+          ]),
         };
       }
 
@@ -110,6 +94,18 @@ function groupTypes(types: GraphQLNamedType[]): GroupedTypes {
       scalars: [],
     }
   );
+
+  [...groups.objects, ...groups.interfaces].forEach(({ type }) => {
+    type.getInterfaces().forEach((inter) => {
+      groups.interfaces.forEach((otherInter) => {
+        if (otherInter.type.name === inter.name) {
+          otherInter.implementedBy.push(type);
+        }
+      });
+    });
+  });
+
+  return groups;
 }
 
 function sortByName<T extends TypeItem<{ name: string }>>(types: T[]): T[] {
