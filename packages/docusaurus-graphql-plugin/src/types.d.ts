@@ -51,4 +51,8 @@ export interface PluginOptions {
   id: string;
   schema: string;
   routeBasePath: string;
+  sidebar?: {
+    label: string;
+    position: number;
+  }
 }

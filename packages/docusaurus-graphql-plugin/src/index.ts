@@ -47,6 +47,10 @@ const OptionsSchema = Joi.object<PluginOptions>({
   id: Joi.string(),
   schema: Joi.string().required(),
   routeBasePath: Joi.string().default("/docs/api/"),
+  sidebar: Joi.object({
+    label: Joi.string(),
+    position: Joi.number()
+  }),
 });
 
 export function validateOptions({
@@ -225,6 +229,16 @@ export default function plugin(
                 file.content,
               ].join("")
             );
+          }
+
+          if (options.sidebar){
+            await fse.outputFile(
+              path.join(outputPath, "_category_.json"),
+              JSON.stringify({
+                label: options.sidebar.label,
+                position: options.sidebar.position
+              }, null, 2)
+            )
           }
         });
     },
