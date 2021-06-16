@@ -157,36 +157,43 @@ export default function plugin(
             {
               id: "queries",
               title: "Queries",
+              sidebarPosition: 1,
               content: convertQueriesToMarkdown(queries, { getTypePath }),
             },
             {
               id: "mutations",
               title: "Mutations",
+              sidebarPosition: 2,
               content: convertMutationsToMarkdown(mutations, { getTypePath }),
             },
             {
               id: "objects",
               title: "Objects",
+              sidebarPosition: 3,
               content: convertObjectsToMarkdown(objects, { getTypePath }),
             },
             {
               id: "interfaces",
               title: "Interfaces",
+              sidebarPosition: 4,
               content: convertInterfacesToMarkdown(interfaces, { getTypePath }),
             },
             {
               id: "enums",
               title: "Enums",
+              sidebarPosition: 5,
               content: convertEnumsToMarkdown(enums, { getTypePath }),
             },
             {
               id: "unions",
               title: "Unions",
+              sidebarPosition: 6,
               content: convertUnionsToMarkdown(unions, { getTypePath }),
             },
             {
               id: "inputObjects",
               title: "Input objects",
+              sidebarPosition: 7,
               content: convertInputObjectsToMarkdown(inputObjects, {
                 getTypePath,
               }),
@@ -194,6 +201,7 @@ export default function plugin(
             {
               id: "scalars",
               title: "Scalars",
+              sidebarPosition: 8,
               content: convertScalarsToMarkdown(scalars, { getTypePath }),
             },
           ];
@@ -209,6 +217,8 @@ export default function plugin(
                 `title: ${file.title}`,
                 `\n`,
                 `slug: ${file.id}`,
+                `\n`,
+                `sidebar_position: ${file.sidebarPosition}`,
                 `\n`,
                 `---`,
                 `\n\n`,
