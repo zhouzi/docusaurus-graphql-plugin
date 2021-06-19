@@ -163,8 +163,8 @@ module.exports = {
         schema: "schema.graphql",
         sidebar: {
           label: "My Awesome Schema",
-          position: 1
-        }
+          position: 1,
+        },
       },
     ],
   ],
@@ -179,4 +179,3 @@ The configuration above will create a [`_category_.json`](https://docusaurus.io/
   "position": 1
 }
 ```
-

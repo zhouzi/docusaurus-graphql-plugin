@@ -54,5 +54,5 @@ export interface PluginOptions {
   sidebar?: {
     label: string;
     position: number;
-  }
+  };
 }

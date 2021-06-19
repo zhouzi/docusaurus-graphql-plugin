@@ -49,7 +49,7 @@ const OptionsSchema = Joi.object<PluginOptions>({
   routeBasePath: Joi.string().default("/docs/api/"),
   sidebar: Joi.object({
     label: Joi.string(),
-    position: Joi.number()
+    position: Joi.number(),
   }),
 });
 
@@ -231,14 +231,18 @@ export default function plugin(
             );
           }
 
-          if (options.sidebar){
+          if (options.sidebar) {
             await fse.outputFile(
               path.join(outputPath, "_category_.json"),
-              JSON.stringify({
-                label: options.sidebar.label,
-                position: options.sidebar.position
-              }, null, 2)
-            )
+              JSON.stringify(
+                {
+                  label: options.sidebar.label,
+                  position: options.sidebar.position,
+                },
+                null,
+                2
+              )
+            );
           }
         });
     },
