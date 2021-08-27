@@ -5,7 +5,9 @@ exports[`convertQueriesToMarkdown should render queries 1`] = `
 
 **Type:** [User!](#)
 
-> Deprecated: admin will be removed with the next major releaseQuery to get an admin.
+> Deprecated: admin will be removed with the next major release
+
+Query to get an admin.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 

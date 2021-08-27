@@ -5,7 +5,9 @@ exports[`convertMutationsToMarkdown should render mutations 1`] = `
 
 **Type:** [User!](#)
 
-> Deprecated: createAdmin will be removed with the next major releaseMutation to create a new admin.
+> Deprecated: createAdmin will be removed with the next major release
+
+Mutation to create a new admin.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 

@@ -15,7 +15,7 @@ export function convertMutationsToMarkdown(
     );
 
     if (mutation.deprecationReason) {
-      lines.push(`> Deprecated: ${mutation.deprecationReason}`);
+      lines.push(`> Deprecated: ${mutation.deprecationReason}`, `\n\n`);
     }
 
     lines.push(mutation.description || "", `\n\n`);

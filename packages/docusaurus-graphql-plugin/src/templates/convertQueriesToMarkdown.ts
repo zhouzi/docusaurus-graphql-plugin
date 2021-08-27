@@ -15,7 +15,7 @@ export function convertQueriesToMarkdown(
     );
 
     if (query.deprecationReason) {
-      lines.push(`> Deprecated: ${query.deprecationReason}`);
+      lines.push(`> Deprecated: ${query.deprecationReason}`, `\n\n`);
     }
 
     lines.push(query.description || "", `\n\n`);
