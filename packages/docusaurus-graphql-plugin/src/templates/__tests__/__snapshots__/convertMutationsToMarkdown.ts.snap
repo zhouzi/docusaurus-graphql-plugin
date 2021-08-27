@@ -1,7 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`convertMutationsToMarkdown should render mutations 1`] = `
-"## createUser
+"## createAdmin
+
+**Type:** [User!](#)
+
+> Deprecated: createAdmin will be removed with the next major releaseMutation to create a new admin.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"#\\"><code>String!</code></a>
+</td>
+<td>
+<p>The new admin&#39;s name</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## createUser
 
 **Type:** [User!](#)
 

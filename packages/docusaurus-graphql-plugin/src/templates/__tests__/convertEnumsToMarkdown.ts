@@ -17,6 +17,11 @@ describe("convertEnumsToMarkdown", () => {
         Admin
         "User has no particular rights."
         User
+        "Unknown user"
+        Anonymous
+          @deprecated(
+            reason: "Anonymous will be removed with the next major release"
+          )
       }
     `);
     const { enums } = groupSortedTypes(Object.values(schema.getTypeMap()));

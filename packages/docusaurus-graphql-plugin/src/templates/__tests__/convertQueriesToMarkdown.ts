@@ -17,6 +17,17 @@ describe("convertQueriesToMarkdown", () => {
           "The user's id."
           id: ID!
         ): User!
+
+        """
+        Query to get an admin.
+        """
+        admin(
+          "The admin's id."
+          id: ID!
+        ): User!
+          @deprecated(
+            reason: "admin will be removed with the next major release"
+          )
       }
       type User {
         name: String!

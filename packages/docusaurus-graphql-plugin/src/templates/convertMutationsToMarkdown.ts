@@ -13,6 +13,11 @@ export function convertMutationsToMarkdown(
       `**Type:** [${mutation.type.inspect()}](${getTypePath(mutation.type)})`,
       `\n\n`
     );
+
+    if (mutation.deprecationReason) {
+      lines.push(`> Deprecated: ${mutation.deprecationReason}`);
+    }
+
     lines.push(mutation.description || "", `\n\n`);
 
     if (mutation.args.length > 0) {

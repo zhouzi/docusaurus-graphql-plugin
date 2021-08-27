@@ -26,9 +26,19 @@ export function convertEnumsToMarkdown(
     en.getValues().forEach((value) => {
       lines.push(`<tr>`, `\n`);
       lines.push(`<td>${value.value}</td>`, `\n`);
+
       lines.push(`<td>`, `\n`);
+
+      if (value.deprecationReason) {
+        lines.push(
+          `<blockquote>Deprecated: ${value.deprecationReason}</blockquote>`,
+          `\n`
+        );
+      }
+
       lines.push(parseMarkdown(value.description || ""), `\n`);
       lines.push(`</td>`, `\n`);
+
       lines.push(`</tr>`, `\n`);
     });
 

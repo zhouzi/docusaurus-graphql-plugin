@@ -17,6 +17,17 @@ describe("convertMutationsToMarkdown", () => {
           "The new user's name"
           name: String!
         ): User!
+
+        """
+        Mutation to create a new admin.
+        """
+        createAdmin(
+          "The new admin's name"
+          name: String!
+        ): User!
+          @deprecated(
+            reason: "createAdmin will be removed with the next major release"
+          )
       }
       type User {
         name: String!

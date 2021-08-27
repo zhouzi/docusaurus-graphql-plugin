@@ -13,6 +13,11 @@ export function convertQueriesToMarkdown(
       `**Type:** [${query.type.inspect()}](${getTypePath(query.type)})`,
       `\n\n`
     );
+
+    if (query.deprecationReason) {
+      lines.push(`> Deprecated: ${query.deprecationReason}`);
+    }
+
     lines.push(query.description || "", `\n\n`);
 
     if (query.args.length > 0) {

@@ -22,6 +22,13 @@ Represents a user's role.
 <p>User has no particular rights.</p>
 </td>
 </tr>
+<tr>
+<td>Anonymous</td>
+<td>
+<blockquote>Deprecated: Anonymous will be removed with the next major release</blockquote>
+<p>Unknown user</p>
+</td>
+</tr>
 </tbody>
 </table>
 
