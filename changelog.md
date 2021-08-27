@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 0.6.0 - 2021-08-27
+
+### Added
+
+- Add missing deprecation reason for queries, mutations and enum values.
+
+### 0.5.0 - 2021-06-19
+
+### Added
+
+- Add `sidebar_position` frontmatter field to the generated files.
+- Add `sidebar` option to generate a `_category_.json` file.
+
 ## 0.4.0 - 2021-04-25
 
 ### Removed
