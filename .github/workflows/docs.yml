@@ -12,8 +12,8 @@ jobs:
         with:
           node-version: "14"
       - run: yarn
-      - run: yarn --cwd ./packages/docs build
+      - run: yarn --cwd ./docs build
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/docs/build
+          publish_dir: ./docs/build
