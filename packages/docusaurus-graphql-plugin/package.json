@@ -1,7 +1,6 @@
 {
   "name": "docusaurus-graphql-plugin",
   "version": "0.6.1",
-  "private": true,
   "description": "Docusaurus plugin generating Markdown documentation from a GraphQL schema.",
   "keywords": [
     "docusaurus",
@@ -19,10 +18,11 @@
   },
   "license": "MIT",
   "author": "Gabin Aureche <hello@gabinaureche.com>",
+  "main": "./build/index.js",
   "scripts": {
     "prebuild": "rm -rf build",
     "build": "tsc",
-    "postbuild": "node ./scripts/postbuild",
+    "postbuild": "cp ../../README.md .",
     "prepare": "yarn run build",
     "test": "jest"
   },
