@@ -16,6 +16,7 @@ import {
   GraphQLScalarType,
   GraphQLUnionType,
   isEnumType,
+  isInputObjectType,
   isInterfaceType,
   isListType,
   isNonNullType,
@@ -145,7 +146,11 @@ export default function plugin(
               return joinURL(baseUrl, `/enums#${sluggify(type.name)}`);
             }
 
-            return joinURL(baseUrl, `/inputObjects#${sluggify(type.name)}`);
+            if (isInputObjectType(type)) {
+              return joinURL(baseUrl, `/inputObjects#${sluggify(type.name)}`);
+            }
+
+            throw new Error(`Unkown type "${type.toString()}"`);
           };
           const {
             queries,

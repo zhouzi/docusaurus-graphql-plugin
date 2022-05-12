@@ -26,7 +26,7 @@ export function pushFields(
       `<br />\n`,
       `<a href="${getTypePath(
         field.type
-      )}"><code>${field.type.inspect()}</code></a>`,
+      )}"><code>${field.type.toJSON()}</code></a>`,
       `\n`,
       `</td>`,
       `\n`

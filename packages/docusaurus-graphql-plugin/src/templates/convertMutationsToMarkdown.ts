@@ -10,7 +10,7 @@ export function convertMutationsToMarkdown(
   mutations.forEach(({ type: mutation }) => {
     lines.push(`## ${mutation.name}`, `\n\n`);
     lines.push(
-      `**Type:** [${mutation.type.inspect()}](${getTypePath(mutation.type)})`,
+      `**Type:** [${mutation.type.toJSON()}](${getTypePath(mutation.type)})`,
       `\n\n`
     );
 
