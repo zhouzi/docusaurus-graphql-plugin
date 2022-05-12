@@ -4310,10 +4310,6 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-"docusaurus-graphql-plugin@link:docusaurus-graphql-plugin/build":
-  version "0.0.0"
-  uid ""
-
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"

@@ -12,7 +12,7 @@ module.exports = function plugin() {
         .description("Generate the documentation from the project's readme")
         .action(() => {
           const readme = fse.readFileSync(
-            path.join(__dirname, "..", "..", "README.md"),
+            path.join(__dirname, "..", "README.md"),
             "utf-8"
           );
           const slugger = new Slugger();
