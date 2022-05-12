@@ -10,7 +10,7 @@ export function convertQueriesToMarkdown(
   queries.forEach(({ type: query }) => {
     lines.push(`## ${query.name}`, `\n\n`);
     lines.push(
-      `**Type:** [${query.type.inspect()}](${getTypePath(query.type)})`,
+      `**Type:** [${query.type.toJSON()}](${getTypePath(query.type)})`,
       `\n\n`
     );
 

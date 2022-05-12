@@ -3,7 +3,7 @@ import { MarkdownOptions } from "../types";
 
 export function pushInterfaces(
   lines: string[],
-  interfaces: GraphQLInterfaceType[],
+  interfaces: readonly GraphQLInterfaceType[],
   { getTypePath }: MarkdownOptions
 ): void {
   lines.push(
