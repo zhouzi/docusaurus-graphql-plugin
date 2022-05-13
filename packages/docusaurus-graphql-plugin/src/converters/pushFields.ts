@@ -1,12 +1,12 @@
 import { GraphQLField } from "graphql";
-import { MarkdownOptions } from "../types";
+import { MarkdownConverterOptions } from "../types";
 import { pushArguments } from "./pushArguments";
 import { parseMarkdown } from "./parseMarkdown";
 
 export function pushFields(
   lines: string[],
   fields: GraphQLField<any, any>[],
-  { getTypePath }: MarkdownOptions
+  { getTypePath }: MarkdownConverterOptions
 ): void {
   lines.push(
     `<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>`,

@@ -6,43 +6,25 @@ import {
   OptionValidationContext,
   ValidationResult,
 } from "@docusaurus/types";
-import {
-  GraphQLEnumType,
-  GraphQLInputObjectType,
-  GraphQLInterfaceType,
-  GraphQLList,
-  GraphQLNonNull,
-  GraphQLObjectType,
-  GraphQLScalarType,
-  GraphQLUnionType,
-  isEnumType,
-  isInputObjectType,
-  isInterfaceType,
-  isListType,
-  isNonNullType,
-  isObjectType,
-  isScalarType,
-  isUnionType,
-} from "graphql";
+import { GraphQLType } from "graphql";
 import Joi from "joi";
 import { loadSchema } from "@graphql-tools/load";
 import { UrlLoader } from "@graphql-tools/url-loader";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 import { JsonFileLoader } from "@graphql-tools/json-file-loader";
-import { Slugger } from "marked";
 import joinURL from "url-join";
-import { PluginOptions } from "./types";
-import {
-  convertEnumsToMarkdown,
-  convertInputObjectsToMarkdown,
-  convertInterfacesToMarkdown,
-  convertMutationsToMarkdown,
-  convertObjectsToMarkdown,
-  convertQueriesToMarkdown,
-  convertScalarsToMarkdown,
-  convertUnionsToMarkdown,
-} from "./templates";
-import { groupSortedTypes } from "./groupSortedTypes";
+import { convertersList } from "./converters";
+import { getRelativeTypeUrl } from "./getRelativeTypeUrl";
+
+interface PluginOptions {
+  id: string;
+  schema: string;
+  routeBasePath: string;
+  sidebar?: {
+    label: string;
+    position: number;
+  };
+}
 
 const OptionsSchema = Joi.object<PluginOptions>({
   id: Joi.string(),
@@ -88,9 +70,6 @@ export default function plugin(
               new JsonFileLoader(),
             ],
           });
-          const slugger = new Slugger();
-          const sluggify = (name: string) =>
-            slugger.slug(name, { dryrun: true });
           const baseUrl = joinURL(context.baseUrl, options.routeBasePath);
           const outputPath = path.join(
             context.siteDir,
@@ -107,115 +86,11 @@ export default function plugin(
               // so that's taken care of by path.join
               .split("/")
           );
-          const getTypePath = (
-            type:
-              | GraphQLScalarType
-              | GraphQLObjectType
-              | GraphQLInterfaceType
-              | GraphQLUnionType
-              | GraphQLEnumType
-              | GraphQLList<any>
-              | GraphQLInputObjectType
-              | GraphQLNonNull<any>
-          ): string => {
-            if (isListType(type)) {
-              return getTypePath(type.ofType);
-            }
 
-            if (isNonNullType(type)) {
-              return getTypePath(type.ofType);
-            }
+          for (let i = 0; i < convertersList.length; i++) {
+            const file = convertersList[i];
+            const sidebarPosition = i + 1;
 
-            if (isScalarType(type)) {
-              return joinURL(baseUrl, `/scalars#${sluggify(type.name)}`);
-            }
-
-            if (isObjectType(type)) {
-              return joinURL(baseUrl, `/objects#${sluggify(type.name)}`);
-            }
-
-            if (isInterfaceType(type)) {
-              return joinURL(baseUrl, `/interfaces#${sluggify(type.name)}`);
-            }
-
-            if (isUnionType(type)) {
-              return joinURL(baseUrl, `/unions#${sluggify(type.name)}`);
-            }
-
-            if (isEnumType(type)) {
-              return joinURL(baseUrl, `/enums#${sluggify(type.name)}`);
-            }
-
-            if (isInputObjectType(type)) {
-              return joinURL(baseUrl, `/inputObjects#${sluggify(type.name)}`);
-            }
-
-            throw new Error(`Unkown type "${type.toString()}"`);
-          };
-          const {
-            queries,
-            mutations,
-            objects,
-            interfaces,
-            enums,
-            unions,
-            inputObjects,
-            scalars,
-          } = groupSortedTypes(Object.values(schema.getTypeMap()));
-          const files = [
-            {
-              id: "queries",
-              title: "Queries",
-              sidebarPosition: 1,
-              content: convertQueriesToMarkdown(queries, { getTypePath }),
-            },
-            {
-              id: "mutations",
-              title: "Mutations",
-              sidebarPosition: 2,
-              content: convertMutationsToMarkdown(mutations, { getTypePath }),
-            },
-            {
-              id: "objects",
-              title: "Objects",
-              sidebarPosition: 3,
-              content: convertObjectsToMarkdown(objects, { getTypePath }),
-            },
-            {
-              id: "interfaces",
-              title: "Interfaces",
-              sidebarPosition: 4,
-              content: convertInterfacesToMarkdown(interfaces, { getTypePath }),
-            },
-            {
-              id: "enums",
-              title: "Enums",
-              sidebarPosition: 5,
-              content: convertEnumsToMarkdown(enums, { getTypePath }),
-            },
-            {
-              id: "unions",
-              title: "Unions",
-              sidebarPosition: 6,
-              content: convertUnionsToMarkdown(unions, { getTypePath }),
-            },
-            {
-              id: "inputObjects",
-              title: "Input objects",
-              sidebarPosition: 7,
-              content: convertInputObjectsToMarkdown(inputObjects, {
-                getTypePath,
-              }),
-            },
-            {
-              id: "scalars",
-              title: "Scalars",
-              sidebarPosition: 8,
-              content: convertScalarsToMarkdown(scalars, { getTypePath }),
-            },
-          ];
-
-          for (const file of files) {
             await fse.outputFile(
               path.join(outputPath, `${file.id}.md`),
               [
@@ -227,11 +102,14 @@ export default function plugin(
                 `\n`,
                 `slug: ${file.id}`,
                 `\n`,
-                `sidebar_position: ${file.sidebarPosition}`,
+                `sidebar_position: ${sidebarPosition}`,
                 `\n`,
                 `---`,
                 `\n\n`,
-                file.content,
+                file.convertToMarkdown(schema, {
+                  getTypePath: (type: GraphQLType) =>
+                    joinURL(baseUrl, getRelativeTypeUrl(type)),
+                }),
               ].join("")
             );
           }

@@ -1,10 +1,10 @@
 import { GraphQLInterfaceType } from "graphql";
-import { MarkdownOptions } from "../types";
+import { MarkdownConverterOptions } from "../types";
 
 export function pushInterfaces(
   lines: string[],
   interfaces: readonly GraphQLInterfaceType[],
-  { getTypePath }: MarkdownOptions
+  { getTypePath }: MarkdownConverterOptions
 ): void {
   lines.push(
     `<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>`,
