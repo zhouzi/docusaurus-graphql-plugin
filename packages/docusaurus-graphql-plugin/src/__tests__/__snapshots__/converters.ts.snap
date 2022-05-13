@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`converters enums should convert enums to markdown 1`] = `
+"## UserRole
+
+Represents a user's role.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Values</strong></p>
+
+<table>
+<thead><tr><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td>
+<p>User has admin rights.</p>
+</td>
+</tr>
+<tr>
+<td>User</td>
+<td>
+<p>User has no particular rights.</p>
+</td>
+</tr>
+<tr>
+<td>Anonymous</td>
+<td>
+<blockquote>Deprecated: Anonymous will be removed with the next major release</blockquote>
+<p>Unknown user</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters inputObjects should convert inputObjects to markdown 1`] = `
+"## CreateUserInput
+
+Input to create a new user.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The new user&#39;s name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters interfaces should convert interfaces to markdown 1`] = `
+"## User
+
+Properties that are common to the different kind of users.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The user&#39;s name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters interfaces should list the interface's implementations 1`] = `
+"## User
+
+Properties that are common to the different kind of users.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
+
+- [Admin](/objects#admin)
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The user&#39;s name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters interfaces should list the interface's interfaces 1`] = `
+"## Admin
+
+A special kind of user.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
+
+- [User](/interfaces#user)
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+power<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The admin&#39;s special power.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## User
+
+Properties that are common to the different kind of users.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
+
+- [Admin](/interfaces#admin)
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The user&#39;s name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters mutations should convert mutations to markdown 1`] = `
+"## createAdmin
+
+**Type:** [User!](/objects#user)
+
+> Deprecated: createAdmin will be removed with the next major release
+
+Mutation to create a new admin.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The new admin&#39;s name</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## createUser
+
+**Type:** [User!](/objects#user)
+
+Mutation to create a new user.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The new user&#39;s name</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters objects should convert objects to markdown 1`] = `""`;
+
+exports[`converters objects should list the objects' interfaces 1`] = `
+"## Admin
+
+A user with special rights.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
+
+- [User](/interfaces#user)
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href=\\"/scalars#string\\"><code>String!</code></a>
+</td>
+<td>
+<p>The admin&#39;s name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters queries should convert queries to markdown 1`] = `
+"## admin
+
+**Type:** [User!](/objects#user)
+
+> Deprecated: admin will be removed with the next major release
+
+Query to get an admin.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href=\\"/scalars#id\\"><code>ID!</code></a>
+</td>
+<td>
+<p>The admin&#39;s id.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## user
+
+**Type:** [User!](/objects#user)
+
+Query to get a user.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href=\\"/scalars#id\\"><code>ID!</code></a>
+</td>
+<td>
+<p>The user&#39;s id.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
+
+exports[`converters scalars should convert scalars to markdown 1`] = `
+"## Boolean
+
+The \`Boolean\` scalar type represents \`true\` or \`false\`.
+
+## DateTime
+
+A ISO date time.
+
+## String
+
+The \`String\` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+
+"
+`;
+
+exports[`converters unions should convert unions to markdown 1`] = `
+"## Humanoid
+
+Combination of the possible humanoids.
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Possible types</strong></p>
+
+- [User](/objects#user)
+- [Droid](/objects#droid)
+
+"
+`;
