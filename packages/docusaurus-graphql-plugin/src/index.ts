@@ -88,25 +88,25 @@ export default function plugin(
           );
 
           for (let i = 0; i < convertersList.length; i++) {
-            const file = convertersList[i];
+            const converter = convertersList[i];
             const sidebarPosition = i + 1;
 
             await fse.outputFile(
-              path.join(outputPath, `${file.id}.md`),
+              path.join(outputPath, `${converter.id}.md`),
               [
                 `---`,
                 `\n`,
-                `id: ${file.id}`,
+                `id: ${converter.id}`,
                 `\n`,
-                `title: ${file.title}`,
+                `title: ${converter.title}`,
                 `\n`,
-                `slug: ${file.id}`,
+                `slug: ${converter.id}`,
                 `\n`,
                 `sidebar_position: ${sidebarPosition}`,
                 `\n`,
                 `---`,
                 `\n\n`,
-                file.convertToMarkdown(schema, {
+                converter.convertToMarkdown(schema, {
                   getTypePath: (type: GraphQLType) =>
                     joinURL(baseUrl, getRelativeTypeUrl(type)),
                 }),
