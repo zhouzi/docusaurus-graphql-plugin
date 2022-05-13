@@ -29,7 +29,10 @@ export function getRelativeTypeUrl(type: GraphQLType): string {
   );
 
   if (converter == null) {
-    throw new Error(`Can't generate an URL for type "${baseType.name}"`);
+    console.warn(
+      `Failed to generate a relative URL to type "${baseType.name}"`
+    );
+    return `#`;
   }
 
   return `/${converter.id}#${sluggify(baseType.name)}`;
