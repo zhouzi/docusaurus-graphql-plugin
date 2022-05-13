@@ -83,9 +83,9 @@ export const convertersMap = {
       options: MarkdownConverterOptions
     ): string {
       const objects = sortTypesByName(
-        Object.values(
-          schema.getTypeMap()
-        ).filter((type): type is GraphQLObjectType => this.matches(type))
+        Object.values(schema.getTypeMap()).filter(
+          (type): type is GraphQLObjectType => this.matches(type)
+        )
       );
       return objects
         .map((object) => convertObjectToMarkdown(object, options))
@@ -103,9 +103,9 @@ export const convertersMap = {
       options: MarkdownConverterOptions
     ): string {
       const interfaces = sortTypesByName(
-        Object.values(
-          schema.getTypeMap()
-        ).filter((type): type is GraphQLInterfaceType => this.matches(type))
+        Object.values(schema.getTypeMap()).filter(
+          (type): type is GraphQLInterfaceType => this.matches(type)
+        )
       );
       return interfaces
         .map((inter) => {
@@ -132,9 +132,9 @@ export const convertersMap = {
       options: MarkdownConverterOptions
     ): string {
       const enums = sortTypesByName(
-        Object.values(
-          schema.getTypeMap()
-        ).filter((type): type is GraphQLEnumType => this.matches(type))
+        Object.values(schema.getTypeMap()).filter(
+          (type): type is GraphQLEnumType => this.matches(type)
+        )
       );
       return enums.map((enm) => convertEnumToMarkdown(enm, options)).join("");
     },
@@ -150,9 +150,9 @@ export const convertersMap = {
       options: MarkdownConverterOptions
     ): string {
       const unions = sortTypesByName(
-        Object.values(
-          schema.getTypeMap()
-        ).filter((type): type is GraphQLUnionType => this.matches(type))
+        Object.values(schema.getTypeMap()).filter(
+          (type): type is GraphQLUnionType => this.matches(type)
+        )
       );
       return unions
         .map((union) => convertUnionToMarkdown(union, options))
@@ -170,9 +170,9 @@ export const convertersMap = {
       options: MarkdownConverterOptions
     ): string {
       const inputObjects = sortTypesByName(
-        Object.values(
-          schema.getTypeMap()
-        ).filter((type): type is GraphQLInputObjectType => this.matches(type))
+        Object.values(schema.getTypeMap()).filter(
+          (type): type is GraphQLInputObjectType => this.matches(type)
+        )
       );
       return inputObjects
         .map((inputObject) =>
@@ -192,9 +192,9 @@ export const convertersMap = {
       options: MarkdownConverterOptions
     ): string {
       const scalars = sortTypesByName(
-        Object.values(
-          schema.getTypeMap()
-        ).filter((type): type is GraphQLScalarType => this.matches(type))
+        Object.values(schema.getTypeMap()).filter(
+          (type): type is GraphQLScalarType => this.matches(type)
+        )
       );
       return scalars
         .map((scalar) => convertScalarToMarkdown(scalar, options))
