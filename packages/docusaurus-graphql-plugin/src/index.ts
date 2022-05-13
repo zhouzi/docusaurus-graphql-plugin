@@ -107,8 +107,12 @@ export default function plugin(
                 `---`,
                 `\n\n`,
                 converter.convertToMarkdown(schema, {
-                  getTypePath: (type: GraphQLType) =>
-                    joinURL(baseUrl, getRelativeTypeUrl(type)),
+                  getTypePath: (type: GraphQLType) => {
+                    const relativeTypeUrl = getRelativeTypeUrl(type);
+                    return relativeTypeUrl
+                      ? joinURL(baseUrl, relativeTypeUrl)
+                      : undefined;
+                  },
                 }),
               ].join("")
             );

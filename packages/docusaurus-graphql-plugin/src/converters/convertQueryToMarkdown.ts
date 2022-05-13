@@ -4,13 +4,16 @@ import { pushArguments } from "./pushArguments";
 
 export function convertQueryToMarkdown(
   query: GraphQLField<any, any>,
-  { getTypePath }: MarkdownConverterOptions
+  options: MarkdownConverterOptions
 ): string {
   const lines: string[] = [];
 
   lines.push(`## ${query.name}`, `\n\n`);
+  const typeUrl = options.getTypePath(query.type);
   lines.push(
-    `**Type:** [${query.type.toJSON()}](${getTypePath(query.type)})`,
+    `**Type:** ${
+      typeUrl ? `[${query.type.toJSON()}](${typeUrl})` : query.type.toJSON()
+    }`,
     `\n\n`
   );
 
@@ -21,7 +24,7 @@ export function convertQueryToMarkdown(
   lines.push(query.description || "", `\n\n`);
 
   if (query.args.length > 0) {
-    pushArguments(lines, query.args, { getTypePath });
+    pushArguments(lines, query.args, options);
   }
 
   return lines.join("");

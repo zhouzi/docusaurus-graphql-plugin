@@ -3,7 +3,7 @@ import { MarkdownConverterOptions } from "../types";
 
 export function convertUnionToMarkdown(
   union: GraphQLUnionType,
-  { getTypePath }: MarkdownConverterOptions
+  options: MarkdownConverterOptions
 ): string {
   const lines: string[] = [];
 
@@ -15,7 +15,11 @@ export function convertUnionToMarkdown(
     `\n\n`
   );
   union.getTypes().forEach((type) => {
-    lines.push(`- [${type.name}](${getTypePath(type)})`, `\n`);
+    const typeUrl = options.getTypePath(type);
+    lines.push(
+      typeUrl ? `- [${type.name}](${typeUrl})` : `- ${type.name}`,
+      `\n`
+    );
   });
   lines.push(`\n`);
 

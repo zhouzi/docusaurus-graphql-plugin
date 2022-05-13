@@ -4,16 +4,14 @@ import { pushArguments } from "./pushArguments";
 
 export function convertInputObjectToMarkdown(
   inputObject: GraphQLInputObjectType,
-  { getTypePath }: MarkdownConverterOptions
+  options: MarkdownConverterOptions
 ): string {
   const lines: string[] = [];
 
   lines.push(`## ${inputObject.name}`, `\n\n`);
   lines.push(inputObject.description || "", `\n\n`);
 
-  pushArguments(lines, Object.values(inputObject.getFields()), {
-    getTypePath,
-  });
+  pushArguments(lines, Object.values(inputObject.getFields()), options);
 
   return lines.join("");
 }

@@ -6,7 +6,7 @@ import { parseMarkdown } from "./parseMarkdown";
 export function pushFields(
   lines: string[],
   fields: GraphQLField<any, any>[],
-  { getTypePath }: MarkdownConverterOptions
+  options: MarkdownConverterOptions
 ): void {
   lines.push(
     `<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>`,
@@ -19,14 +19,15 @@ export function pushFields(
 
   fields.forEach((field) => {
     lines.push(`<tr>`, `\n`);
+    const typeUrl = options.getTypePath(field.type);
     lines.push(
       `<td>`,
       `\n`,
       `${field.name}`,
       `<br />\n`,
-      `<a href="${getTypePath(
-        field.type
-      )}"><code>${field.type.toJSON()}</code></a>`,
+      typeUrl
+        ? `<a href="${typeUrl}"><code>${field.type.toJSON()}</code></a>`
+        : `<code>${field.type.toJSON()}</code>`,
       `\n`,
       `</td>`,
       `\n`
@@ -45,7 +46,7 @@ export function pushFields(
 
     if (field.args.length > 0) {
       lines.push(`\n`);
-      pushArguments(lines, field.args, { getTypePath });
+      pushArguments(lines, field.args, options);
     }
 
     lines.push(`</td>`, `\n`);

@@ -22,7 +22,7 @@ function getBaseType(type: GraphQLType): GraphQLNamedType {
   return type;
 }
 
-export function getRelativeTypeUrl(type: GraphQLType): string {
+export function getRelativeTypeUrl(type: GraphQLType): string | undefined {
   const baseType = getBaseType(type);
   const converter = convertersList.find((otherConverter) =>
     otherConverter.matches(baseType)
@@ -32,7 +32,7 @@ export function getRelativeTypeUrl(type: GraphQLType): string {
     console.warn(
       `Failed to generate a relative URL to type "${baseType.name}"`
     );
-    return `#`;
+    return undefined;
   }
 
   return `/${converter.id}#${sluggify(baseType.name)}`;

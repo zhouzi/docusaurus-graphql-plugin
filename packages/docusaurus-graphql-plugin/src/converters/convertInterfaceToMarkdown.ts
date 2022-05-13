@@ -6,7 +6,7 @@ import { pushInterfaces } from "./pushInterfaces";
 export function convertInterfaceToMarkdown(
   inter: GraphQLInterfaceType,
   implementedBy: Array<GraphQLObjectType | GraphQLInterfaceType>,
-  { getTypePath }: MarkdownConverterOptions
+  options: MarkdownConverterOptions
 ): string {
   const lines: string[] = [];
 
@@ -15,7 +15,7 @@ export function convertInterfaceToMarkdown(
 
   const subInterfaces = inter.getInterfaces();
   if (subInterfaces.length > 0) {
-    pushInterfaces(lines, subInterfaces, { getTypePath });
+    pushInterfaces(lines, subInterfaces, options);
   }
 
   if (implementedBy.length > 0) {
@@ -24,13 +24,17 @@ export function convertInterfaceToMarkdown(
       `\n\n`
     );
     implementedBy.forEach((object) => {
-      lines.push(`- [${object.name}](${getTypePath(object)})`, `\n`);
+      const typeUrl = options.getTypePath(object);
+      lines.push(
+        typeUrl ? `- [${object.name}](${typeUrl})` : `- ${object.name}`,
+        `\n`
+      );
     });
     lines.push(`\n`);
   }
 
   const fields = Object.values(inter.getFields());
-  pushFields(lines, fields, { getTypePath });
+  pushFields(lines, fields, options);
 
   return lines.join("");
 }

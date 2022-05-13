@@ -5,7 +5,7 @@ import { pushInterfaces } from "./pushInterfaces";
 
 export function convertObjectToMarkdown(
   object: GraphQLObjectType,
-  { getTypePath }: MarkdownConverterOptions
+  options: MarkdownConverterOptions
 ): string {
   const lines: string[] = [];
 
@@ -14,11 +14,11 @@ export function convertObjectToMarkdown(
 
   const interfaces = object.getInterfaces();
   if (interfaces.length > 0) {
-    pushInterfaces(lines, interfaces, { getTypePath });
+    pushInterfaces(lines, interfaces, options);
   }
 
   const fields = Object.values(object.getFields());
-  pushFields(lines, fields, { getTypePath });
+  pushFields(lines, fields, options);
 
   return lines.join("");
 }

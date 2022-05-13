@@ -5,7 +5,7 @@ import { parseMarkdown } from "./parseMarkdown";
 export function pushArguments(
   lines: string[],
   args: readonly GraphQLArgument[] | GraphQLInputField[],
-  { getTypePath }: MarkdownConverterOptions
+  options: MarkdownConverterOptions
 ): void {
   lines.push(
     `<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>`,
@@ -18,14 +18,15 @@ export function pushArguments(
 
   args.forEach((arg) => {
     lines.push(`<tr>`, `\n`);
+    const typeUrl = options.getTypePath(arg.type);
     lines.push(
       `<td>`,
       `\n`,
       `${arg.name}`,
       `<br />\n`,
-      `<a href="${getTypePath(
-        arg.type
-      )}"><code>${arg.type.toJSON()}</code></a>`,
+      typeUrl
+        ? `<a href="${typeUrl}"><code>${arg.type.toJSON()}</code></a>`
+        : `<code>${arg.type.toJSON()}</code>`,
       `\n`,
       `</td>`,
       `\n`
