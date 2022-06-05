@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Fixed
+
+- Add warning for Subscription instead of failing silently
+- Do not create a file for an object type that doesn't have matches (e.g `subscriptions.md` if there are no subscriptions)
+
 ## 0.7.0 - 2022-05-12
 
 ### Fixed

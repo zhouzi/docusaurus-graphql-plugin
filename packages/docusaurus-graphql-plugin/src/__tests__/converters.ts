@@ -1,6 +1,6 @@
 import { buildSchema } from "graphql";
 import { getRelativeTypeUrl } from "../getRelativeTypeUrl";
-import { convertersMap } from "../converters";
+import * as converters from "../converters";
 
 const markdownConverterOptions = {
   getTypePath: getRelativeTypeUrl,
@@ -29,10 +29,21 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.queries.convertToMarkdown(
-          schema,
-          markdownConverterOptions
-        )
+        converters.queries.convertToMarkdown(schema, markdownConverterOptions)
+      ).toMatchSnapshot();
+    });
+
+    it("should support query referencing Query", () => {
+      const schema = buildSchema(/* GraphQL */ `
+        type Query {
+          """
+          Hack to workaround https://github.com/facebook/relay/issues/112 re-exposing the root query object.
+          """
+          relay: Query!
+        }
+      `);
+      expect(
+        converters.queries.convertToMarkdown(schema, markdownConverterOptions)
       ).toMatchSnapshot();
     });
   });
@@ -59,10 +70,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.mutations.convertToMarkdown(
-          schema,
-          markdownConverterOptions
-        )
+        converters.mutations.convertToMarkdown(schema, markdownConverterOptions)
       ).toMatchSnapshot();
     });
   });
@@ -79,10 +87,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.objects.convertToMarkdown(
-          schema,
-          markdownConverterOptions
-        )
+        converters.objects.convertToMarkdown(schema, markdownConverterOptions)
       ).toMatchSnapshot();
     });
 
@@ -101,10 +106,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.objects.convertToMarkdown(
-          schema,
-          markdownConverterOptions
-        )
+        converters.objects.convertToMarkdown(schema, markdownConverterOptions)
       ).toMatchSnapshot();
     });
   });
@@ -121,7 +123,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.interfaces.convertToMarkdown(
+        converters.interfaces.convertToMarkdown(
           schema,
           markdownConverterOptions
         )
@@ -147,7 +149,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.interfaces.convertToMarkdown(
+        converters.interfaces.convertToMarkdown(
           schema,
           markdownConverterOptions
         )
@@ -173,7 +175,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.interfaces.convertToMarkdown(
+        converters.interfaces.convertToMarkdown(
           schema,
           markdownConverterOptions
         )
@@ -200,7 +202,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.enums.convertToMarkdown(schema, markdownConverterOptions)
+        converters.enums.convertToMarkdown(schema, markdownConverterOptions)
       ).toMatchSnapshot();
     });
   });
@@ -221,7 +223,7 @@ describe("converters", () => {
         union Humanoid = User | Droid
       `);
       expect(
-        convertersMap.unions.convertToMarkdown(schema, markdownConverterOptions)
+        converters.unions.convertToMarkdown(schema, markdownConverterOptions)
       ).toMatchSnapshot();
     });
   });
@@ -238,7 +240,7 @@ describe("converters", () => {
         }
       `);
       expect(
-        convertersMap.inputObjects.convertToMarkdown(
+        converters.inputObjects.convertToMarkdown(
           schema,
           markdownConverterOptions
         )
@@ -255,10 +257,7 @@ describe("converters", () => {
         scalar DateTime
       `);
       expect(
-        convertersMap.scalars.convertToMarkdown(
-          schema,
-          markdownConverterOptions
-        )
+        converters.scalars.convertToMarkdown(schema, markdownConverterOptions)
       ).toMatchSnapshot();
     });
   });

@@ -13,7 +13,7 @@ import { UrlLoader } from "@graphql-tools/url-loader";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 import { JsonFileLoader } from "@graphql-tools/json-file-loader";
 import joinURL from "url-join";
-import { convertersList } from "./converters";
+import * as converters from "./converters";
 import { getRelativeTypeUrl } from "./getRelativeTypeUrl";
 
 interface PluginOptions {
@@ -87,34 +87,35 @@ export default function plugin(
               .split("/")
           );
 
-          for (let i = 0; i < convertersList.length; i++) {
-            const converter = convertersList[i];
-            const sidebarPosition = i + 1;
+          const convertersList = Object.values(converters);
+          for (let index = 0; index < convertersList.length; index++) {
+            const converter = convertersList[index];
+            const markdown = converter.convertToMarkdown(schema, {
+              getTypePath: (type: GraphQLType) => {
+                const relativeTypeUrl = getRelativeTypeUrl(type);
+                return relativeTypeUrl
+                  ? joinURL(baseUrl, relativeTypeUrl)
+                  : undefined;
+              },
+            });
+
+            if (!markdown) {
+              // do not create an empty file
+              continue;
+            }
 
             await fse.outputFile(
               path.join(outputPath, `${converter.id}.md`),
               [
                 `---`,
-                `\n`,
                 `id: ${converter.id}`,
-                `\n`,
                 `title: ${converter.title}`,
-                `\n`,
                 `slug: ${converter.id}`,
-                `\n`,
-                `sidebar_position: ${sidebarPosition}`,
-                `\n`,
+                `sidebar_position: ${index + 1}`,
                 `---`,
-                `\n\n`,
-                converter.convertToMarkdown(schema, {
-                  getTypePath: (type: GraphQLType) => {
-                    const relativeTypeUrl = getRelativeTypeUrl(type);
-                    return relativeTypeUrl
-                      ? joinURL(baseUrl, relativeTypeUrl)
-                      : undefined;
-                  },
-                }),
-              ].join("")
+                ``,
+                markdown,
+              ].join(`\n`)
             );
           }
 

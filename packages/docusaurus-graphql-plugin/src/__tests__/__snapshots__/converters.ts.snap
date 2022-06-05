@@ -303,6 +303,16 @@ id<br />
 "
 `;
 
+exports[`converters queries should support query referencing Query 1`] = `
+"## relay
+
+**Type:** [Query!](/queries#query)
+
+Hack to workaround https://github.com/facebook/relay/issues/112 re-exposing the root query object.
+
+"
+`;
+
 exports[`converters scalars should convert scalars to markdown 1`] = `
 "## Boolean
 

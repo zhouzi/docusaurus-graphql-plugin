@@ -5,7 +5,7 @@ import {
   isNonNullType,
 } from "graphql";
 import { Slugger } from "marked";
-import { convertersList } from "./converters";
+import * as converters from "./converters";
 
 const slugger = new Slugger();
 const sluggify = (name: string) => slugger.slug(name, { dryrun: true });
@@ -24,6 +24,7 @@ function getBaseType(type: GraphQLType): GraphQLNamedType {
 
 export function getRelativeTypeUrl(type: GraphQLType): string | undefined {
   const baseType = getBaseType(type);
+  const convertersList = Object.values(converters);
   const converter = convertersList.find((otherConverter) =>
     otherConverter.matches(baseType)
   );
