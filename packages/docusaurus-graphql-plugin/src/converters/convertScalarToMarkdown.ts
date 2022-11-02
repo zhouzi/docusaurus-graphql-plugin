@@ -1,5 +1,6 @@
 import { GraphQLScalarType } from "graphql";
 import { MarkdownConverterOptions } from "../types";
+import { parseMarkdown } from "./parseMarkdown";
 
 export function convertScalarToMarkdown(
   scalar: GraphQLScalarType,
@@ -8,7 +9,7 @@ export function convertScalarToMarkdown(
   const lines: string[] = [];
 
   lines.push(`## ${scalar.name}`, `\n\n`);
-  lines.push(scalar.description || "", `\n\n`);
+  lines.push(parseMarkdown(scalar.description || ""), `\n\n`);
 
   return lines.join("");
 }

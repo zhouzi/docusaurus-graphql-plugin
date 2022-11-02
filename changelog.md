@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Fixed
+
+- Parse markdown in the description of: enums, inputs, interfaces, mutations, objects, queries, scalars, and unions
+- Escape special characters in inline code and code blocks appearing in the descriptions (for support with MDX)
+
 ## 0.8.0 - 2022-06-05
 
 ### Fixed
