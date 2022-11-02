@@ -1,6 +1,5 @@
 import { GraphQLUnionType } from "graphql";
 import { MarkdownConverterOptions } from "../types";
-import { parseMarkdown } from "./parseMarkdown";
 
 export function convertUnionToMarkdown(
   union: GraphQLUnionType,
@@ -9,7 +8,7 @@ export function convertUnionToMarkdown(
   const lines: string[] = [];
 
   lines.push(`## ${union.name}`, `\n\n`);
-  lines.push(parseMarkdown(union.description || ""), `\n\n`);
+  lines.push(union.description || "", `\n\n`);
 
   lines.push(
     `<p style={{ marginBottom: "0.4em" }}><strong>Possible types</strong></p>`,

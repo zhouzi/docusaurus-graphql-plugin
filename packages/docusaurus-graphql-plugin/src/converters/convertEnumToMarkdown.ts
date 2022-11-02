@@ -9,7 +9,7 @@ export function convertEnumToMarkdown(
   const lines: string[] = [];
 
   lines.push(`## ${enm.name}`, `\n\n`);
-  lines.push(parseMarkdown(enm.description || ""), `\n\n`);
+  lines.push(enm.description || "", `\n\n`);
 
   lines.push(
     `<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>`,

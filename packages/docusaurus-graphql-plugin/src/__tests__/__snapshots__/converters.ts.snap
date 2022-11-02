@@ -3,12 +3,7 @@
 exports[`converters enums should convert enums to markdown 1`] = `
 "## UserRole
 
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+Represents a user's role.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Values</strong></p>
 
@@ -18,12 +13,7 @@ exports[`converters enums should convert enums to markdown 1`] = `
 <tr>
 <td>Admin</td>
 <td>
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+<p>User has admin rights.</p>
 </td>
 </tr>
 <tr>
@@ -48,12 +38,7 @@ exports[`converters enums should convert enums to markdown 1`] = `
 exports[`converters inputObjects should convert inputObjects to markdown 1`] = `
 "## CreateUserInput
 
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+Input to create a new user.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
@@ -78,12 +63,7 @@ name<br />
 exports[`converters interfaces should convert interfaces to markdown 1`] = `
 "## User
 
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+Properties that are common to the different kind of users.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
@@ -108,7 +88,7 @@ name<br />
 exports[`converters interfaces should list the interface's implementations 1`] = `
 "## User
 
-<p>Properties that are common to the different kind of users.</p>
+Properties that are common to the different kind of users.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
 
@@ -137,7 +117,7 @@ name<br />
 exports[`converters interfaces should list the interface's interfaces 1`] = `
 "## Admin
 
-<p>A special kind of user.</p>
+A special kind of user.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
 
@@ -162,7 +142,7 @@ power<br />
 
 ## User
 
-<p>Properties that are common to the different kind of users.</p>
+Properties that are common to the different kind of users.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
 
@@ -195,7 +175,7 @@ exports[`converters mutations should convert mutations to markdown 1`] = `
 
 > Deprecated: createAdmin will be removed with the next major release
 
-<p>Mutation to create a new admin.</p>
+Mutation to create a new admin.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
@@ -218,12 +198,7 @@ name<br />
 
 **Type:** [User!](/objects#user)
 
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+Mutation to create a new user.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
@@ -250,7 +225,7 @@ exports[`converters objects should convert objects to markdown 1`] = `""`;
 exports[`converters objects should list the objects' interfaces 1`] = `
 "## Admin
 
-<p>A user with special rights.</p>
+A user with special rights.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
 
@@ -283,7 +258,7 @@ exports[`converters queries should convert queries to markdown 1`] = `
 
 > Deprecated: admin will be removed with the next major release
 
-<p>Query to get an admin.</p>
+Query to get an admin.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
@@ -306,12 +281,7 @@ id<br />
 
 **Type:** [User!](/objects#user)
 
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+Query to get a user.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Arguments</strong></p>
 
@@ -338,7 +308,7 @@ exports[`converters queries should support query referencing Query 1`] = `
 
 **Type:** [Query!](/queries#query)
 
-<p>Hack to workaround <a href=\\"https://github.com/facebook/relay/issues/112\\">https://github.com/facebook/relay/issues/112</a> re-exposing the root query object.</p>
+Hack to workaround https://github.com/facebook/relay/issues/112 re-exposing the root query object.
 
 "
 `;
@@ -346,20 +316,15 @@ exports[`converters queries should support query referencing Query 1`] = `
 exports[`converters scalars should convert scalars to markdown 1`] = `
 "## Boolean
 
-<p>The <code>Boolean</code> scalar type represents <code>true</code> or <code>false</code>.</p>
+The \`Boolean\` scalar type represents \`true\` or \`false\`.
 
 ## DateTime
 
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+A ISO date time.
 
 ## String
 
-<p>The <code>String</code> scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.</p>
+The \`String\` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
 
 "
 `;
@@ -367,12 +332,7 @@ exports[`converters scalars should convert scalars to markdown 1`] = `
 exports[`converters unions should convert unions to markdown 1`] = `
 "## Humanoid
 
-<p>This description contains special characters such as &lbrace; and &rbrace;.</p>
-<p>They should also be escaped in inline code <code>&lbrace;</code> and <code>&rbrace;</code> and code block:</p>
-<pre><code>function hello() &lbrace;
-  console.log(&#39;world&#39;);
-&rbrace;
-</code></pre>
+Combination of the possible humanoids.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Possible types</strong></p>
 

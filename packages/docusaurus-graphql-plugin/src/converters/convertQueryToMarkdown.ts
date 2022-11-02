@@ -1,6 +1,5 @@
 import { GraphQLField } from "graphql";
 import { MarkdownConverterOptions } from "../types";
-import { parseMarkdown } from "./parseMarkdown";
 import { pushArguments } from "./pushArguments";
 
 export function convertQueryToMarkdown(
@@ -22,7 +21,7 @@ export function convertQueryToMarkdown(
     lines.push(`> Deprecated: ${query.deprecationReason}`, `\n\n`);
   }
 
-  lines.push(parseMarkdown(query.description || ""), `\n\n`);
+  lines.push(query.description || "", `\n\n`);
 
   if (query.args.length > 0) {
     pushArguments(lines, query.args, options);

@@ -12,15 +12,7 @@ describe("converters", () => {
       const schema = buildSchema(/* GraphQL */ `
         type Query {
           """
-          This description contains special characters such as { and }.
-
-          They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-          \`\`\`
-          function hello() {
-            console.log('world');
-          }
-          \`\`\`
+          Query to get a user.
           """
           user("The user's id." id: ID!): User!
 
@@ -61,15 +53,7 @@ describe("converters", () => {
       const schema = buildSchema(/* GraphQL */ `
         type Mutation {
           """
-          This description contains special characters such as { and }.
-
-          They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-          \`\`\`
-          function hello() {
-            console.log('world');
-          }
-          \`\`\`
+          Mutation to create a new user.
           """
           createUser("The new user's name" name: String!): User!
 
@@ -95,28 +79,10 @@ describe("converters", () => {
     it("should convert objects to markdown", () => {
       const schema = buildSchema(/* GraphQL */ `
         """
-        This description contains special characters such as { and }.
-
-        They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-        \`\`\`
-        function hello() {
-          console.log('world');
-        }
-        \`\`\`
+        Input to create a new user.
         """
         input CreateUserInput {
-          """
-          This description contains special characters such as { and }.
-
-          They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-          \`\`\`
-          function hello() {
-            console.log('world');
-          }
-          \`\`\`
-          """
+          "The new user's name."
           name: String!
         }
       `);
@@ -149,15 +115,7 @@ describe("converters", () => {
     it("should convert interfaces to markdown", () => {
       const schema = buildSchema(/* GraphQL */ `
         """
-        This description contains special characters such as { and }.
-
-        They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-        \`\`\`
-        function hello() {
-          console.log('world');
-        }
-        \`\`\`
+        Properties that are common to the different kind of users.
         """
         interface User {
           "The user's name."
@@ -229,28 +187,10 @@ describe("converters", () => {
     it("should convert enums to markdown", () => {
       const schema = buildSchema(/* GraphQL */ `
         """
-        This description contains special characters such as { and }.
-
-        They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-        \`\`\`
-        function hello() {
-          console.log('world');
-        }
-        \`\`\`
+        Represents a user's role.
         """
         enum UserRole {
-          """
-          This description contains special characters such as { and }.
-
-          They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-          \`\`\`
-          function hello() {
-            console.log('world');
-          }
-          \`\`\`
-          """
+          "User has admin rights."
           Admin
           "User has no particular rights."
           User
@@ -278,15 +218,7 @@ describe("converters", () => {
         }
 
         """
-        This description contains special characters such as { and }.
-
-        They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-        \`\`\`
-        function hello() {
-          console.log('world');
-        }
-        \`\`\`
+        Combination of the possible humanoids.
         """
         union Humanoid = User | Droid
       `);
@@ -300,15 +232,7 @@ describe("converters", () => {
     it("should convert inputObjects to markdown", () => {
       const schema = buildSchema(/* GraphQL */ `
         """
-        This description contains special characters such as { and }.
-
-        They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-        \`\`\`
-        function hello() {
-          console.log('world');
-        }
-        \`\`\`
+        Input to create a new user.
         """
         input CreateUserInput {
           "The new user's name."
@@ -328,15 +252,7 @@ describe("converters", () => {
     it("should convert scalars to markdown", () => {
       const schema = buildSchema(/* GraphQL */ `
         """
-        This description contains special characters such as { and }.
-
-        They should also be escaped in inline code \`{\` and \`}\` and code block:
-
-        \`\`\`
-        function hello() {
-          console.log('world');
-        }
-        \`\`\`
+        A ISO date time.
         """
         scalar DateTime
       `);
