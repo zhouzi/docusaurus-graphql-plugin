@@ -220,7 +220,31 @@ name<br />
 "
 `;
 
-exports[`converters objects should convert objects to markdown 1`] = `""`;
+exports[`converters objects should convert objects to markdown 1`] = `
+"## User
+
+
+
+<p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href=\\"/scalars#id\\"><code>ID!</code></a>
+</td>
+<td>
+<p>This field&#39;s description contains special characters that should be escaped, such as &#123; and &#125;.</p>
+<p>It should also work within inline code such as <code>&#123; example &#125;</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+"
+`;
 
 exports[`converters objects should list the objects' interfaces 1`] = `
 "## Admin
