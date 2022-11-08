@@ -78,12 +78,13 @@ describe("converters", () => {
   describe("objects", () => {
     it("should convert objects to markdown", () => {
       const schema = buildSchema(/* GraphQL */ `
-        """
-        Input to create a new user.
-        """
-        input CreateUserInput {
-          "The new user's name."
-          name: String!
+        type User {
+          """
+          This field's description contains special characters that should be escaped, such as { and }.
+
+          It should also work within inline code such as \`{ example }\`
+          """
+          id: ID!
         }
       `);
       expect(
