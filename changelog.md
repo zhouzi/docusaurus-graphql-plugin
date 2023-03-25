@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 0.8.3 - 2023-03-25
+
 ### Fixed
 
 - Escape curly braces in deprecations' reason for MDX cross-compatibility
