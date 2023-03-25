@@ -21,7 +21,7 @@ describe("converters", () => {
           """
           admin("The admin's id." id: ID!): User!
             @deprecated(
-              reason: "admin will be removed with the next major release"
+              reason: "admin will be removed with the next major release, use { user } instead"
             )
         }
         type User {
@@ -62,7 +62,7 @@ describe("converters", () => {
           """
           createAdmin("The new admin's name" name: String!): User!
             @deprecated(
-              reason: "createAdmin will be removed with the next major release"
+              reason: "{ createAdmin } will be removed with the next major release"
             )
         }
         type User {
@@ -198,7 +198,7 @@ describe("converters", () => {
           "Unknown user"
           Anonymous
             @deprecated(
-              reason: "Anonymous will be removed with the next major release"
+              reason: "{ Anonymous } will be removed with the next major release"
             )
         }
       `);

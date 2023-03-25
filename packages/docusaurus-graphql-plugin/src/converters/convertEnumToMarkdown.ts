@@ -1,6 +1,6 @@
 import { GraphQLEnumType } from "graphql";
 import { MarkdownConverterOptions } from "../types";
-import { parseMarkdown } from "./parseMarkdown";
+import { escapeSpecialCharacters, parseMarkdown } from "./parseMarkdown";
 
 export function convertEnumToMarkdown(
   enm: GraphQLEnumType,
@@ -31,7 +31,9 @@ export function convertEnumToMarkdown(
 
     if (value.deprecationReason) {
       lines.push(
-        `<blockquote>Deprecated: ${value.deprecationReason}</blockquote>`,
+        `<blockquote>Deprecated: ${escapeSpecialCharacters(
+          value.deprecationReason
+        )}</blockquote>`,
         `\n`
       );
     }

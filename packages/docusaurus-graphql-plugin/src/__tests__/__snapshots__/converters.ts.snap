@@ -25,7 +25,7 @@ Represents a user's role.
 <tr>
 <td>Anonymous</td>
 <td>
-<blockquote>Deprecated: Anonymous will be removed with the next major release</blockquote>
+<blockquote>Deprecated: &#123; Anonymous &#125; will be removed with the next major release</blockquote>
 <p>Unknown user</p>
 </td>
 </tr>
@@ -173,7 +173,7 @@ exports[`converters mutations should convert mutations to markdown 1`] = `
 
 **Type:** [User!](/objects#user)
 
-> Deprecated: createAdmin will be removed with the next major release
+> Deprecated: &#123; createAdmin &#125; will be removed with the next major release
 
 Mutation to create a new admin.
 
@@ -280,7 +280,7 @@ exports[`converters queries should convert queries to markdown 1`] = `
 
 **Type:** [User!](/objects#user)
 
-> Deprecated: admin will be removed with the next major release
+> Deprecated: admin will be removed with the next major release, use &#123; user &#125; instead
 
 Query to get an admin.
 

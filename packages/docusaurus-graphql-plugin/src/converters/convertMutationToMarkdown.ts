@@ -1,5 +1,6 @@
 import { GraphQLField } from "graphql";
 import { MarkdownConverterOptions } from "../types";
+import { escapeSpecialCharacters } from "./parseMarkdown";
 import { pushArguments } from "./pushArguments";
 
 export function convertMutationToMarkdown(
@@ -21,7 +22,10 @@ export function convertMutationToMarkdown(
   );
 
   if (mutation.deprecationReason) {
-    lines.push(`> Deprecated: ${mutation.deprecationReason}`, `\n\n`);
+    lines.push(
+      `> Deprecated: ${escapeSpecialCharacters(mutation.deprecationReason)}`,
+      `\n\n`
+    );
   }
 
   lines.push(mutation.description || "", `\n\n`);
