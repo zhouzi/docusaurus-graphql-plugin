@@ -1,7 +1,7 @@
 import { GraphQLField } from "graphql";
 import { MarkdownConverterOptions } from "../types";
 import { pushArguments } from "./pushArguments";
-import { parseMarkdown } from "./parseMarkdown";
+import { escapeSpecialCharacters, parseMarkdown } from "./parseMarkdown";
 
 export function pushFields(
   lines: string[],
@@ -37,7 +37,9 @@ export function pushFields(
 
     if (field.deprecationReason) {
       lines.push(
-        `<blockquote>Deprecated: ${field.deprecationReason}</blockquote>`,
+        `<blockquote>Deprecated: ${escapeSpecialCharacters(
+          field.deprecationReason
+        )}</blockquote>`,
         `\n\n`
       );
     }
