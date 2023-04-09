@@ -4,7 +4,6 @@ import {
   LoadContext,
   Plugin,
   OptionValidationContext,
-  ValidationResult,
 } from "@docusaurus/types";
 import { GraphQLType } from "graphql";
 import Joi from "joi";
@@ -41,7 +40,7 @@ const OptionsSchema = Joi.object<PluginOptions>({
 export function validateOptions({
   options,
   validate,
-}: OptionValidationContext<PluginOptions>): ValidationResult<PluginOptions> {
+}: OptionValidationContext<PluginOptions, PluginOptions>): PluginOptions {
   return validate(OptionsSchema, options);
 }
 
