@@ -24,6 +24,7 @@ interface PluginOptions {
     label: string;
     position: number;
   };
+  useRelativePaths: boolean;
 }
 
 const OptionsSchema = Joi.object<PluginOptions>({
@@ -34,6 +35,7 @@ const OptionsSchema = Joi.object<PluginOptions>({
     label: Joi.string(),
     position: Joi.number(),
   }),
+  useRelativePaths: Joi.boolean(),
 });
 
 export function validateOptions({
@@ -94,7 +96,7 @@ export default function plugin(
               getTypePath: (type: GraphQLType) => {
                 const relativeTypeUrl = getRelativeTypeUrl(type);
                 return relativeTypeUrl
-                  ? joinURL(baseUrl, relativeTypeUrl)
+                  ? joinURL(options.useRelativePaths ? '' : baseUrl, relativeTypeUrl)
                   : undefined;
               },
             });
