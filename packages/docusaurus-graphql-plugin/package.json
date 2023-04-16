@@ -33,15 +33,13 @@
     "@graphql-tools/url-loader": "^7.9.21",
     "fs-extra": "^9.1.0",
     "joi": "^17.4.0",
-    "marked": "^2.0.3",
-    "url-join": "^4.0.1"
+    "marked": "^2.0.3"
   },
   "devDependencies": {
     "@docusaurus/types": "^2.0.0-alpha.72",
     "@types/fs-extra": "^9.0.11",
     "@types/jest": "^26.0.22",
     "@types/marked": "^2.0.2",
-    "@types/url-join": "^4.0.0",
     "graphql": "^16.0.0",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.5",

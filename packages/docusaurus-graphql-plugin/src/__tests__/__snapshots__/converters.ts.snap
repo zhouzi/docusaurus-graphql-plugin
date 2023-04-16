@@ -48,7 +48,7 @@ Input to create a new user.
 <tr>
 <td>
 name<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The new user&#39;s name.</p>
@@ -73,7 +73,7 @@ Properties that are common to the different kind of users.
 <tr>
 <td>
 name<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The user&#39;s name.</p>
@@ -92,7 +92,7 @@ Properties that are common to the different kind of users.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
 
-- [Admin](/objects#admin)
+- [Admin](objects#admin)
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
@@ -102,7 +102,7 @@ Properties that are common to the different kind of users.
 <tr>
 <td>
 name<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The user&#39;s name.</p>
@@ -121,7 +121,7 @@ A special kind of user.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
 
-- [User](/interfaces#user)
+- [User](interfaces#user)
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
@@ -131,7 +131,7 @@ A special kind of user.
 <tr>
 <td>
 power<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The admin&#39;s special power.</p>
@@ -146,7 +146,7 @@ Properties that are common to the different kind of users.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implemented by</strong></p>
 
-- [Admin](/interfaces#admin)
+- [Admin](interfaces#admin)
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
@@ -156,7 +156,7 @@ Properties that are common to the different kind of users.
 <tr>
 <td>
 name<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The user&#39;s name.</p>
@@ -171,7 +171,7 @@ name<br />
 exports[`converters mutations should convert mutations to markdown 1`] = `
 "## createAdmin
 
-**Type:** [User!](/objects#user)
+**Type:** [User!](objects#user)
 
 > Deprecated: &#123; createAdmin &#125; will be removed with the next major release
 
@@ -185,7 +185,7 @@ Mutation to create a new admin.
 <tr>
 <td>
 name<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The new admin&#39;s name</p>
@@ -196,7 +196,7 @@ name<br />
 
 ## createUser
 
-**Type:** [User!](/objects#user)
+**Type:** [User!](objects#user)
 
 Mutation to create a new user.
 
@@ -208,7 +208,7 @@ Mutation to create a new user.
 <tr>
 <td>
 name<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The new user&#39;s name</p>
@@ -233,7 +233,7 @@ exports[`converters objects should convert objects to markdown 1`] = `
 <tr>
 <td>
 id<br />
-<a href=\\"/scalars#id\\"><code>ID!</code></a>
+<a href=\\"scalars#id\\"><code>ID!</code></a>
 </td>
 <td>
 <p>This field&#39;s description contains special characters that should be escaped, such as &#123; and &#125;.</p>
@@ -253,7 +253,7 @@ A user with special rights.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Implements</strong></p>
 
-- [User](/interfaces#user)
+- [User](interfaces#user)
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Fields</strong></p>
 
@@ -263,7 +263,7 @@ A user with special rights.
 <tr>
 <td>
 name<br />
-<a href=\\"/scalars#string\\"><code>String!</code></a>
+<a href=\\"scalars#string\\"><code>String!</code></a>
 </td>
 <td>
 <p>The admin&#39;s name.</p>
@@ -278,7 +278,7 @@ name<br />
 exports[`converters queries should convert queries to markdown 1`] = `
 "## admin
 
-**Type:** [User!](/objects#user)
+**Type:** [User!](objects#user)
 
 > Deprecated: admin will be removed with the next major release, use &#123; user &#125; instead
 
@@ -292,7 +292,7 @@ Query to get an admin.
 <tr>
 <td>
 id<br />
-<a href=\\"/scalars#id\\"><code>ID!</code></a>
+<a href=\\"scalars#id\\"><code>ID!</code></a>
 </td>
 <td>
 <p>The admin&#39;s id.</p>
@@ -303,7 +303,7 @@ id<br />
 
 ## user
 
-**Type:** [User!](/objects#user)
+**Type:** [User!](objects#user)
 
 Query to get a user.
 
@@ -315,7 +315,7 @@ Query to get a user.
 <tr>
 <td>
 id<br />
-<a href=\\"/scalars#id\\"><code>ID!</code></a>
+<a href=\\"scalars#id\\"><code>ID!</code></a>
 </td>
 <td>
 <p>The user&#39;s id.</p>
@@ -330,7 +330,7 @@ id<br />
 exports[`converters queries should support query referencing Query 1`] = `
 "## relay
 
-**Type:** [Query!](/queries#query)
+**Type:** [Query!](queries#query)
 
 Hack to workaround https://github.com/facebook/relay/issues/112 re-exposing the root query object.
 
@@ -360,8 +360,8 @@ Combination of the possible humanoids.
 
 <p style={{ marginBottom: \\"0.4em\\" }}><strong>Possible types</strong></p>
 
-- [User](/objects#user)
-- [Droid](/objects#droid)
+- [User](objects#user)
+- [Droid](objects#droid)
 
 "
 `;
