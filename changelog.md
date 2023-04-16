@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add support for i18n by using relative links instead of absolute
+- Add comment at the top of generated files to discourage editing
 
 ### Changed
 
