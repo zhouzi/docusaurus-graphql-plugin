@@ -113,37 +113,18 @@ Can be a path, a glob or an URL used to load your GraphQL schema.
 
 **Defaults:** `/docs/api/`
 
-This option is used for two things:
+This option can be used to customize the output folder and thus the GraphQL docs' path.
 
-1. To generate reference links, such as the return type of a query being linked to its corresponding object.
-2. To generate the path where the files will be written to disk.
-
-So if you want the API docs to be served over `/docs/api-reference/` instead of `/docs/api/`, you can change this option to `/docs/api-reference/`. Note that you can also have more levels to the path, e.g `/docs/reference/api/`.
-
-**You must change this option if you are using the docs plugin's `routeBasePath`.**
-For example, if you opted for a docs only documentation, your configuration could look like this:
+For example if you want the API docs to be served over `/docs/api-reference/` instead of `/docs/api/`, you can change this option to `/docs/api-reference/`. Note that you can also have more levels to the path, e.g `/docs/reference/api/`.
 
 ```js
 module.exports = {
-  presets: [
-    [
-      "@docusaurus/preset-classic",
-      {
-        docs: {
-          // with the change below, docs are server over `/` instead of `/docs/`
-          routeBasePath: "/",
-        },
-      },
-    ],
-  ],
   plugins: [
     [
       "docusaurus-graphql-plugin",
       {
         schema: "schema.graphql",
-
-        // routeBasePath defaults to `/docs/api/` which will not work if docs are server over `/`
-        routeBasePath: "/api/",
+        routeBasePath: "/docs/api-reference/",
       },
     ],
   ],

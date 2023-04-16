@@ -6,13 +6,11 @@ import {
   OptionValidationContext,
   ValidationResult,
 } from "@docusaurus/types";
-import { GraphQLType } from "graphql";
 import Joi from "joi";
 import { loadSchema } from "@graphql-tools/load";
 import { UrlLoader } from "@graphql-tools/url-loader";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 import { JsonFileLoader } from "@graphql-tools/json-file-loader";
-import joinURL from "url-join";
 import * as converters from "./converters";
 import { getRelativeTypeUrl } from "./getRelativeTypeUrl";
 
@@ -70,7 +68,6 @@ export default function plugin(
               new JsonFileLoader(),
             ],
           });
-          const baseUrl = joinURL(context.baseUrl, options.routeBasePath);
           const outputPath = path.join(
             context.siteDir,
             "docs",
@@ -91,12 +88,7 @@ export default function plugin(
           for (let index = 0; index < convertersList.length; index++) {
             const converter = convertersList[index];
             const markdown = converter.convertToMarkdown(schema, {
-              getTypePath: (type: GraphQLType) => {
-                const relativeTypeUrl = getRelativeTypeUrl(type);
-                return relativeTypeUrl
-                  ? joinURL(baseUrl, relativeTypeUrl)
-                  : undefined;
-              },
+              getTypePath: getRelativeTypeUrl,
             });
 
             if (!markdown) {

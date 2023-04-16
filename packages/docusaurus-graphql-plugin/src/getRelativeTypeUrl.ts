@@ -36,5 +36,5 @@ export function getRelativeTypeUrl(type: GraphQLType): string | undefined {
     return undefined;
   }
 
-  return `/${converter.id}#${sluggify(baseType.name)}`;
+  return `${converter.id}#${sluggify(baseType.name)}`;
 }

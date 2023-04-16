@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Add support for i18n by using relative links instead of absolute
+
+### Changed
+
+- Use relative links for references
+
 ## 0.8.3 - 2023-03-25
 
 ### Fixed
